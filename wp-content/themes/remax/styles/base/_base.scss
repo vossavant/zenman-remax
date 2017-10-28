@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+	}
+}
+
+body {
+}

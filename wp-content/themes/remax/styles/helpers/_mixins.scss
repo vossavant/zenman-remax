@@ -1,0 +1,27 @@
+@mixin material_icon($font_size, $icon_name) {
+	content: $icon_name;
+	font: #{$font_size}/1 "Material Icons";
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: 'liga';
+}
+
+@mixin transition( $what: "all", $duration: "250ms", $easing: "ease-in-out" ) {
+	transition: #{$what} #{$duration} #{$easing};
+}
+
+@mixin breakpoint($breakpoint) {
+	$raw-query: map-get($mobile-breakpoints, $breakpoint);
+
+	@if $raw-query {
+		$query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+		@media #{$query} {
+			@content;
+		}
+	} @else {
+		@error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+	}
+}
