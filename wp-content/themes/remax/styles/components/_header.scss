@@ -1,0 +1,25 @@
+// Logotype
+
+.logo {
+	background: url('../images/logo@2x.png');
+	background-size: contain;
+	display: inline-block;
+	height: 0;
+	overflow: hidden;
+	padding-top: 33px;
+	min-width: 180px;
+}
+
+
+// Top Menu (Content Page only)
+
+.top-menu {
+	a {
+		color: $remax-red;
+		text-transform: uppercase;
+	}
+
+	li {
+		display: inline-block;
+	}
+}

@@ -5,14 +5,14 @@
  */
 
 function remax_enqueue_theme_styles() {
-    wp_enqueue_style('master', get_template_directory_uri() . '/styles/style.css', array(), '0.0.41');
+    wp_enqueue_style('master', get_template_directory_uri() . '/styles/style.css', null, '0.0.1');
 }
 add_action('wp_enqueue_scripts', 'remax_enqueue_theme_styles');
 
 function remax_enqueue_theme_scripts() {
     wp_enqueue_script('final-min', get_template_directory_uri() . '/javascripts/final.min.js', array('jquery'), '0.0.35', true);
 }
-add_action('wp_enqueue_scripts', 'remax_enqueue_theme_scripts');
+//add_action('wp_enqueue_scripts', 'remax_enqueue_theme_scripts');
 
 // disable admin bar
 show_admin_bar( false );
@@ -40,7 +40,8 @@ add_action('init', 'remax_remove_random_wp_gunk');
 function remax_register_custom_menus() {
     register_nav_menus(
         array(
-            'sidebar' => __('Sidebar Nav')
+            'top' => __('Top Menu'),
+            'main' => __('Main Menu')
         )
     );
 }

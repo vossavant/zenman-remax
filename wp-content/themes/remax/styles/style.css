@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+a:focus {
+  outline: none; }
+
+.logo {
+  background: url("../images/logo@2x.png");
+  background-size: contain;
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 33px;
+  min-width: 180px; }
+
+.top-menu a {
+  color: #dd1c2f;
+  text-transform: uppercase; }
+
+.top-menu li {
+  display: inline-block; }

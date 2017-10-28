@@ -6,6 +6,7 @@ config.codekit3
 wp-admin
 wp-content/plugins
 wp-content/themes/index.php
+wp-content/themes/remax/images/fpo
 wp-content/upgrade
 wp-content/uploads
 wp-content/index.php
