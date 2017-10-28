@@ -46,12 +46,54 @@ function remax_register_custom_menus() {
         array(
             'top' => __('Top Menu'),
             'main' => __('Main Menu'),
-	        'footer_1' => __('Footer Menu 1'),
-	        'footer_2' => __('Footer Menu 2'),
-	        'footer_3' => __('Footer Menu 3'),
-	        'footer_4' => __('Footer Menu 4'),
-	        'footer_bottom' => __('Footer Bottom')
+	        'footer' => __('Footer')
         )
     );
 }
 add_action('init', 'remax_register_custom_menus');
+
+
+/**
+ * Enables widget-ready areas in the footer
+ */
+if (function_exists('register_sidebar')) {
+	register_sidebar(
+		array(
+			'name' => 'Footer (Left Column)',
+			'before_widget' => '<div class="col-3">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => 'Footer (Center Left Column)',
+			'before_widget' => '<div class="col-3">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => 'Footer (Center Right Column)',
+			'before_widget' => '<div class="col-3">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		)
+	);
+	
+	register_sidebar(
+		array(
+			'name' => 'Footer (Right Column)',
+			'before_widget' => '<div class="col-3">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		)
+	);
+}
