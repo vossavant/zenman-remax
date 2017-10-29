@@ -3,24 +3,28 @@ get_header();
 ?>
 
 <!-- Intro -->
-<div class="container py-5">
+<div class="container py-6">
 	<h1 class="text-center">Real Estate (Placeholder)</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
+	<div class="mx-auto w-75">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
+	</div>
 	
-	<div class="row justify-content-center">
+	<div class="row justify-content-center pb-5">
 		<div class="card-deck col-xl-9">
-			<div class="card">
+			<div class="card border-0 rounded-0 shadow">
 				<div class="card-body">
 					<h4 class="card-title text-center">Buyers Guide</h4>
+					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<div class="text-center">
 						<a href="#" class="btn btn-primary">Buy a Home</a>
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card border-0 rounded-0 shadow">
 				<div class="card-body">
 					<h4 class="card-title text-center">Sellers Guide</h4>
+					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<div class="text-center">
 						<a href="#" class="btn btn-primary">Sell Your Home</a>
@@ -30,8 +34,27 @@ get_header();
 		</div>
 	</div>
 	
-	<h2 class="h1 text-center">Start Your Journey Here</h2>
-	<p>Widget to be provided by Remax</p>
+	<h2 class="h1 text-center pt-5">
+		<img src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_StartJourney.svg" width="85">
+		Start Your Journey Here
+	</h2>
+	<p>Widget to be provided by Remax. Code below (see source):</p>
+<!--	<script src="http://remax.com/resources_resp/js/app/ui-modules/searchwidget/rmx-search.js"></script>-->
+<!--	<div id="remax_search1" class="remax_search"></div>-->
+<!--	<script>-->
+<!--		var options = {-->
+<!--			_blank: true,-->
+<!--			count: 10,-->
+<!--			autoEnter: true,-->
+<!--			buttonText: "Let's Go",-->
+<!--			placeholder: 'City and State, Address or Zip Code'-->
+<!--		};-->
+<!---->
+<!---->
+<!--		$(document).ready(function() {-->
+<!--			$('.remax_search').remaxseach(options);-->
+<!--		});-->
+<!--	</script>-->
 </div>
 
 <!-- Image Gallery -->

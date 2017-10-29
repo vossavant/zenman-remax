@@ -19,12 +19,21 @@
 .border-bottom-4 {
   border-bottom-width: 4px !important; }
 
+.py-6 {
+  padding-bottom: 4rem !important;
+  padding-top: 4rem !important; }
+
+.shadow {
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
+
 * {
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased; }
 
 a:focus {
   outline: none; }
+
+h1, h2, h3, h4, .h1 {
+  color: #003ea5; }
 
 nav ul {
   list-style: none;
