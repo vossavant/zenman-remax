@@ -1,19 +1,2 @@
+$remax-blue: #003ea5;
 $remax-red: #dd1c2f;
-
-//$white-0			: hsl(0,0,0);		// #000000
-//$white-15			: hsl(0,0,15%);		// #262626
-//$white-50			: hsl(0,0,50%);		// #808080
-//$white-90			: hsl(0,0,90%);		// #e5e5e5
-//$white-100			: hsl(0,0,100%);	// #ffffff
-
-
-$mobile-breakpoints : (
-    'private'		: (max-width: 320px),
-    'corporal'		: (max-width: 480px),
-    'sergeant'		: (max-width: 640px),
-    'captain'		: (max-width: 720px),
-    'major'			: (max-width: 800px),
-    'lieutenant'	: (max-width: 960px),
-    'colonel'		: (max-width: 1200px),
-    'general'		: (max-width: 1440px)
-);

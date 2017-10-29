@@ -5,6 +5,15 @@
 a:focus {
   outline: none; }
 
+.btn-primary {
+  background: #dd1c2f;
+  border: 0;
+  border-radius: 1.5rem;
+  line-height: 3rem;
+  padding: 0 1.5rem; }
+  .btn-primary:hover {
+    background: #b01625; }
+
 .logo {
   background: url("../images/logo@2x.png");
   background-size: contain;
@@ -16,7 +25,24 @@ a:focus {
 
 .top-menu a {
   color: #dd1c2f;
+  display: inline-block;
+  line-height: 3rem;
+  padding: 0 1.5rem;
   text-transform: uppercase; }
 
 .top-menu li {
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
+  .top-menu li:not(:last-child):after {
+    background: #003ea5;
+    content: "";
+    height: 16px;
+    margin-top: -8px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2px; }
+
+.top-menu ul {
+  margin: 0;
+  padding: 0; }

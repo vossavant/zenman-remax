@@ -24,7 +24,7 @@
 
 <body <?php body_class($post->post_name); ?>>
 	<header>
-		<div class="container d-flex justify-content-between">
+		<div class="container d-flex align-items-center justify-content-between mt-3">
 			<a class="logo" href="">RE/MAX Home</a>
 			<?php
 			$args = array(
