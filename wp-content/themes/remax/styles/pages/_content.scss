@@ -1,0 +1,30 @@
+.top-menu {
+	a {
+		color: $remax-red;
+		display: inline-block;
+		line-height: 3rem;
+		padding: 0 1.5rem;
+		text-transform: uppercase;
+	}
+
+	li {
+		position: relative;
+
+		&:not(:last-child):after {
+			background: $remax-blue;
+			content: "";
+			height: 16px;
+			margin-top: -8px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			width: 2px;
+		}
+	}
+}
+
+.nav-on-dark {
+	a {
+		color: white;
+	}
+}

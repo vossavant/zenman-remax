@@ -1,10 +1,6 @@
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased; }
-
-a:focus {
-  outline: none; }
-
+/**
+	Overrides Bootstrap styles
+ */
 .btn-primary {
   background: #dd1c2f;
   border: 0;
@@ -13,6 +9,34 @@ a:focus {
   padding: 0 1.5rem; }
   .btn-primary:hover {
     background: #b01625; }
+
+.bg-primary {
+  background-color: #dd1c2f !important; }
+
+.border-primary {
+  border-color: #003ea5 !important; }
+
+.border-bottom-4 {
+  border-bottom-width: 4px !important; }
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+a:focus {
+  outline: none; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  nav ul a,
+  nav ul li {
+    display: inline-block; }
+
+.nav-primary a {
+  line-height: 3.5rem;
+  padding: 0 3rem; }
 
 .logo {
   background: url("../images/logo@2x.png");
@@ -31,7 +55,6 @@ a:focus {
   text-transform: uppercase; }
 
 .top-menu li {
-  display: inline-block;
   position: relative; }
   .top-menu li:not(:last-child):after {
     background: #003ea5;
@@ -43,6 +66,5 @@ a:focus {
     top: 50%;
     width: 2px; }
 
-.top-menu ul {
-  margin: 0;
-  padding: 0; }
+.nav-on-dark a {
+  color: white; }

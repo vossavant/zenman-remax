@@ -1,0 +1,17 @@
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	a,
+	li {
+		display: inline-block;
+	}
+}
+
+.nav-primary {
+	a {
+		line-height: 3.5rem;
+		padding: 0 3rem;
+	}
+}

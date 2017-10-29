@@ -37,30 +37,15 @@
 			<a class="btn btn-primary" href="">Create An Account</a>
 		</div>
 
-		<nav>
-			<li>
-				<a href="">For Buyers</a>
-				<div>
-					Mega menu here
-				</div>
-			</li>
-			<li>
-				<a href="">For Sellers</a>
-				<div>
-					Mega menu here
-				</div>
-			</li>
-			<li>
-				<a href="">For Owners</a>
-				<div>
-					Mega menu here
-				</div>
-			</li>
-			<li>
-				<a href="">For Fun</a>
-				<div>
-					Mega menu here
-				</div>
-			</li>
-		</nav>
+		<div class="bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
+			<?php
+			$args = array(
+				'container' => 'nav',
+				'container_class' => 'container nav-primary nav-on-dark',
+				'menu_class' => 'd-flex justify-content-around',
+				'theme_location' => 'main'
+			);
+			wp_nav_menu($args);
+			?>
+		</div>
 	</header>
