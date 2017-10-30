@@ -3,9 +3,9 @@
 @import "helpers/bootstrap-custom";
 @import "helpers/utility";
 
-//@import "base/normalize";
 @import "base/base";
 
+@import "components/gallery";
 @import "components/nav";
 
 @import "layout/header";

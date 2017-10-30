@@ -10,7 +10,7 @@ function remax_enqueue_theme_styles() {
 add_action('wp_enqueue_scripts', 'remax_enqueue_theme_styles');
 
 function remax_enqueue_theme_scripts() {
-    wp_enqueue_script('final-min', get_template_directory_uri() . '/javascripts/final.min.js', array('jquery'), '0.0.35', true);
+    wp_enqueue_script('master', get_template_directory_uri() . '/scripts/final.min.js', array('jquery'), '0.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'remax_enqueue_theme_scripts');
 
