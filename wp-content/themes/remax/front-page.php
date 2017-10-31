@@ -192,8 +192,13 @@ get_header();
 <!-- Lead Capture -->
 <div class="bg-light py-5">
 	<div class="container">
-		<h2 class="h1 text-center">Lead Capture Form</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque ex excepturi ipsam officiis provident, qui quidem. Adipisci dolorum eaque, iste itaque odit placeat quo totam voluptatem! Fugit nostrum, unde!</p>
+		<h2 class="h1 text-center">
+			<img src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_LeadCapture.svg" width="85">
+			Lead Capture Form
+		</h2>
+		<div class="mx-auto w-75">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque ex excepturi ipsam officiis provident, qui quidem. Adipisci dolorum eaque, iste itaque odit placeat quo totam voluptatem! Fugit nostrum, unde!</p>
+		</div>
 		
 		<form class="form-inline justify-content-center">
 			<div class="form-group">
@@ -210,27 +215,33 @@ get_header();
 </div>
 
 <!-- Testimonial -->
-<div class="py-5" style="background: url('<?php bloginfo('template_url'); ?>/images/fpo/living-room.jpg'); background-size: cover;">
-	<blockquote class="container">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor non, placeat quisquam sit sunt voluptatum? At beatae deserunt dicta enim maxime, odio pariatur quisquam repudiandae sapiente sit voluptatibus voluptatum.
-	</blockquote>
+<div class="bg-image py-5 text-white" style="background: url('<?php bloginfo('template_url'); ?>/images/fpo/living-room.jpg'); background-size: cover;">
+	<div class="container">
+		<blockquote class="mb-0 mx-auto w-75">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor non, placeat quisquam sit sunt voluptatum? At beatae deserunt dicta enim maxime, odio pariatur quisquam repudiandae sapiente sit voluptatibus voluptatum.</p>
+		</blockquote>
+	</div>
 </div>
 
 <!-- Foreclosure -->
 <div class="container py-5">
 	<h2 class="h1 text-center">Behind the Foreclosure Process (Placeholder)</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
+	<div class="mx-auto w-75">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
+	</div>
 	
-	<ol>
+	<ol class="list-stylized list-unstyled">
 		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
 		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
 		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
 		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
 	</ol>
 	
-	<a class="btn btn-primary" href="">Next Steps</a>
+	<div class="text-center">
+		<a class="btn btn-primary" href="">Next Steps</a>
+	</div>
 	
-	<h2 class="h1">Top 5 Tips for Selling (placeholder)</h2>
+	<h2 class="h1 mt-5 text-center">Top 5 Tips for Selling (placeholder)</h2>
 	<p>This lil widget can be gotten from zenman's homepage</p>
 </div>
 

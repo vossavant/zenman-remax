@@ -12,6 +12,32 @@ a {
 	}
 }
 
+blockquote {
+	position: relative;
+
+	&:after,
+	&:before {
+		font-size: 72px;
+		content: "\0022";
+		position: absolute;
+		top: 0;
+	}
+
+	&:after {
+		bottom: 0;
+		right: 0;
+	}
+
+	p {
+		margin: 0;
+		position: relative;
+
+		&:before {
+			@extend .red-hash;
+		}
+	}
+}
+
 h1, h2, h3, h4, .h1 {
 	color: $remax-blue;
 }

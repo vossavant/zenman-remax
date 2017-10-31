@@ -23,6 +23,32 @@
 	}
 }
 
+.list-stylized {
+	column-count: 2;
+	column-gap: 6rem;
+	counter-reset: my-counter;
+
+	li {
+		color: $remax-blue;
+		position: relative;
+	}
+
+	li:after {
+		@extend .red-hash;
+	}
+
+	li:before {
+		color: #c4c5c9;
+		content: counter(my-counter);
+		counter-increment: my-counter;
+		font-size: 3rem;
+		left: -3rem;
+		line-height: 1;
+		position: absolute;
+		top: 0;
+	}
+}
+
 .nav-on-dark {
 	a {
 		color: white;

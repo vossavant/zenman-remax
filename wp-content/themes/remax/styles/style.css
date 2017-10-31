@@ -26,14 +26,51 @@
 .shadow {
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
 
+.bg-image {
+  position: relative; }
+  .bg-image:before {
+    background: black;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .bg-image .container {
+    position: relative; }
+
 .bg-medium {
   background: #ebebeb; }
+
+.red-hash, blockquote p:before, .list-stylized li:after {
+  background: #dd1c2f;
+  height: 0.2rem;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.5rem; }
 
 * {
   -webkit-font-smoothing: antialiased; }
 
 a:focus {
   outline: none; }
+
+blockquote {
+  position: relative; }
+  blockquote:after, blockquote:before {
+    font-size: 72px;
+    content: "\0022";
+    position: absolute;
+    top: 0; }
+  blockquote:after {
+    bottom: 0;
+    right: 0; }
+  blockquote p {
+    margin: 0;
+    position: relative; }
 
 h1, h2, h3, h4, .h1 {
   color: #003ea5; }
@@ -105,6 +142,23 @@ nav ul {
     right: 0;
     top: 50%;
     width: 2px; }
+
+.list-stylized {
+  column-count: 2;
+  column-gap: 6rem;
+  counter-reset: my-counter; }
+  .list-stylized li {
+    color: #003ea5;
+    position: relative; }
+  .list-stylized li:before {
+    color: #c4c5c9;
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    font-size: 3rem;
+    left: -3rem;
+    line-height: 1;
+    position: absolute;
+    top: 0; }
 
 .nav-on-dark a {
   color: white; }
