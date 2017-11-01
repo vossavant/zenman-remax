@@ -4,29 +4,29 @@ get_header();
 
 <!-- Intro -->
 <div class="container py-6">
-	<h1 class="text-center">Real Estate (Placeholder)</h1>
-	<div class="mx-auto w-75">
+	<h1 class="mb-4 text-center">Real Estate (Placeholder)</h1>
+	<div class="mb-5 mx-auto w-75">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut leo justo. Mauris elit lectus, tempus ac eros ut, ornare egestas orci. Fusce blandit orci vitae finibus tempor. Ut efficitur lorem lacus, sit amet dignissim lacus tempor et. Duis eget ante sagittis, hendrerit eros sed, aliquam justo.</p>
 	</div>
 	
 	<div class="row justify-content-center pb-5">
-		<div class="card-deck col-xl-9">
-			<div class="card border-0 rounded-0 shadow">
+		<div class="card-deck col-xl-10">
+			<div class="card border-0 mx-5 rounded-0 shadow">
 				<div class="card-body">
-					<h3 class="card-title text-center">Buyers Guide</h3>
+					<h3 class="card-title mb-4 text-center">Buyers Guide</h3>
 					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<div class="text-center">
+					<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
+					<div class="mt-4 text-center">
 						<a href="#" class="btn btn-primary">Buy a Home</a>
 					</div>
 				</div>
 			</div>
-			<div class="card border-0 rounded-0 shadow">
+			<div class="card border-0 mx-5 rounded-0 shadow">
 				<div class="card-body">
-					<h3 class="card-title text-center">Sellers Guide</h3>
+					<h3 class="card-title mb-4 text-center">Sellers Guide</h3>
 					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<div class="text-center">
+					<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
+					<div class="mt-4 text-center">
 						<a href="#" class="btn btn-primary">Sell Your Home</a>
 					</div>
 				</div>
@@ -117,7 +117,7 @@ get_header();
 			</div>
 			<figcaption>
 				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
@@ -127,7 +127,7 @@ get_header();
 			</div>
 			<figcaption>
 				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
@@ -137,7 +137,7 @@ get_header();
 			</div>
 			<figcaption>
 				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
@@ -147,7 +147,7 @@ get_header();
 			</div>
 			<figcaption>
 				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
@@ -157,7 +157,7 @@ get_header();
 			</div>
 			<figcaption>
 				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
@@ -167,7 +167,7 @@ get_header();
 			</div>
 			<figcaption>
 				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
@@ -177,14 +177,14 @@ get_header();
 			</div>
 			<figcaption>
 				<h3>Image Title</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
 		<div class="current-photo-details d-flex invisible m-2 w-100">
-			<div class="js-photo-box p-4 w-50"></div>
-			<div class="js-photo-details-box pt-4 pr-4 pb-4 pl-2 w-50"></div>
-			<a class="js-close-photo-details btn btn-primary" role="button">X</a>
+			<div class="js-photo-box p-5 w-50"></div>
+			<div class="js-photo-details-box pt-5 pr-5 pb-5 pl-2 w-50"></div>
+			<button class="js-close-photo-details btn btn-close rounded-circle">X</button>
 		</div>
 	</div>
 </section>

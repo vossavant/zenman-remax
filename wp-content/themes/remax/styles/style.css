@@ -46,8 +46,8 @@
   border-bottom-width: 4px !important; }
 
 .py-6 {
-  padding-bottom: 4rem !important;
-  padding-top: 4rem !important; }
+  padding-bottom: 4.5rem !important;
+  padding-top: 4.5rem !important; }
 
 .red-hash, blockquote p:before, .list-stylized li:after {
   background: #dd1c2f;
@@ -59,7 +59,7 @@
   width: 1.5rem; }
 
 .shadow {
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 2rem rgba(86, 86, 86, 0.1); }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -81,7 +81,7 @@ blockquote {
     margin: 0;
     position: relative; }
 
-p {
+body {
   color: #333333;
   font: 1rem/1.625rem "Raleway Medium", sans-serif; }
 
@@ -95,6 +95,18 @@ h1, .h1 {
 h3 {
   font-size: 1.5rem; }
 
+.btn-close {
+  background: #dd1c2f;
+  box-shadow: 0 0 0 2px white;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  width: 2.5rem; }
+  .btn-close:hover {
+    background: #b01625; }
+
 .btn-primary {
   background: #dd1c2f;
   border: 0;
@@ -104,6 +116,9 @@ h3 {
   padding: 0 1.5rem; }
   .btn-primary:hover {
     background: #b01625; }
+
+.card-body {
+  padding: 2rem 3rem 3rem; }
 
 .gallery figcaption {
   display: none; }
@@ -124,15 +139,20 @@ h3 {
   position: relative; }
   .gallery .current-photo-details figcaption {
     display: block; }
+  .gallery .current-photo-details h3,
+  .gallery .current-photo-details p {
+    margin-bottom: 2rem; }
+  .gallery .current-photo-details img:hover {
+    cursor: default;
+    opacity: 1;
+    transform: none; }
+  .gallery .current-photo-details .btn-close {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem; }
 
 .gallery .gallery-image-mask {
   overflow: hidden; }
-
-.js-close-photo-details {
-  color: white;
-  position: absolute;
-  right: 0;
-  top: 0; }
 
 nav ul {
   list-style: none;

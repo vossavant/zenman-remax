@@ -27,16 +27,26 @@
 		figcaption {
 			display: block;
 		}
+
+		h3,
+		p {
+			margin-bottom: 2rem;
+		}
+
+		img:hover {
+			cursor: default;
+			opacity: 1;
+			transform: none;
+		}
+
+		.btn-close {
+			position: absolute;
+			right: 0.75rem;
+			top: 0.75rem;
+		}
 	}
 
 	.gallery-image-mask {
 		overflow: hidden;
 	}
-}
-
-.js-close-photo-details {
-	color: white;
-	position: absolute;
-	right: 0;
-	top: 0;
 }
