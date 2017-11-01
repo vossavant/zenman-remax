@@ -1,7 +1,3 @@
-.shadow {
-	box-shadow: 0 0 2rem transparentize(black, 0.9);
-}
-
 .bg-image {
 	position: relative;
 
@@ -21,8 +17,21 @@
 	}
 }
 
-.bg-medium {
-	background: $gray-med;
+.bg-primary {
+	background-color: $remax-red !important;
+}
+
+.border-primary {
+	border-color: $remax-blue !important;
+}
+
+.border-bottom-4 {
+	border-bottom-width: 4px !important;
+}
+
+.py-6 {
+	padding-bottom: 4rem !important;
+	padding-top: 4rem !important;
 }
 
 .red-hash {
@@ -33,4 +42,8 @@
 	position: absolute;
 	top: 0;
 	width: 1.5rem;
+}
+
+.shadow {
+	box-shadow: 0 0 2rem transparentize(black, 0.9);
 }

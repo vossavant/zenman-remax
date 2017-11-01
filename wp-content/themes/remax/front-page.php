@@ -6,14 +6,14 @@ get_header();
 <div class="container py-6">
 	<h1 class="text-center">Real Estate (Placeholder)</h1>
 	<div class="mx-auto w-75">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut leo justo. Mauris elit lectus, tempus ac eros ut, ornare egestas orci. Fusce blandit orci vitae finibus tempor. Ut efficitur lorem lacus, sit amet dignissim lacus tempor et. Duis eget ante sagittis, hendrerit eros sed, aliquam justo.</p>
 	</div>
 	
 	<div class="row justify-content-center pb-5">
 		<div class="card-deck col-xl-9">
 			<div class="card border-0 rounded-0 shadow">
 				<div class="card-body">
-					<h4 class="card-title text-center">Buyers Guide</h4>
+					<h3 class="card-title text-center">Buyers Guide</h3>
 					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<div class="text-center">
@@ -23,7 +23,7 @@ get_header();
 			</div>
 			<div class="card border-0 rounded-0 shadow">
 				<div class="card-body">
-					<h4 class="card-title text-center">Sellers Guide</h4>
+					<h3 class="card-title text-center">Sellers Guide</h3>
 					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
 					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<div class="text-center">
@@ -176,12 +176,12 @@ get_header();
 				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
 			</div>
 			<figcaption>
-				<h4>Image Title</h4>
+				<h3>Image Title</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
-		<div class="current-photo-details d-flex invisible bg-medium m-2 w-100">
+		<div class="current-photo-details d-flex invisible m-2 w-100">
 			<div class="js-photo-box p-4 w-50"></div>
 			<div class="js-photo-details-box pt-4 pr-4 pb-4 pl-2 w-50"></div>
 			<a class="js-close-photo-details btn btn-primary" role="button">X</a>

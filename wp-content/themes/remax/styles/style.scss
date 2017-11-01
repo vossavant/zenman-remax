@@ -1,10 +1,11 @@
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/bootstrap-custom";
+@import "helpers/fonts";
 @import "helpers/utility";
 
 @import "base/base";
 
+@import "components/button";
 @import "components/gallery";
 @import "components/nav";
 

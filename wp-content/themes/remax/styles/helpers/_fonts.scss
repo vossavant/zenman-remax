@@ -1,0 +1,7 @@
+/*
+	Create an @font-face declaration for each font used in the theme
+ */
+
+@include fontFace("Montserrat Regular", "montserrat-regular-webfont", "montserratregular");
+@include fontFace("Montserrat Semibold", "montserrat-semibold-webfont", "montserratsemibold");
+@include fontFace("Raleway Medium", "raleway-medium-webfont", "ralewaymedium");

@@ -30,6 +30,7 @@
 			$args = array(
 				'container' => 'nav',
 				'container_class' => 'top-menu',
+				'item_spacing' => 'discard',
 				'theme_location' => 'top'
 			);
 			wp_nav_menu($args);
@@ -42,6 +43,7 @@
 			$args = array(
 				'container' => 'nav',
 				'container_class' => 'container nav-primary nav-on-dark',
+				'item_spacing' => 'discard',
 				'menu_class' => 'd-flex justify-content-around',
 				'theme_location' => 'main'
 			);
