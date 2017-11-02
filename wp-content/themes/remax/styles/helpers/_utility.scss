@@ -2,14 +2,7 @@
 	position: relative;
 
 	&:before {
-		background: black;
-		bottom: 0;
-		content: "";
-		left: 0;
-		opacity: 0.67;
-		position: absolute;
-		right: 0;
-		top: 0;
+		@extend .overlay;
 	}
 
 	.container {
@@ -17,6 +10,7 @@
 	}
 }
 
+// BS override
 .bg-primary {
 	background-color: $remax-red !important;
 }
@@ -42,12 +36,24 @@
 	}
 }
 
+// BS override
 .border-primary {
 	border-color: $remax-blue !important;
 }
 
 .border-bottom-4 {
 	border-bottom-width: 4px !important;
+}
+
+.overlay {
+	background: black;
+	bottom: 0;
+	content: "";
+	left: 0;
+	opacity: 0.67;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .red-hash {
@@ -62,4 +68,9 @@
 
 .shadow {
 	box-shadow: 0 0 2rem transparentize(#565656, 0.9);
+}
+
+// BS override
+.text-primary {
+	color: $remax-red !important;
 }

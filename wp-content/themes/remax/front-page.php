@@ -304,35 +304,56 @@ get_header();
 
 <!-- Real Estate Resources -->
 <div class="py-5">
-	<section class="container pt-4 pb-5">
+	<section class="container pt-4">
 		<h1 class="mb-4 text-center">Real Estate Resources</h1>
-		<div class="card-deck text-left">
-			<div class="card m-2">
-				<img class="card-img-top" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		<div class="card-deck card-deck-posts mb-4 pb-2 text-left">
+			<div class="card m-2 position-relative rounded-0">
+				<div class="card-image-wrap">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
+				</div>
+				<div class="card-body position-absolute text-white">
+					<h4 class="card-title mb-0 text-white">For Buyers</h4>
+					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="card-text mb-2">
+						<a class="text-primary" href="#">Read More &rsaquo;</a>
+					</p>
+					<p class="card-text">11.1.17</p>
+					<p class="card-text card-tags"><a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a></p>
 				</div>
 			</div>
-			<div class="card m-2">
-				<img class="card-img-top" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<div class="card m-2 position-relative rounded-0">
+				<div class="card-image-wrap">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
+				</div>
+				<div class="card-body position-absolute text-white">
+					<h4 class="card-title mb-0 text-white">For Sellers</h4>
+					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="card-text mb-2">
+						<a class="text-primary" href="#">Read More &rsaquo;</a>
+					</p>
+					<p class="card-text">11.1.17</p>
+					<p class="card-text card-tags"><a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a></p>
 				</div>
 			</div>
-			<div class="card m-2">
-				<img class="card-img-top" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
-				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<div class="card m-2 position-relative rounded-0">
+				<div class="card-image-wrap">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
+				</div>
+				<div class="card-body position-absolute text-white">
+					<h4 class="card-title mb-0 text-white">For Fun</h4>
+					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="card-text mb-2">
+						<a class="text-primary" href="#">Read More &rsaquo;</a>
+					</p>
+					<p class="card-text">11.1.17</p>
+					<p class="card-text card-tags"><a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a></p>
 				</div>
 			</div>
 		</div>
-		<a class="btn btn-primary" href="">Read More</a>
+		
+		<div class="pt-4 text-center">
+			<a class="btn btn-primary" href="">Read More</a>
+		</div>
 	</section>
 </div>
 

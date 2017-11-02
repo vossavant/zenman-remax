@@ -16,6 +16,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype"), url("../fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "Raleway Medium";
   src: url("../fonts/raleway-medium-webfont.eot");
   src: url("../fonts/raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-medium-webfont.woff2") format("woff2"), url("../fonts/raleway-medium-webfont.woff") format("woff"), url("../fonts/raleway-medium-webfont.ttf") format("truetype"), url("../fonts/raleway-medium-webfont.svg#ralewaymedium") format("svg");
@@ -24,15 +31,6 @@
 
 .bg-image {
   position: relative; }
-  .bg-image:before {
-    background: black;
-    bottom: 0;
-    content: "";
-    left: 0;
-    opacity: 0.67;
-    position: absolute;
-    right: 0;
-    top: 0; }
   .bg-image .container {
     position: relative; }
 
@@ -61,6 +59,16 @@
 .border-bottom-4 {
   border-bottom-width: 4px !important; }
 
+.overlay, .bg-image:before, .card-deck-posts .card-image-wrap:before {
+  background: black;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.67;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
 .red-hash, blockquote p:before, .list-stylized li:after {
   background: #dd1c2f;
   height: 0.2rem;
@@ -72,6 +80,9 @@
 
 .shadow {
   box-shadow: 0 0 2rem rgba(86, 86, 86, 0.1); }
+
+.text-primary {
+  color: #dd1c2f !important; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -139,8 +150,21 @@ blockquote {
   .btn-primary:hover {
     background: #b01625; }
 
-.card-body {
-  padding: 2rem 3rem 3rem; }
+.card-deck-posts .card-body {
+  bottom: 0; }
+
+.card-deck-posts .card-text {
+  font: 1rem "Montserrat Regular", sans-serif; }
+
+.card-deck-posts .card-title {
+  font: 1.125rem "Montserrat Bold", sans-serif; }
+
+.card-deck-posts .card-tags {
+  bottom: -2rem;
+  color: initial;
+  position: absolute; }
+  .card-deck-posts .card-tags a {
+    color: #dd1c2f; }
 
 .form-inline .form-control {
   border-radius: 2rem;
@@ -190,7 +214,7 @@ blockquote {
     position: relative;
     width: 46%; }
   .list-stylized li:before {
-    color: #f8f9fa;
+    color: #c4c6c8;
     content: counter(my-counter);
     counter-increment: my-counter;
     font: 3rem "Montserrat Regular", sans-serif;
