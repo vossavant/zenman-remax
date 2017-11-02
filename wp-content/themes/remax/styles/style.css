@@ -67,11 +67,11 @@ body {
   color: #333333;
   font: 1rem/1.625rem "Raleway Medium", sans-serif; }
 
-h1, h2, h3, h4, .h1 {
+h1, h2, h3, h4 {
   color: #003ea5;
   font-family: "Montserrat Regular", sans-serif; }
 
-h1, .h1 {
+h1 {
   font-size: 2.1875rem; }
 
 h3 {
@@ -164,6 +164,25 @@ blockquote {
 .gallery .gallery-image-mask {
   overflow: hidden; }
 
+.list-stylized {
+  counter-reset: my-counter; }
+  .list-stylized li {
+    color: #003ea5;
+    font: 18px "Montserrat Regular", sans-serif;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+    position: relative;
+    width: 46%; }
+  .list-stylized li:before {
+    color: #f9f8f8;
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    font: 3rem "Montserrat Regular", sans-serif;
+    left: -3rem;
+    line-height: 1;
+    position: absolute;
+    top: -0.7rem; }
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -215,23 +234,6 @@ nav ul {
     right: -1px;
     top: 50%;
     width: 2px; }
-
-.list-stylized {
-  column-count: 2;
-  column-gap: 6rem;
-  counter-reset: my-counter; }
-  .list-stylized li {
-    color: #003ea5;
-    position: relative; }
-  .list-stylized li:before {
-    color: #c4c5c9;
-    content: counter(my-counter);
-    counter-increment: my-counter;
-    font-size: 3rem;
-    left: -3rem;
-    line-height: 1;
-    position: absolute;
-    top: 0; }
 
 .nav-on-dark a {
   color: white; }

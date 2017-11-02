@@ -1,0 +1,29 @@
+.list-stylized {
+	//column-count: 2;
+	//column-gap: 6rem;
+	counter-reset: my-counter;
+
+	li {
+		color: $remax-blue;
+		font: 18px "Montserrat Regular", sans-serif;
+		margin-bottom: 2rem;
+		padding-top: 0.5rem;
+		position: relative;
+		width: 46%;
+	}
+
+	li:after {
+		@extend .red-hash;
+	}
+
+	li:before {
+		color: $gray-list-item;
+		content: counter(my-counter);
+		counter-increment: my-counter;
+		font: 3rem "Montserrat Regular", sans-serif;
+		left: -3rem;
+		line-height: 1;
+		position: absolute;
+		top: -0.7rem;
+	}
+}

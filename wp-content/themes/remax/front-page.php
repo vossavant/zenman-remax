@@ -3,63 +3,67 @@ get_header();
 ?>
 
 <!-- Intro -->
-<div class="container py-5">
-	<h1 class="mb-4 text-center">Real Estate (Placeholder)</h1>
-	<div class="mb-5 mx-auto w-75">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut leo justo. Mauris elit lectus, tempus ac eros ut, ornare egestas orci. Fusce blandit orci vitae finibus tempor. Ut efficitur lorem lacus, sit amet dignissim lacus tempor et. Duis eget ante sagittis, hendrerit eros sed, aliquam justo.</p>
-	</div>
-	
-	<div class="row justify-content-center pb-5">
-		<div class="card-deck col-xl-10">
-			<div class="card border-0 mx-5 rounded-0 shadow">
-				<div class="card-body">
-					<h3 class="card-title mb-4 text-center">Buyers Guide</h3>
-					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
-					<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
-					<div class="mt-4 text-center">
-						<a href="#" class="btn btn-primary">Buy a Home</a>
+<div class="py-5"> <!-- bg stripe on this guy -->
+	<section class="container pt-4 pb-5">
+		<h1 class="mb-4 text-center">Real Estate (Placeholder)</h1>
+		<div class="mb-5 mx-auto w-75">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut leo justo. Mauris elit lectus, tempus ac eros ut, ornare egestas orci. Fusce blandit orci vitae finibus tempor. Ut efficitur lorem lacus, sit amet dignissim lacus tempor et. Duis eget ante sagittis, hendrerit eros sed, aliquam justo.</p>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="card-deck col-xl-10">
+				<div class="card border-0 mx-5 rounded-0 shadow">
+					<div class="card-body">
+						<h3 class="card-title mb-4 text-center">Buyers Guide</h3>
+						<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
+						<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
+						<div class="mt-4 text-center">
+							<a href="#" class="btn btn-primary">Buy a Home</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card border-0 mx-5 rounded-0 shadow">
-				<div class="card-body">
-					<h3 class="card-title mb-4 text-center">Sellers Guide</h3>
-					<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
-					<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
-					<div class="mt-4 text-center">
-						<a href="#" class="btn btn-primary">Sell Your Home</a>
+				<div class="card border-0 mx-5 rounded-0 shadow">
+					<div class="card-body">
+						<h3 class="card-title mb-4 text-center">Sellers Guide</h3>
+						<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
+						<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
+						<div class="mt-4 text-center">
+							<a href="#" class="btn btn-primary">Sell Your Home</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	
-	<h2 class="h1 text-center pt-5">
-		<img src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_StartJourney.svg" width="85">
-		Start Your Journey Here
-	</h2>
-	<p>Widget to be provided by Remax. Code below (see source):</p>
-<!--	<script src="http://remax.com/resources_resp/js/app/ui-modules/searchwidget/rmx-search.js"></script>-->
-<!--	<div id="remax_search1" class="remax_search"></div>-->
-<!--	<script>-->
-<!--		var options = {-->
-<!--			_blank: true,-->
-<!--			count: 10,-->
-<!--			autoEnter: true,-->
-<!--			buttonText: "Let's Go",-->
-<!--			placeholder: 'City and State, Address or Zip Code'-->
-<!--		};-->
-<!---->
-<!---->
-<!--		$(document).ready(function() {-->
-<!--			$('.remax_search').remaxseach(options);-->
-<!--		});-->
-<!--	</script>-->
+	<section class="container pt-5">
+		<h1 class="mb-4 text-center">
+			<img src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_StartJourney.svg" width="85">
+			Start Your Journey Here
+		</h1>
+		<p>Widget to be provided by Remax. Code below (see source):</p>
+		<!--	<script src="http://remax.com/resources_resp/js/app/ui-modules/searchwidget/rmx-search.js"></script>-->
+		<!--	<div id="remax_search1" class="remax_search"></div>-->
+		<!--	<script>-->
+		<!--		var options = {-->
+		<!--			_blank: true,-->
+		<!--			count: 10,-->
+		<!--			autoEnter: true,-->
+		<!--			buttonText: "Let's Go",-->
+		<!--			placeholder: 'City and State, Address or Zip Code'-->
+		<!--		};-->
+		<!---->
+		<!---->
+		<!--		$(document).ready(function() {-->
+		<!--			$('.remax_search').remaxseach(options);-->
+		<!--		});-->
+		<!--	</script>-->
+	</section>
 </div>
 
 <!-- Image Gallery -->
-<section class="container py-6">
-	<h2 class="h1 text-center">Image Gallery</h2>
+<section class="container py-5">
+	<h1 class="mb-4 text-center">Image Gallery</h1>
 	<div class="gallery d-flex flex-wrap">
 		<figure class="mb-0 p-2 w-25">
 			<div class="gallery-image-mask">
@@ -181,7 +185,7 @@ get_header();
 				<a class="btn btn-primary" href="">Learn More</a>
 			</figcaption>
 		</figure>
-		<div class="current-photo-details d-flex invisible m-2 w-100">
+		<div class="current-photo-details d-none m-2 w-100">
 			<div class="js-photo-box p-5 w-50"></div>
 			<div class="js-photo-details-box pt-5 pr-5 pb-5 pl-2 w-50"></div>
 			<button class="js-close-photo-details btn btn-close rounded-circle">X</button>
@@ -190,17 +194,17 @@ get_header();
 </section>
 
 <!-- Lead Capture -->
-<div class="bg-light py-6">
+<div class="bg-light py-5">
 	<div class="container">
-		<h2 class="h1 text-center">
+		<h1 class="mb-4 text-center">
 			<img class="mr-3" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_LeadCapture.svg" width="85">
 			Lead Capture Form
-		</h2>
-		<div class="mx-auto my-5 w-75">
+		</h1>
+		<div class="mx-auto mb-4 w-75">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus turpis vel gravida vehicula. Integer ligula ipsum, gravida ut fringilla vel, pellentesque quis justo. Mauris nibh mauris, bibendum a sem vel, tempor mollis sem.</p>
 		</div>
 		
-		<form class="form-inline justify-content-center">
+		<form class="form-inline justify-content-center mb-2">
 			<div class="form-group">
 				<label for="name" class="sr-only">Name</label>
 				<input type="text" class="form-control px-3" id="name" placeholder="Name">
@@ -223,32 +227,37 @@ get_header();
 	</div>
 </div>
 
-<!-- Foreclosure -->
-<div class="container py-6">
-	<h2 class="h1 text-center">Behind the Foreclosure Process (Placeholder)</h2>
-	<div class="mx-auto w-75">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
-	</div>
+<div class="py-5"> <!-- bg stripe on this guy -->
+	<!-- Foreclosure -->
+	<section class="container pt-4 pb-5">
+		<h1 class="mb-4 text-center">Behind the Foreclosure Process (Placeholder)</h1>
+		<div class="mb-5 mx-auto w-75">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
+		</div>
+		
+		<ol class="d-flex flex-wrap justify-content-between list-stylized list-unstyled mb-0">
+			<li>The borrower/owner reinstates the loan by paying off the default amount during a grace period determined by state law. This grace period is also known as pre-foreclosure.</li>
+			<li>The borrower/owner sells the property to a third party during the pre-foreclosure period. The sale allows the borrower/owner to pay off the loan and avoid having a foreclosure on his or her credit history.</li>
+			<li>A third party buys the property at a public auction at the end of the pre-foreclosure period.</li>
+			<li>The lender takes ownership of the property, usually with the intent to re-sell it on the open market. The lender can take ownership either through an agreement with the borrower/owner during pre-foreclosure, via a short sale foreclosure or by buying back the property at the public auction. Properties repossessed by the lender are also known as bank-owned or REO properties (Real Estate Owned by the lender).</li>
+		</ol>
+
+		<div class="text-center">
+			<a class="btn btn-primary" href="">Next Steps</a>
+		</div>
+	</section>
 	
-	<ol class="list-stylized list-unstyled">
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic illum magni officiis possimus quas tempora! Alias cupiditate doloribus eius facilis, inventore mollitia non possimus quasi quo rerum. Culpa, cum!</li>
-	</ol>
-	
-	<div class="text-center">
-		<a class="btn btn-primary" href="">Next Steps</a>
-	</div>
-	
-	<h2 class="h1 mt-5 text-center">Top 5 Tips for Selling (placeholder)</h2>
-	<p>This lil widget can be gotten from zenman's homepage</p>
+	<!-- 5 Tips for Selling -->
+	<section class="container pt-4 pb-5">
+		<h1 class="mb-4 text-center">Top 5 Tips for Selling (placeholder)</h1>
+		<p>This lil widget can be gotten from zenman's homepage</p>
+	</section>
 </div>
 
 <!-- Half Column -->
-<div class="bg-light py-6">
+<div class="bg-light py-5">
 	<div class="container">
-		<h2 class="h1 text-center">Real Estate 1/2 Column</h2>
+		<h1 class="text-center">Real Estate 1/2 Column</h1>
 		<div class="row">
 			<div class="col-6">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate delectus ex laboriosam libero modi non quidem unde. Ab inventore ipsa minus suscipit totam veniam vero. At nam, reprehenderit.</p>
@@ -262,9 +271,9 @@ get_header();
 </div>
 
 <!-- Third Column -->
-<div class="py-6">
+<div class="py-5">
 	<div class="container">
-		<h2 class="h1 text-center">Real Estate 1/3 Column</h2>
+		<h1 class="text-center">Real Estate 1/3 Column</h1>
 		<div class="row">
 			<div class="col-4">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate delectus ex laboriosam libero modi non quidem unde. Ab inventore ipsa minus suscipit totam veniam vero. At nam, reprehenderit.</p>
@@ -278,9 +287,9 @@ get_header();
 </div>
 
 <!-- Two-Thirds Column -->
-<div class="bg-light py-6">
+<div class="bg-light py-5">
 	<div class="container">
-		<h2 class="h1 text-center">Real Estate 2/3 Column</h2>
+		<h1 class="text-center">Real Estate 2/3 Column</h1>
 		<div class="row">
 			<div class="col-8">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate delectus ex laboriosam libero modi non quidem unde. Ab inventore ipsa minus suscipit totam veniam vero. At nam, reprehenderit.</p>
@@ -294,9 +303,9 @@ get_header();
 </div>
 
 <!-- Real Estate Resources -->
-<div class="py-6">
+<div class="py-5">
 	<div class="container text-center">
-		<h2 class="h1">Real Estate Resources</h2>
+		<h1 class=">Real Estate Resources</h1>
 		<div class="card-deck text-left">
 			<div class="card">
 				<img class="card-img-top" src="..." alt="Card image cap">

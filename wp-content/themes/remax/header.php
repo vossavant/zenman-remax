@@ -23,7 +23,7 @@
 </head>
 
 <body <?php body_class($post->post_name); ?>>
-	<header class="mb-4">
+	<header>
 		<div class="container d-flex align-items-center justify-content-between mt-3">
 			<a class="logo" href="">RE/MAX Home</a>
 			<?php

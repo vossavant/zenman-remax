@@ -27,7 +27,7 @@ jQuery(function () {
 				currentPhoto.siblings().removeClass('active');
 				currentPhoto.addClass('active');
 
-				currentPhotoDetailsBox.removeClass('invisible');
+				currentPhotoDetailsBox.addClass('d-flex').removeClass('d-none');
 				currentPhotoDetailsBox.find('.js-photo-box').html(currentPhotoClone);
 				currentPhotoDetailsBox.find('.js-photo-details-box').html(currentPhotoDetailsClone);
 
