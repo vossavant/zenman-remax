@@ -219,7 +219,7 @@ get_header();
 </div>
 
 <!-- Testimonial -->
-<div class="bg-image text-white" style="background: url('<?php bloginfo('template_url'); ?>/images/fpo/street.jpg') center no-repeat; background-size: cover;">
+<div class="bg-image overflow-hidden text-white" style="background: url('<?php bloginfo('template_url'); ?>/images/fpo/street.jpg') center no-repeat; background-size: cover;">
 	<div class="container">
 		<blockquote class="mb-0 mx-auto w-75">
 			<p class="pt-3">This is a testimonial quote consectetur adipiscing elit. Integer dapibus efficitur ligula vulputate ultricies. Id odio eros. Integer tristique varius nibh eu convallis.</p>

@@ -15,6 +15,11 @@
 	background-color: $remax-red !important;
 }
 
+// BS override
+.bg-secondary {
+	background-color: $remax-blue !important;
+}
+
 .bg-slant {
 	overflow: hidden;
 	position: relative;
@@ -43,6 +48,10 @@
 
 .border-bottom-4 {
 	border-bottom-width: 4px !important;
+}
+
+.overflow-hidden {
+	overflow: hidden;
 }
 
 .overlay {

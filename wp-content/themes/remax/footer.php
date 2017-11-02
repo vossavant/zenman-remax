@@ -1,5 +1,5 @@
-	<div class="bg-primary">
-		<div class="container">
+	<div class="bg-primary footer-top py-4">
+		<div class="container my-2">
 			<div class="row">
 				<?php
 				/**
@@ -22,27 +22,27 @@
 		</div>
 	</div>
 	
-	<footer class="bg-secondary text-center">
+	<footer class="bg-secondary py-3 text-center text-white">
 		<div class="container">
-			[logo]
+			<img class="my-4" src="<?php bloginfo('template_url'); ?>/images/logo/logo-white@2x.png" width="250">
 			
-			<ul class="remax-social">
-				<li>
+			<ul class="footer-social list-unstyled my-3">
+				<li class="d-inline-block">
 					<a href="">Facebook</a>
 				</li>
-				<li>
+				<li class="d-inline-block">
 					<a href="">Twitter</a>
 				</li>
-				<li>
+				<li class="d-inline-block">
 					<a href="">Google</a>
 				</li>
-				<li>
+				<li class="d-inline-block">
 					<a href="">Instagram</a>
 				</li>
-				<li>
+				<li class="d-inline-block">
 					<a href="">LinkedIn</a>
 				</li>
-				<li>
+				<li class="d-inline-block">
 					<a href="">Pinterest</a>
 				</li>
 			</ul>
@@ -50,14 +50,14 @@
 			<?php
 			$args = array(
 				'container' => 'ul',
-				'menu_class' => 'footer-menu',
+				'menu_class' => 'footer-menu list-unstyled',
 				'theme_location' => 'footer'
 			);
 			wp_nav_menu($args);
 			?>
 			
-			<small>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi cumque debitis ea eligendi enim eum explicabo facilis iusto laboriosam maiores mollitia nihil odit officia similique, ullam vero vitae voluptatum!
+			<small class="d-block mx-auto my-4 w-75">
+				Each Office Independently Owned and Operated. RE/MAX, LLC is an Equal Opportunity Employer and supports the Fair Housing Act. &copy; <?= date('Y');?> RE/MAX, LLC. All Rights Reserved. Powered by Homes.com.
 			</small>
 		</div>
 	</footer>
