@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <!-- Intro -->
-<div class="py-5"> <!-- bg stripe on this guy -->
+<div class="bg-slant py-5">
 	<section class="container pt-4 pb-5">
 		<h1 class="mb-4 text-center">Real Estate (Placeholder)</h1>
 		<div class="mb-5 mx-auto w-75">
@@ -59,139 +59,139 @@ get_header();
 		<!--		});-->
 		<!--	</script>-->
 	</section>
-</div>
 
-<!-- Image Gallery -->
-<section class="container py-5">
-	<h1 class="mb-4 text-center">Image Gallery</h1>
-	<div class="gallery d-flex flex-wrap">
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-1.jpg">
+	<!-- Image Gallery -->
+	<section class="container pt-5">
+		<h1 class="mb-4 text-center">Image Gallery</h1>
+		<div class="gallery d-flex flex-wrap">
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-1.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title #1</h4>
+					<p>ONE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title #2</h4>
+					<p>TWO Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-3.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title #3</h4>
+					<p>THREE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-4.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title #4</h4>
+					<p>FOUR Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title #5</h4>
+					<p>ROW TWO FIVE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-3.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-4.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-1.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-4.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-1.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-3.jpg">
+				</div>
+				<figcaption>
+					<h4>Image Title</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<figure class="mb-0 p-2 w-25">
+				<div class="gallery-image-mask">
+					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
+				</div>
+				<figcaption>
+					<h3>Image Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
+					<a class="btn btn-primary" href="">Learn More</a>
+				</figcaption>
+			</figure>
+			<div class="current-photo-details d-none m-2 w-100">
+				<div class="js-photo-box p-5 w-50"></div>
+				<div class="js-photo-details-box pt-5 pr-5 pb-5 pl-2 w-50"></div>
+				<button class="js-close-photo-details btn btn-close rounded-circle">X</button>
 			</div>
-			<figcaption>
-				<h4>Image Title #1</h4>
-				<p>ONE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title #2</h4>
-				<p>TWO Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-3.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title #3</h4>
-				<p>THREE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-4.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title #4</h4>
-				<p>FOUR Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title #5</h4>
-				<p>ROW TWO FIVE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, tempore. Asperiores consectetur debitis dolorem iusto modi mollitia officia possimus similique? Aperiam est exercitationem facilis ipsa nihil quod reprehenderit veritatis.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-3.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-4.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-1.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-4.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-1.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-3.jpg">
-			</div>
-			<figcaption>
-				<h4>Image Title</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<figure class="mb-0 p-2 w-25">
-			<div class="gallery-image-mask">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/gallery-2.jpg">
-			</div>
-			<figcaption>
-				<h3>Image Title</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet consequat metus. Donec sapien turpis, rhoncus sit amet efficitur ac, bibendum nec orci. Fusce scelerisque neque posuere leo dictum, quis placerat libero sodales. Donec efficitur auctor lacinia. Fusce sagittis mattis est. Maecenas ullamcorper, nulla a pellentesque molestie, urna ipsum porta est, id suscipit arcu tellus et nisl. Phasellus venenatis diam dui, ac placerat sapien semper at. Suspendisse rutrum vehicula gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.</p>
-				<a class="btn btn-primary" href="">Learn More</a>
-			</figcaption>
-		</figure>
-		<div class="current-photo-details d-none m-2 w-100">
-			<div class="js-photo-box p-5 w-50"></div>
-			<div class="js-photo-details-box pt-5 pr-5 pb-5 pl-2 w-50"></div>
-			<button class="js-close-photo-details btn btn-close rounded-circle">X</button>
 		</div>
-	</div>
-</section>
+	</section>
+</div>
 
 <!-- Lead Capture -->
 <div class="bg-light py-5">
@@ -227,7 +227,7 @@ get_header();
 	</div>
 </div>
 
-<div class="py-5"> <!-- bg stripe on this guy -->
+<div class="bg-slant bg-slant-reverse py-5">
 	<!-- Foreclosure -->
 	<section class="container pt-4 pb-5">
 		<h1 class="mb-4 text-center">Behind the Foreclosure Process (Placeholder)</h1>
@@ -257,14 +257,14 @@ get_header();
 <!-- Half Column -->
 <div class="bg-light py-5">
 	<div class="container">
-		<h1 class="text-center">Real Estate 1/2 Column</h1>
+		<h1 class="mb-4 text-center">Real Estate 1/2 Column</h1>
 		<div class="row">
 			<div class="col-6">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate delectus ex laboriosam libero modi non quidem unde. Ab inventore ipsa minus suscipit totam veniam vero. At nam, reprehenderit.</p>
-				<a class="btn btn-primary" href="">Next CTA</a>
+				<a class="btn btn-primary mt-4 mb-2" href="">Next CTA</a>
 			</div>
 			<div class="col-6">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/living-room-sq.jpg">
+				<img class="mb-2 mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/living-room-sq.jpg">
 			</div>
 		</div>
 	</div>
@@ -273,14 +273,14 @@ get_header();
 <!-- Third Column -->
 <div class="py-5">
 	<div class="container">
-		<h1 class="text-center">Real Estate 1/3 Column</h1>
+		<h1 class="mb-4 text-center">Real Estate 1/3 Column</h1>
 		<div class="row">
 			<div class="col-4">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate delectus ex laboriosam libero modi non quidem unde. Ab inventore ipsa minus suscipit totam veniam vero. At nam, reprehenderit.</p>
-				<a class="btn btn-primary" href="">Next CTA</a>
+				<a class="btn btn-primary mt-4 mb-2" href="">Next CTA</a>
 			</div>
 			<div class="col-8">
-				<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/living-room-sq.jpg">
+				<img class="mb-2 mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/living-room-sq.jpg">
 			</div>
 		</div>
 	</div>
@@ -289,14 +289,14 @@ get_header();
 <!-- Two-Thirds Column -->
 <div class="bg-light py-5">
 	<div class="container">
-		<h1 class="text-center">Real Estate 2/3 Column</h1>
+		<h1 class="mb-4 text-center">Real Estate 2/3 Column</h1>
 		<div class="row">
 			<div class="col-8">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cupiditate delectus ex laboriosam libero modi non quidem unde. Ab inventore ipsa minus suscipit totam veniam vero. At nam, reprehenderit.</p>
-				<a class="btn btn-primary" href="">Next CTA</a>
+				<a class="btn btn-primary mt-4 mb-2" href="">Next CTA</a>
 			</div>
 			<div class="col-4">
-				<img class="mw-100 rounded-circle" src="<?php bloginfo('template_url'); ?>/images/fpo/living-room-sq.jpg">
+				<img class="mb-2 mw-100 rounded-circle" src="<?php bloginfo('template_url'); ?>/images/fpo/living-room-sq.jpg">
 			</div>
 		</div>
 	</div>
@@ -304,27 +304,27 @@ get_header();
 
 <!-- Real Estate Resources -->
 <div class="py-5">
-	<div class="container text-center">
-		<h1 class=">Real Estate Resources</h1>
+	<section class="container pt-4 pb-5">
+		<h1 class="mb-4 text-center">Real Estate Resources</h1>
 		<div class="card-deck text-left">
-			<div class="card">
-				<img class="card-img-top" src="..." alt="Card image cap">
+			<div class="card m-2">
+				<img class="card-img-top" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
 				<div class="card-body">
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
 			</div>
-			<div class="card">
-				<img class="card-img-top" src="..." alt="Card image cap">
+			<div class="card m-2">
+				<img class="card-img-top" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
 				<div class="card-body">
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
 			</div>
-			<div class="card">
-				<img class="card-img-top" src="..." alt="Card image cap">
+			<div class="card m-2">
+				<img class="card-img-top" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
 				<div class="card-body">
 					<h4 class="card-title">Card title</h4>
 					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -333,7 +333,7 @@ get_header();
 			</div>
 		</div>
 		<a class="btn btn-primary" href="">Read More</a>
-	</div>
+	</section>
 </div>
 
 <?php

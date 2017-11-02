@@ -39,6 +39,22 @@
 .bg-primary {
   background-color: #dd1c2f !important; }
 
+.bg-slant {
+  overflow: hidden;
+  position: relative; }
+  .bg-slant:before {
+    background: #f8f9fa;
+    content: "";
+    top: 23%;
+    left: -6.5rem;
+    position: absolute;
+    right: -6.5rem;
+    height: 28rem;
+    transform: rotate(-15deg);
+    z-index: -1; }
+  .bg-slant-reverse:before {
+    transform: rotate(15deg); }
+
 .border-primary {
   border-color: #003ea5 !important; }
 
@@ -174,7 +190,7 @@ blockquote {
     position: relative;
     width: 46%; }
   .list-stylized li:before {
-    color: #f9f8f8;
+    color: #f8f9fa;
     content: counter(my-counter);
     counter-increment: my-counter;
     font: 3rem "Montserrat Regular", sans-serif;

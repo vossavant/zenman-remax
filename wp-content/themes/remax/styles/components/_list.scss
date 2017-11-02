@@ -17,7 +17,7 @@
 	}
 
 	li:before {
-		color: $gray-list-item;
+		color: $gray-light;
 		content: counter(my-counter);
 		counter-increment: my-counter;
 		font: 3rem "Montserrat Regular", sans-serif;

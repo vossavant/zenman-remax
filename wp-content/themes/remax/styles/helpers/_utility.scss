@@ -21,6 +21,27 @@
 	background-color: $remax-red !important;
 }
 
+.bg-slant {
+	overflow: hidden;
+	position: relative;
+
+	&:before {
+		background: $gray-light;
+		content: "";
+		top: 23%;
+		left: -6.5rem;
+		position: absolute;
+		right: -6.5rem;
+		height: 28rem;
+		transform: rotate(-15deg);
+		z-index: -1;
+	}
+
+	&-reverse:before {
+		transform: rotate(15deg);
+	}
+}
+
 .border-primary {
 	border-color: $remax-blue !important;
 }
