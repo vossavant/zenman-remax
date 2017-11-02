@@ -29,7 +29,7 @@
     bottom: 0;
     content: "";
     left: 0;
-    opacity: 0.75;
+    opacity: 0.67;
     position: absolute;
     right: 0;
     top: 0; }
@@ -44,10 +44,6 @@
 
 .border-bottom-4 {
   border-bottom-width: 4px !important; }
-
-.py-6 {
-  padding-bottom: 4.5rem !important;
-  padding-top: 4.5rem !important; }
 
 .red-hash, blockquote p:before, .list-stylized li:after {
   background: #dd1c2f;
@@ -67,20 +63,6 @@
 a:focus {
   outline: none; }
 
-blockquote {
-  position: relative; }
-  blockquote:after, blockquote:before {
-    font-size: 72px;
-    content: "\0022";
-    position: absolute;
-    top: 0; }
-  blockquote:after {
-    bottom: 0;
-    right: 0; }
-  blockquote p {
-    margin: 0;
-    position: relative; }
-
 body {
   color: #333333;
   font: 1rem/1.625rem "Raleway Medium", sans-serif; }
@@ -94,6 +76,30 @@ h1, .h1 {
 
 h3 {
   font-size: 1.5rem; }
+
+blockquote {
+  padding: 10rem 0;
+  position: relative; }
+  blockquote:after, blockquote:before {
+    font: 47.5rem/1 "Montserrat Regular", sans-serif;
+    content: "\201C";
+    left: -12.5rem;
+    opacity: 0.3;
+    position: absolute;
+    top: -6rem; }
+  blockquote:after {
+    bottom: 1rem;
+    content: "\201D";
+    left: auto;
+    line-height: 0;
+    right: -13rem;
+    top: auto; }
+  blockquote p {
+    font: 30px "Montserrat Regular", sans-serif;
+    margin: 0;
+    position: relative; }
+    blockquote p:before {
+      width: 3rem; }
 
 .btn-close {
   background: #dd1c2f;
@@ -119,6 +125,10 @@ h3 {
 
 .card-body {
   padding: 2rem 3rem 3rem; }
+
+.form-inline .form-control {
+  border-radius: 2rem;
+  width: 17.5rem; }
 
 .gallery figcaption {
   display: none; }

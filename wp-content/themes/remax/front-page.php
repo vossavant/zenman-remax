@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <!-- Intro -->
-<div class="container py-6">
+<div class="container py-5">
 	<h1 class="mb-4 text-center">Real Estate (Placeholder)</h1>
 	<div class="mb-5 mx-auto w-75">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut leo justo. Mauris elit lectus, tempus ac eros ut, ornare egestas orci. Fusce blandit orci vitae finibus tempor. Ut efficitur lorem lacus, sit amet dignissim lacus tempor et. Duis eget ante sagittis, hendrerit eros sed, aliquam justo.</p>
@@ -58,7 +58,7 @@ get_header();
 </div>
 
 <!-- Image Gallery -->
-<section class="container py-5">
+<section class="container py-6">
 	<h2 class="h1 text-center">Image Gallery</h2>
 	<div class="gallery d-flex flex-wrap">
 		<figure class="mb-0 p-2 w-25">
@@ -190,24 +190,24 @@ get_header();
 </section>
 
 <!-- Lead Capture -->
-<div class="bg-light py-5">
+<div class="bg-light py-6">
 	<div class="container">
 		<h2 class="h1 text-center">
-			<img src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_LeadCapture.svg" width="85">
+			<img class="mr-3" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_LeadCapture.svg" width="85">
 			Lead Capture Form
 		</h2>
-		<div class="mx-auto w-75">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque ex excepturi ipsam officiis provident, qui quidem. Adipisci dolorum eaque, iste itaque odit placeat quo totam voluptatem! Fugit nostrum, unde!</p>
+		<div class="mx-auto my-5 w-75">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus turpis vel gravida vehicula. Integer ligula ipsum, gravida ut fringilla vel, pellentesque quis justo. Mauris nibh mauris, bibendum a sem vel, tempor mollis sem.</p>
 		</div>
 		
 		<form class="form-inline justify-content-center">
 			<div class="form-group">
 				<label for="name" class="sr-only">Name</label>
-				<input type="text" class="form-control" id="name" placeholder="Name">
+				<input type="text" class="form-control px-3" id="name" placeholder="Name">
 			</div>
 			<div class="form-group mx-3">
 				<label for="email" class="sr-only">Email</label>
-				<input type="email" class="form-control" id="email" placeholder="Email">
+				<input type="email" class="form-control px-3" id="email" placeholder="Email">
 			</div>
 			<button type="submit" class="btn btn-primary">Learn More</button>
 		</form>
@@ -215,16 +215,16 @@ get_header();
 </div>
 
 <!-- Testimonial -->
-<div class="bg-image py-5 text-white" style="background: url('<?php bloginfo('template_url'); ?>/images/fpo/living-room.jpg'); background-size: cover;">
+<div class="bg-image text-white" style="background: url('<?php bloginfo('template_url'); ?>/images/fpo/street.jpg') center no-repeat; background-size: cover;">
 	<div class="container">
 		<blockquote class="mb-0 mx-auto w-75">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor non, placeat quisquam sit sunt voluptatum? At beatae deserunt dicta enim maxime, odio pariatur quisquam repudiandae sapiente sit voluptatibus voluptatum.</p>
+			<p class="pt-3">This is a testimonial quote consectetur adipiscing elit. Integer dapibus efficitur ligula vulputate ultricies. Id odio eros. Integer tristique varius nibh eu convallis.</p>
 		</blockquote>
 	</div>
 </div>
 
 <!-- Foreclosure -->
-<div class="container py-5">
+<div class="container py-6">
 	<h2 class="h1 text-center">Behind the Foreclosure Process (Placeholder)</h2>
 	<div class="mx-auto w-75">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem, blanditiis cupiditate dolore eaque est ex expedita illo illum ipsa labore natus necessitatibus nesciunt non quae quisquam sapiente tempore vero.</p>
@@ -246,7 +246,7 @@ get_header();
 </div>
 
 <!-- Half Column -->
-<div class="bg-light py-5">
+<div class="bg-light py-6">
 	<div class="container">
 		<h2 class="h1 text-center">Real Estate 1/2 Column</h2>
 		<div class="row">
@@ -262,7 +262,7 @@ get_header();
 </div>
 
 <!-- Third Column -->
-<div class="py-5">
+<div class="py-6">
 	<div class="container">
 		<h2 class="h1 text-center">Real Estate 1/3 Column</h2>
 		<div class="row">
@@ -278,7 +278,7 @@ get_header();
 </div>
 
 <!-- Two-Thirds Column -->
-<div class="bg-light py-5">
+<div class="bg-light py-6">
 	<div class="container">
 		<h2 class="h1 text-center">Real Estate 2/3 Column</h2>
 		<div class="row">
@@ -294,7 +294,7 @@ get_header();
 </div>
 
 <!-- Real Estate Resources -->
-<div class="py-5">
+<div class="py-6">
 	<div class="container text-center">
 		<h2 class="h1">Real Estate Resources</h2>
 		<div class="card-deck text-left">
