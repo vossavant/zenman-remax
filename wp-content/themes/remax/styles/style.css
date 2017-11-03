@@ -65,7 +65,7 @@
 .overflow-hidden {
   overflow: hidden; }
 
-.overlay, .bg-image:before, .card-deck-posts .card-image-wrap:before {
+.overlay, .bg-image:before, .card-deck-posts .card-image-wrap:before, .top-story-content:before {
   background: black;
   bottom: 0;
   content: "";
@@ -85,7 +85,7 @@
   top: 50%;
   width: 2px; }
 
-.red-hash, blockquote p:before, .list-stylized li:after {
+.red-hash, blockquote p:before, .list-stylized li:after, .top-story p:after {
   background: #dc1c2e;
   height: 0.2rem;
   content: "";
@@ -261,6 +261,35 @@ nav ul {
     right: 1.25rem;
     top: 50%;
     width: 1.25rem; }
+
+.top-story {
+  height: 25rem; }
+  .top-story a, .top-story h1, .top-story p {
+    font: 1.375rem "Montserrat Bold", sans-serif;
+    color: white; }
+  .top-story a {
+    font: 1rem "Montserrat Regular", sans-serif; }
+  .top-story h1 {
+    background: url("../images/star.svg") left center no-repeat;
+    background-size: 1.25rem;
+    padding-left: 2rem; }
+  .top-story p {
+    font-family: "Montserrat Regular", sans-serif; }
+    .top-story p:after {
+      bottom: 0;
+      top: auto; }
+  .top-story-content {
+    bottom: 0;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33.333%; }
+    .top-story-content > * {
+      position: relative; }
+  .top-story-social a {
+    padding-top: 1rem;
+    width: 1.5rem; }
 
 footer small {
   font: 0.875rem "Montserrat Regular", sans-serif; }

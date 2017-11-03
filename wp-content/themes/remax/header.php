@@ -24,7 +24,7 @@
 
 <body <?php body_class($post->post_name); ?>>
 	<header>
-		<?php if (is_front_page()) : ?>
+		<?php //if (is_front_page()) : ?>
 			<div class="container d-flex align-items-center justify-content-between mt-3">
 				<a class="logo" href="<?= home_url(); ?>">RE/MAX Home</a>
 				<?php
@@ -38,7 +38,7 @@
 				?>
 				<a class="btn btn-primary" href="">Create An Account</a>
 			</div>
-		<?php endif; ?>
+		<?php //endif; ?>
 
 		<div class="bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
 			<?php
