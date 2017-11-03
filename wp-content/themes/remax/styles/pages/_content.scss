@@ -12,14 +12,7 @@
 		position: relative;
 
 		&:not(:last-child):after {
-			background: $remax-blue;
-			content: "";
-			height: 1rem;
-			margin-top: -0.5rem;
-			position: absolute;
-			right: -1px;
-			top: 50%;
-			width: 2px;
+			@extend .pipe;
 		}
 	}
 }

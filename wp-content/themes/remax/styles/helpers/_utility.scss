@@ -65,6 +65,17 @@
 	top: 0;
 }
 
+.pipe {
+	background: $remax-blue;
+	content: "";
+	height: 1rem;
+	margin-top: -0.5rem;
+	position: absolute;
+	right: -1px;
+	top: 50%;
+	width: 2px;
+}
+
 .red-hash {
 	background: $remax-red;
 	height: 0.2rem;

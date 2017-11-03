@@ -27,30 +27,30 @@
 			<img class="my-4" src="<?php bloginfo('template_url'); ?>/images/logo/logo-white@2x.png" width="250">
 			
 			<ul class="footer-social list-unstyled my-3">
-				<li class="d-inline-block">
-					<a href="">Facebook</a>
+				<li class="d-inline-block mx-1">
+					<a class="social social-facebook" href="">Facebook</a>
 				</li>
-				<li class="d-inline-block">
-					<a href="">Twitter</a>
+				<li class="d-inline-block mx-1">
+					<a class="social social-twitter" href="">Twitter</a>
 				</li>
-				<li class="d-inline-block">
-					<a href="">Google</a>
+				<li class="d-inline-block mx-1">
+					<a class="social social-google" href="">Google</a>
 				</li>
-				<li class="d-inline-block">
-					<a href="">Instagram</a>
+				<li class="d-inline-block mx-1">
+					<a class="social social-instagram" href="">Instagram</a>
 				</li>
-				<li class="d-inline-block">
-					<a href="">LinkedIn</a>
+				<li class="d-inline-block mx-1">
+					<a class="social social-linkedin" href="">LinkedIn</a>
 				</li>
-				<li class="d-inline-block">
-					<a href="">Pinterest</a>
+				<li class="d-inline-block mx-1">
+					<a class="social social-pinterest" href="">Pinterest</a>
 				</li>
 			</ul>
 			
 			<?php
 			$args = array(
 				'container' => 'ul',
-				'menu_class' => 'footer-menu list-unstyled',
+				'menu_class' => 'footer-menu list-unstyled my-4',
 				'theme_location' => 'footer'
 			);
 			wp_nav_menu($args);

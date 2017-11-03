@@ -1,3 +1,33 @@
+footer {
+	small {
+		font: 0.875rem "Montserrat Regular", sans-serif;
+	}
+}
+
+.footer-menu {
+	font: 0.9375rem "Montserrat Bold", sans-serif;
+	text-transform: uppercase;
+
+	a {
+		color: white;
+		padding: 1.25rem;
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			@extend .pipe;
+			background: white;
+		}
+
+		&:last-child:after {
+			display: none;
+		}
+	}
+}
+
 .footer-top {
 	font: 1rem "Montserrat Semibold", sans-serif;
 
@@ -25,21 +55,37 @@
 	}
 }
 
-footer {
-	small {
-		font: 0.875rem "Montserrat Regular", sans-serif;
+.social {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	display: inline-block;
+	font-size: 0;
+	height: 0;
+	overflow: hidden;
+	padding-top: 2.625rem;
+	width: 3.25rem;
+
+	&-facebook {
+		background: url('../images/social/facebook.svg');
 	}
 
-	.footer-menu {
-		font: 0.9375rem "Montserrat Bold", sans-serif;
-		text-transform: uppercase;
+	&-google {
+		background: url('../images/social/google.svg');
+	}
 
-		a {
-			color: white;
-		}
+	&-instagram {
+		background: url('../images/social/instagram.svg');
+	}
 
-		li {
-			display: inline-block;
-		}
+	&-linkedin {
+		background: url('../images/social/linkedin.svg');
+	}
+
+	&-pinterest {
+		background: url('../images/social/pinterest.svg');
+	}
+
+	&-twitter {
+		background: url('../images/social/twitter.svg');
 	}
 }
