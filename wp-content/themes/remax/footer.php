@@ -1,26 +1,28 @@
-	<div class="bg-primary footer-top py-4">
-		<div class="container my-2">
-			<div class="row">
-				<?php
-				/**
-				 * Defines widget-ready areas
-				 * These are customizable from Appearance → Widgets
-				 */
-				if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Left Column)')) :
-				endif;
-				
-				if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Center Left Column)')) :
-				endif;
-				
-				if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Center Right Column)')) :
-				endif;
-				
-				if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Right Column)')) :
-				endif;
-				?>
+	<?php if (is_front_page()) : ?>
+		<div class="bg-primary footer-top py-4">
+			<div class="container my-2">
+				<div class="row">
+					<?php
+					/**
+					 * Defines widget-ready areas
+					 * These are customizable from Appearance → Widgets
+					 */
+					if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Left Column)')) :
+					endif;
+					
+					if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Center Left Column)')) :
+					endif;
+					
+					if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Center Right Column)')) :
+					endif;
+					
+					if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer (Right Column)')) :
+					endif;
+					?>
+				</div>
 			</div>
 		</div>
-	</div>
+	<?php endif; ?>
 	
 	<footer class="bg-secondary py-3 text-center text-white">
 		<div class="container">

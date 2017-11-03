@@ -24,19 +24,21 @@
 
 <body <?php body_class($post->post_name); ?>>
 	<header>
-		<div class="container d-flex align-items-center justify-content-between mt-3">
-			<a class="logo" href="">RE/MAX Home</a>
-			<?php
-			$args = array(
-				'container' => 'nav',
-				'container_class' => 'top-menu',
-				'item_spacing' => 'discard',
-				'theme_location' => 'top'
-			);
-			wp_nav_menu($args);
-			?>
-			<a class="btn btn-primary" href="">Create An Account</a>
-		</div>
+		<?php if (is_front_page()) : ?>
+			<div class="container d-flex align-items-center justify-content-between mt-3">
+				<a class="logo" href="<?= home_url(); ?>">RE/MAX Home</a>
+				<?php
+				$args = array(
+					'container' => 'nav',
+					'container_class' => 'top-menu',
+					'item_spacing' => 'discard',
+					'theme_location' => 'top'
+				);
+				wp_nav_menu($args);
+				?>
+				<a class="btn btn-primary" href="">Create An Account</a>
+			</div>
+		<?php endif; ?>
 
 		<div class="bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
 			<?php
