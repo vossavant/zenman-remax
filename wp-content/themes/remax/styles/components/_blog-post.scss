@@ -1,0 +1,66 @@
+.blog-post {
+	font: 1rem/1 "Montserrat Regular", sans-serif;
+
+	h1 {
+		font-size: 1.375rem;
+		line-height: 1.8125rem;
+
+		a {
+			color: $remax-blue;
+		}
+	}
+
+	&-date {
+		color: $remax-red;
+		line-height: 1;
+
+		&:before {
+			@extend .red-hash;
+			margin-top: 0.1rem;
+			top: 50%;
+		}
+	}
+
+	&-meta {
+		bottom: 0;
+		color: white;
+		left: 0;
+		position: absolute;
+		right: 0;
+
+		&:before {
+			@extend .overlay;
+		}
+
+		span {
+			font-size: 1.125rem;
+		}
+	}
+
+	&-permalink {
+		color: $remax-red;
+	}
+
+	&-social {
+		color: white;
+
+		a {
+			padding-top: 1rem;
+			width: 1.5rem;
+		}
+	}
+}
+
+.blog-post-small {
+	border-bottom: 1px solid $remax-gray;
+	font-size: 0.875rem;
+
+	&:last-child {
+		border: 0;
+	}
+
+	h1 {
+		font-size: 0.875rem;
+		line-height: 1.3125rem;
+	}
+}

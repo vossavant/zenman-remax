@@ -29,6 +29,30 @@
   font-weight: normal;
   font-style: normal; }
 
+.h4 {
+  color: #dc1c2e;
+  font: 1.375rem "Montserrat Bold", sans-serif; }
+
+.icon {
+  background-size: 1.25rem !important;
+  padding-left: 2rem; }
+  .icon-2 {
+    background-size: 1.5rem !important;
+    padding-left: 2.25rem; }
+  .icon-3 {
+    background-size: 1.75rem !important;
+    padding-left: 2.5rem; }
+  .icon-calendar {
+    background: url("../images/icon/calendar.svg") left center no-repeat; }
+  .icon-chat {
+    background: url("../images/icon/chat.svg") left center no-repeat; }
+  .icon-email {
+    background: url("../images/icon/email.svg") left center no-repeat; }
+  .icon-megaphone {
+    background: url("../images/icon/megaphone.svg") left center no-repeat; }
+  .icon-star {
+    background: url("../images/icon/star.svg") left center no-repeat; }
+
 .bg-image {
   position: relative; }
   .bg-image .container {
@@ -65,7 +89,7 @@
 .overflow-hidden {
   overflow: hidden; }
 
-.overlay, .bg-image:before, .card-deck-posts .card-image-wrap:before, .top-story-content:before {
+.overlay, .bg-image:before, .blog-post-meta:before, .card-deck-posts .card-image-wrap:before, .top-story-content:before {
   background: black;
   bottom: 0;
   content: "";
@@ -85,7 +109,7 @@
   top: 50%;
   width: 2px; }
 
-.red-hash, blockquote p:before, .list-stylized li:after, .top-story p:after {
+.red-hash, blockquote p:before, .blog-post-date:before, .list-stylized li:after, .top-story p:after {
   background: #dc1c2e;
   height: 0.2rem;
   content: "";
@@ -144,6 +168,44 @@ blockquote {
     blockquote p:before {
       width: 3rem; }
 
+.blog-post {
+  font: 1rem/1 "Montserrat Regular", sans-serif; }
+  .blog-post h1 {
+    font-size: 1.375rem;
+    line-height: 1.8125rem; }
+    .blog-post h1 a {
+      color: #005898; }
+  .blog-post-date {
+    color: #dc1c2e;
+    line-height: 1; }
+    .blog-post-date:before {
+      margin-top: 0.1rem;
+      top: 50%; }
+  .blog-post-meta {
+    bottom: 0;
+    color: white;
+    left: 0;
+    position: absolute;
+    right: 0; }
+    .blog-post-meta span {
+      font-size: 1.125rem; }
+  .blog-post-permalink {
+    color: #dc1c2e; }
+  .blog-post-social {
+    color: white; }
+    .blog-post-social a {
+      padding-top: 1rem;
+      width: 1.5rem; }
+
+.blog-post-small {
+  border-bottom: 1px solid #4c4c4c;
+  font-size: 0.875rem; }
+  .blog-post-small:last-child {
+    border: 0; }
+  .blog-post-small h1 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem; }
+
 .btn-close {
   background: #dc1c2e;
   box-shadow: 0 0 0 2px white;
@@ -165,6 +227,11 @@ blockquote {
   padding: 0 1.5rem; }
   .btn-primary:hover {
     background: #af1625; }
+
+.btn-unstyled {
+  background: none;
+  color: #dc1c2e;
+  cursor: pointer; }
 
 .card-deck-posts .card-body {
   bottom: 0; }
@@ -253,7 +320,7 @@ nav ul {
   padding: 0 3rem;
   position: relative; }
   .nav-primary a:after {
-    background: url("../images/chevron-down.svg");
+    background: url("../images/icon/chevron-down.svg");
     content: "";
     height: 1.25rem;
     margin-top: -0.5rem;
@@ -269,10 +336,6 @@ nav ul {
     color: white; }
   .top-story a {
     font: 1rem "Montserrat Regular", sans-serif; }
-  .top-story h1 {
-    background: url("../images/star.svg") left center no-repeat;
-    background-size: 1.25rem;
-    padding-left: 2rem; }
   .top-story p {
     font-family: "Montserrat Regular", sans-serif; }
     .top-story p:after {
@@ -287,9 +350,6 @@ nav ul {
     width: 33.333%; }
     .top-story-content > * {
       position: relative; }
-  .top-story-social a {
-    padding-top: 1rem;
-    width: 1.5rem; }
 
 footer small {
   font: 0.875rem "Montserrat Regular", sans-serif; }
@@ -356,6 +416,11 @@ footer small {
   overflow: hidden;
   padding-top: 33px;
   min-width: 180px; }
+
+.sidebar {
+  font: 1rem/1 "Montserrat Regular", sans-serif; }
+  .sidebar-more-link {
+    color: #dc1c2e; }
 
 .top-menu a {
   color: #dc1c2e;

@@ -6,3 +6,10 @@
 @include fontFace("Montserrat Semibold", "montserrat-semibold-webfont", "montserratsemibold");
 @include fontFace("Montserrat Bold", "montserrat-bold-webfont", "montserratbold");
 @include fontFace("Raleway Medium", "raleway-medium-webfont", "ralewaymedium");
+
+
+// BS Override
+.h4 {
+	color: $remax-red;
+	font: 1.375rem "Montserrat Bold", sans-serif;
+}

@@ -26,4 +26,10 @@
 			background: darken($remax-red, 10%);
 		}
 	}
+
+	&-unstyled {
+		background: none;
+		color: $remax-red;
+		cursor: pointer;
+	}
 }

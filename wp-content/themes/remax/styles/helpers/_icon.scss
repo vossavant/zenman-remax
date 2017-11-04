@@ -1,0 +1,34 @@
+.icon {
+	background-size: 1.25rem !important;
+	padding-left: 2rem;
+
+	&-2 {
+		background-size: 1.5rem !important;
+		padding-left: 2.25rem;
+	}
+
+	&-3 {
+		background-size: 1.75rem !important;
+		padding-left: 2.5rem;
+	}
+
+	&-calendar {
+		background: url('../images/icon/calendar.svg') left center no-repeat;
+	}
+
+	&-chat {
+		background: url('../images/icon/chat.svg') left center no-repeat;
+	}
+
+	&-email {
+		background: url('../images/icon/email.svg') left center no-repeat;
+	}
+
+	&-megaphone {
+		background: url('../images/icon/megaphone.svg') left center no-repeat;
+	}
+
+	&-star {
+		background: url('../images/icon/star.svg') left center no-repeat;
+	}
+}
