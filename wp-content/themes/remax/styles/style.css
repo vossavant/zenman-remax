@@ -315,6 +315,7 @@ nav ul {
     display: inline-block; }
 
 .nav-primary a {
+  color: white;
   font: 1.375rem "Montserrat Regular", sans-serif;
   line-height: 3.5rem;
   padding: 0 3rem;
@@ -410,16 +411,61 @@ footer small {
 
 .logo {
   background: url("../images/logo/logo@2x.png");
-  background-size: contain;
+  background-size: contain !important;
   display: inline-block;
   height: 0;
   overflow: hidden;
   padding-top: 33px;
   min-width: 180px; }
+  .logo-large {
+    background: url("../images/logo/logo-large@2x.png");
+    padding-top: 60px;
+    min-width: 328px; }
 
 .sidebar {
   font: 1rem/1 "Montserrat Regular", sans-serif; }
   .sidebar-more-link {
+    color: #dc1c2e; }
+
+.blog-nav {
+  background: none !important;
+  border-bottom: 1px solid #4c4c4c !important;
+  margin-top: 0 !important; }
+  .blog-nav a {
+    color: #dc1c2e; }
+  .blog-nav a:after {
+    background: url("../images/icon/chevron-down-red.svg"); }
+
+.blog-social-header {
+  border-bottom: 1px solid #4c4c4c;
+  overflow: auto; }
+  .blog-social-header .social-facebook {
+    background: url("../images/social/facebook-red.svg"); }
+  .blog-social-header .social-linkedin {
+    background: url("../images/social/linkedin-red.svg"); }
+  .blog-social-header .social-twitter {
+    background: url("../images/social/twitter-red.svg"); }
+
+.blog .search-form {
+  margin-top: -0.75rem;
+  right: 15px;
+  top: 50%;
+  width: 15em; }
+  .blog .search-form .form-control {
+    background: url("../images/icon/search.svg") 1rem center no-repeat/1rem;
+    border: 0;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    color: #dc1c2e;
+    font: 1em "Montserrat Regular", sans-serf;
+    padding-left: 2.5rem; }
+  .blog .search-form .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #dc1c2e; }
+  .blog .search-form .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #dc1c2e; }
+  .blog .search-form .form-control:-ms-input-placeholder {
+    /* IE 10+ */
     color: #dc1c2e; }
 
 .top-menu a {
@@ -432,6 +478,3 @@ footer small {
 
 .top-menu li {
   position: relative; }
-
-.nav-on-dark a {
-  color: white; }

@@ -24,7 +24,7 @@
 
 <body <?php body_class($post->post_name); ?>>
 	<header>
-		<?php //if (is_front_page()) : ?>
+		<?php if (is_front_page()) : ?>
 			<div class="container d-flex align-items-center justify-content-between mt-3">
 				<a class="logo" href="<?= home_url(); ?>">RE/MAX Home</a>
 				<?php
@@ -38,9 +38,19 @@
 				?>
 				<a class="btn btn-primary" href="">Create An Account</a>
 			</div>
-		<?php //endif; ?>
+		<?php elseif (is_home()) : ?>
+			<div class="blog-social-header pt-2">
+				<div class="container">
+					<?php get_template_part('partials/blog-post-social'); ?>
+				</div>
+			</div>
+			<div class="container position-relative pt-3 text-center">
+				<a class="logo logo-large mt-1" href="<?= home_url(); ?>">RE/MAX Home</a>
+				<?= get_search_form(); ?>
+			</div>
+		<?php endif; ?>
 
-		<div class="bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
+		<div class="<?php if (is_home()) { echo 'blog-nav '; } ?>bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
 			<?php
 			$args = array(
 				'container' => 'nav',

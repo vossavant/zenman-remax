@@ -1,9 +1,15 @@
 .logo {
 	background: url('../images/logo/logo@2x.png');
-	background-size: contain;
+	background-size: contain !important;
 	display: inline-block;
 	height: 0;
 	overflow: hidden;
 	padding-top: 33px;
 	min-width: 180px;
+
+	&-large {
+		background: url('../images/logo/logo-large@2x.png');
+		padding-top: 60px;
+		min-width: 328px;
+	}
 }
