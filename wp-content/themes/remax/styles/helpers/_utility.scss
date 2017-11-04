@@ -43,6 +43,11 @@
 
 // BS override
 .border-primary {
+	border-color: $remax-red !important;
+}
+
+// BS override
+.border-secondary {
 	border-color: $remax-blue !important;
 }
 

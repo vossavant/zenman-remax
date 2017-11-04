@@ -81,6 +81,9 @@
     transform: rotate(15deg); }
 
 .border-primary {
+  border-color: #dc1c2e !important; }
+
+.border-secondary {
   border-color: #005898 !important; }
 
 .border-bottom-4 {
@@ -163,6 +166,9 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.375rem; }
 
+h5, .h5 {
+  font-size: 1.125rem; }
+
 blockquote {
   padding: 10rem 0;
   position: relative; }
@@ -206,7 +212,7 @@ blockquote {
     position: absolute;
     right: 0; }
     .blog-post-meta span {
-      font-size: 1.125rem; }
+      line-height: 1; }
   .blog-post-social {
     color: white; }
     .blog-post-social a {
@@ -254,9 +260,6 @@ blockquote {
 
 .card-deck-posts .card-text {
   font: 1rem "Montserrat Regular", sans-serif; }
-
-.card-deck-posts .card-title {
-  font: 1.125rem "Montserrat Bold", sans-serif; }
 
 .card-deck-posts .card-tags {
   bottom: -2rem;
@@ -345,7 +348,7 @@ blockquote {
     position: absolute;
     top: -0.7rem; }
 
-.mega-menu {
+body .mega-menu {
   transition: all 250ms ease-in-out;
   background: white;
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
@@ -359,11 +362,23 @@ blockquote {
   top: 5.5rem;
   transform: translateY(-5px);
   z-index: -1; }
-  .mega-menu-visible {
+  body .mega-menu-view-all {
+    background: white;
+    border: 4px solid #dc1c2e;
+    bottom: 0;
+    left: 50%; }
+  body .mega-menu-visible {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
     z-index: 1; }
+  body .mega-menu a {
+    font: 18px/1 "Montserrat Regular", sans-serif;
+    padding: 0; }
+    body .mega-menu a:after {
+      display: none; }
+  body .mega-menu img {
+    max-width: 100%; }
 
 nav ul {
   list-style: none;
