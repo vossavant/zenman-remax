@@ -312,7 +312,7 @@ get_header();
 					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
 				</div>
 				<div class="card-body position-absolute text-white">
-					<h4 class="card-title mb-0 text-white">For Buyers</h4>
+					<h5 class="card-title font-weight-bold mb-1 text-white">For Buyers</h5>
 					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					<p class="card-text mb-2">
 						<a class="text-primary" href="#">Read More &rsaquo;</a>
@@ -326,7 +326,7 @@ get_header();
 					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
 				</div>
 				<div class="card-body position-absolute text-white">
-					<h4 class="card-title mb-0 text-white">For Sellers</h4>
+					<h5 class="card-title font-weight-bold mb-1 text-white">For Sellers</h5>
 					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					<p class="card-text mb-2">
 						<a class="text-primary" href="#">Read More &rsaquo;</a>
@@ -340,7 +340,7 @@ get_header();
 					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
 				</div>
 				<div class="card-body position-absolute text-white">
-					<h4 class="card-title mb-0 text-white">For Fun</h4>
+					<h5 class="card-title font-weight-bold mb-1 text-white">For Fun</h5>
 					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					<p class="card-text mb-2">
 						<a class="text-primary" href="#">Read More &rsaquo;</a>

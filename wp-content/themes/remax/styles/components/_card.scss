@@ -14,11 +14,6 @@
 		font: 1rem "Montserrat Regular", sans-serif;
 	}
 
-	.card-title {
-		// TODO: is bold used anywhere else? If not, change to semibold and remove bold font from helpers/_fonts.scss
-		font: 1.125rem "Montserrat Bold", sans-serif;
-	}
-
 	.card-tags {
 		bottom: -2rem;
 		color: initial;

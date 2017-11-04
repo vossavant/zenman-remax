@@ -24,7 +24,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_1.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_2.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -52,7 +52,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_3.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -66,7 +66,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_4.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -80,7 +80,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_3.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -94,7 +94,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_4.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -108,7 +108,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_3.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
@@ -122,7 +122,7 @@ get_header();
 					<div class="gallery-image-mask position-relative">
 						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_4.jpg">
 						<div class="blog-post-meta p-3">
-							<span class="position-relative">For Fun</span>
+							<span class="h5 position-relative">For Fun</span>
 							<?php get_template_part('partials/blog-post-social'); ?>
 						</div>
 					</div>
