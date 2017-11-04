@@ -29,10 +29,6 @@
   font-weight: normal;
   font-style: normal; }
 
-.h4 {
-  color: #dc1c2e;
-  font: 1.375rem "Montserrat Bold", sans-serif; }
-
 .icon {
   background-size: 1.25rem !important;
   padding-left: 2rem; }
@@ -42,6 +38,8 @@
   .icon-3 {
     background-size: 1.75rem !important;
     padding-left: 2.5rem; }
+  .icon-header {
+    font-family: "Montserrat Bold", sans-serif; }
   .icon-calendar {
     background: url("../images/icon/calendar.svg") left center no-repeat; }
   .icon-chat {
@@ -87,6 +85,10 @@
 
 .border-bottom-4 {
   border-bottom-width: 4px !important; }
+
+.font-weight-bold {
+  font-family: "Montserrat Bold", sans-serif !important;
+  font-weight: normal !important; }
 
 .overflow-hidden {
   overflow: hidden; }
@@ -147,15 +149,19 @@ body {
   color: #333333;
   font: 1rem/1.625rem "Raleway Medium", sans-serif; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
   color: #005898;
   font-family: "Montserrat Regular", sans-serif; }
 
-h1 {
+h1, .h1 {
   font-size: 2.1875rem; }
 
-h3 {
+h3, .h3 {
   font-size: 1.5rem; }
+
+h4, .h4 {
+  font-size: 1.375rem; }
 
 blockquote {
   padding: 10rem 0;
@@ -184,7 +190,6 @@ blockquote {
 .blog-post {
   font: 1rem/1 "Montserrat Regular", sans-serif; }
   .blog-post h1 {
-    font-size: 1.375rem;
     line-height: 1.8125rem; }
     .blog-post h1 a {
       color: #005898; }
@@ -340,6 +345,26 @@ blockquote {
     position: absolute;
     top: -0.7rem; }
 
+.mega-menu {
+  transition: all 250ms ease-in-out;
+  background: white;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
+  display: flex;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 5.5rem;
+  transform: translateY(-5px);
+  z-index: -1; }
+  .mega-menu-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    z-index: 1; }
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -350,7 +375,6 @@ nav ul {
 
 .nav-primary a {
   color: white;
-  font: 1.375rem "Montserrat Regular", sans-serif;
   line-height: 3.5rem;
   padding: 0 3rem;
   position: relative; }
@@ -367,7 +391,6 @@ nav ul {
 .top-story {
   height: 25rem; }
   .top-story a, .top-story h1, .top-story p {
-    font: 1.375rem "Montserrat Bold", sans-serif;
     color: white; }
   .top-story a {
     font: 1rem "Montserrat Regular", sans-serif; }

@@ -1,7 +1,7 @@
 <div class="col-4 sidebar">
 	<?php if (is_single()) : ?>
 		<section>
-			<h1 class="h4 icon icon-2 icon-document">Related Posts</h1>
+			<h1 class="h4 font-weight-bold icon icon-2 icon-document text-primary">Related Posts</h1>
 
 			<article class="blog-post blog-post-small d-flex py-3">
 				<div class="pr-3 w-50">
@@ -34,7 +34,7 @@
 	
 	<?php else : ?>
 		<section class="mb-4 pb-2">
-			<h1 class="h4 icon icon-3 icon-megaphone">Now Trending</h1>
+			<h1 class="h4 font-weight-bold icon icon-3 icon-megaphone text-primary">Now Trending</h1>
 			
 			<article class="blog-post blog-post-small d-flex py-3">
 				<div class="pr-3 w-50">
@@ -68,7 +68,7 @@
 		</section>
 		
 		<section class="mb-4 pb-2">
-			<h1 class="h4 icon icon-3 icon-chat">On Social</h1>
+			<h1 class="h4 font-weight-bold icon icon-3 icon-chat text-primary">On Social</h1>
 			
 			<article class="blog-post blog-post-small d-flex py-3">
 				<div class="pr-3 w-50">
@@ -102,7 +102,7 @@
 		</section>
 		
 		<section>
-			<h1 class="h4 icon icon-3 icon-email">Newsletter Sign-Up</h1>
+			<h1 class="h4 font-weight-bold icon icon-3 icon-email text-primary">Newsletter Sign-Up</h1>
 			<form class="form-inline pt-3">
 				<div class="form-group w-100">
 					<label for="name" class="sr-only">Name</label>

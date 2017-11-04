@@ -50,6 +50,12 @@
 	border-bottom-width: 4px !important;
 }
 
+// BS override
+.font-weight-bold {
+	font-family: "Montserrat Bold", sans-serif !important;
+	font-weight: normal !important;
+}
+
 .overflow-hidden {
 	overflow: hidden;
 }
