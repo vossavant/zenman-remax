@@ -38,7 +38,7 @@
 				?>
 				<a class="btn btn-primary" href="">Create An Account</a>
 			</div>
-		<?php elseif (is_home()) : ?>
+		<?php else : ?>
 			<div class="blog-social-header pt-2">
 				<div class="container">
 					<?php get_template_part('partials/blog-post-social'); ?>
@@ -50,7 +50,7 @@
 			</div>
 		<?php endif; ?>
 
-		<div class="<?php if (is_home()) { echo 'blog-nav '; } ?>bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
+		<div class="<?php if (!is_front_page()) { echo 'blog-nav '; } ?>bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
 			<?php
 			$args = array(
 				'container' => 'nav',
