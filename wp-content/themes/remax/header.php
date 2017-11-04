@@ -50,14 +50,15 @@
 			</div>
 		<?php endif; ?>
 
-		<div class="<?php if (!is_front_page()) { echo 'blog-nav '; } ?>bg-primary border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
+		<div class="<?php if (!is_front_page()) { echo 'blog-nav '; } ?>bg-primary border border-secondary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
 			<?php
 			$args = array(
 				'container' => 'nav',
 				'container_class' => 'container nav-primary nav-on-dark',
 				'item_spacing' => 'discard',
-				'menu_class' => 'd-flex justify-content-around',
-				'theme_location' => 'main'
+				'menu_class' => 'd-flex justify-content-around position-relative',
+				'theme_location' => 'main',
+				'walker' => new Walker_Simple_Example()
 			);
 			wp_nav_menu($args);
 			?>
