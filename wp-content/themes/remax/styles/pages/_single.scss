@@ -1,0 +1,45 @@
+.single {
+	&-post-author {
+		color: $remax-blue;
+		font: 1rem "Montserrat Semibold", sans-serif;
+	}
+
+	&-post-category {
+		&:after {
+			@extend .pipe;
+		}
+	}
+
+	&-post-content {
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
+
+	&-post-meta {
+		time {
+			color: $remax-blue;
+			font: 1rem "Montserrat Regular", sans-serif;
+		}
+
+		.blog-post-social {
+			float: none !important;
+		}
+
+		.social-facebook {
+			@extend .social-facebook-primary;
+		}
+
+		.social-linkedin {
+			@extend .social-linkedin-primary;
+		}
+
+		.social-twitter {
+			@extend .social-twitter-primary;
+		}
+	}
+}
+
+.comment-reply-title {
+	font: 1rem "Montserrat Semibold", sans-serif;
+}

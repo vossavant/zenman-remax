@@ -18,15 +18,15 @@
 		overflow: auto;
 
 		.social-facebook {
-			background: url('../images/social/facebook-red.svg');
+			@extend .social-facebook-primary;
 		}
 
 		.social-linkedin {
-			background: url('../images/social/linkedin-red.svg');
+			@extend .social-linkedin-primary;
 		}
 
 		.social-twitter {
-			background: url('../images/social/twitter-red.svg');
+			@extend .social-twitter-primary;
 		}
 	}
 }

@@ -1,3 +1,9 @@
+.form-comment {
+	.form-submit {
+		margin: 0;
+	}
+}
+
 .form-inline {
 	.form-control {
 		border-radius: 2rem;
@@ -5,7 +11,7 @@
 	}
 }
 
-.search-form {
+.form-search {
 	margin-top: -0.75rem;
 	right: 15px;
 	top: 50%;
