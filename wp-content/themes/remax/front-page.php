@@ -184,11 +184,12 @@ get_header();
 					<a class="btn btn-primary" href="">Learn More</a>
 				</figcaption>
 			</figure>
-			<div class="current-photo-details d-none m-2 w-100">
+			<div class="current-photo-details d-none m-2 w-100" data-js-closeable="true">
 				<div class="js-photo-box p-5 w-50"></div>
 				<div class="js-photo-details-box pt-5 pr-5 pb-5 pl-2 w-50"></div>
 				<button class="js-close-photo-details btn btn-close rounded-circle">X</button>
 			</div>
+			<figure class="gallery-placeholder m-0">&nbsp;</figure>
 		</div>
 	</section>
 </div>

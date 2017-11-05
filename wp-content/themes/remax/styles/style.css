@@ -234,7 +234,7 @@ blockquote {
   color: white;
   cursor: pointer;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  height: 2.5rem;
   padding: 0;
   width: 2.5rem; }
   .btn-close:hover {
@@ -326,8 +326,11 @@ blockquote {
     right: 0.75rem;
     top: 0.75rem; }
 
-.gallery .gallery-image-mask {
+.gallery-image-mask {
   overflow: hidden; }
+
+.gallery-placeholder {
+  line-height: 0; }
 
 .list-stylized {
   counter-reset: my-counter; }

@@ -46,7 +46,11 @@
 		}
 	}
 
-	.gallery-image-mask {
+	&-image-mask {
 		overflow: hidden;
+	}
+
+	&-placeholder {
+		line-height: 0;
 	}
 }
