@@ -1,0 +1,26 @@
+.parallax {
+	&-wrapper {
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+		perspective: 2px;
+	}
+
+	&-section {
+		align-items: center;
+		display: flex;
+		height: 100vh;
+		position: relative;
+	}
+
+	&-section .parallax-bg {
+		background-size: 100%;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translateZ(-1px) scale(1.5);
+		z-index: -1;
+	}
+}
