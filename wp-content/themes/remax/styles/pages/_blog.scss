@@ -3,12 +3,12 @@
 		background: none !important;
 		border-bottom: 1px solid $remax-gray !important;
 		margin-top: 0 !important;
+	}
 
-		a {
-			color: $remax-red;
-		}
+	.nav-link span {
+		color: $remax-red;
 
-		a:after {
+		&:after {
 			background: url('../images/icon/chevron-down-red.svg');
 		}
 	}

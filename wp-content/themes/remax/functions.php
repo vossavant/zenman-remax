@@ -143,7 +143,7 @@ class Walker_Simple_Example extends Walker
 		$mega_menu_html = '';
 		
 		if ($posts = get_posts($posts_in_category)) {
-			$mega_menu_html .= '<ul class="mega-menu' . ($item->object_id == 8 ? ' mega-menu-visible' : '') . ' border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 text-center px-1">';
+			$mega_menu_html .= '<ul class="mega-menu border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 gallery text-center pb-3 px-1">';
 			
 			foreach ($posts as $post) :
 				setup_postdata($post);
@@ -155,14 +155,17 @@ class Walker_Simple_Example extends Walker
 					</li>';
 			endforeach;
 			
-			$mega_menu_html .= '<li class="mega-menu-view-all h5 px-3 py-2 position-absolute text-primary">View all CATEGORY posts &rsaquo;</li>';
+			$mega_menu_html .=
+				'<li class="mega-menu-view-all position-absolute">
+					<a class="mega-menu-cat-link d-block px-3 text-primary" href="' . get_category_link($item->object_id) . '">View all <b>' . get_the_category_by_ID($item->object_id) . '</b> posts &rsaquo;</a>
+				</li>';
 			
 			$mega_menu_html .= '</ul>';
 			
 			wp_reset_postdata();
 		}
 		
-		$output .= sprintf("\n<li><a class='h4' href='%s'%s>%s</a>%s</li>\n",
+		$output .= sprintf("\n<li class='nav-item'><a class='h4 nav-link m-0 p-0 position-relative' href='%s'%s><span class='d-block'>%s</span></a>%s</li>\n",
 			$item->url,
 			($item->object_id === get_the_ID()) ? ' class="current"' : '',
 			$item->title, $mega_menu_html

@@ -56,7 +56,7 @@
 				'container' => 'nav',
 				'container_class' => 'container nav-primary nav-on-dark',
 				'item_spacing' => 'discard',
-				'menu_class' => 'd-flex justify-content-around position-relative',
+				'menu_class' => 'justify-content-around nav position-relative',
 				'theme_location' => 'main',
 				'walker' => new Walker_Simple_Example()
 			);

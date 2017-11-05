@@ -1,3 +1,5 @@
+// @codekit-append "nav.js"
+
 // make JSHint happy
 /* global console, jQuery */
 
@@ -12,7 +14,7 @@ jQuery(function () {
 
 	rmxGallery = {
 		init: function () {
-			console.log('JS loaded');
+			console.log('Gallery JS loaded');
 
 			$('.gallery').find('figure').click(function() {
 				if ($(this).hasClass('active')) {
