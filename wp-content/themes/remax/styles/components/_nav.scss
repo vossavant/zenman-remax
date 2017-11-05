@@ -74,3 +74,17 @@ nav ul {
 		}
 	}
 }
+
+.blog-nav {
+	background: none !important;
+	border-bottom: 1px solid $remax-gray !important;
+	margin-top: 0 !important;
+
+	.nav-link span {
+		color: $remax-red;
+
+		&:after {
+			background: url('../images/icon/chevron-down-red.svg');
+		}
+	}
+}

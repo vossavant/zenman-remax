@@ -53,6 +53,28 @@
   .icon-star {
     background: url("../images/icon/star.svg") left center no-repeat; }
 
+.parallax-wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px; }
+
+.parallax-section {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  position: relative; }
+
+.parallax-section .parallax-bg {
+  background-size: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1; }
+
 .bg-image {
   position: relative; }
   .bg-image .container {
@@ -442,6 +464,15 @@ nav ul {
     top: 50%;
     width: 1.25rem; }
 
+.blog-nav {
+  background: none !important;
+  border-bottom: 1px solid #4c4c4c !important;
+  margin-top: 0 !important; }
+  .blog-nav .nav-link span {
+    color: #dc1c2e; }
+    .blog-nav .nav-link span:after {
+      background: url("../images/icon/chevron-down-red.svg"); }
+
 .top-story {
   height: 25rem; }
   .top-story a, .top-story h1, .top-story p {
@@ -535,16 +566,6 @@ footer small {
 
 .sidebar {
   font: 1rem/1 "Montserrat Regular", sans-serif; }
-
-.blog-nav {
-  background: none !important;
-  border-bottom: 1px solid #4c4c4c !important;
-  margin-top: 0 !important; }
-
-.blog .nav-link span {
-  color: #dc1c2e; }
-  .blog .nav-link span:after {
-    background: url("../images/icon/chevron-down-red.svg"); }
 
 .blog-social-header {
   border-bottom: 1px solid #4c4c4c;
