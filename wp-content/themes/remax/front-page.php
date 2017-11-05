@@ -250,9 +250,74 @@ get_header();
 	</section>
 	
 	<!-- 5 Tips for Selling -->
-	<section class="container pt-4 pb-5">
+	<section class="container pt-4 pb-5 text-center">
 		<h1 class="mb-4 text-center">Top 5 Tips for Selling (placeholder)</h1>
-		<p>This lil widget can be gotten from zenman's homepage</p>
+		
+		<div class="tab-slider mt-5">
+			<input class="tab-slider-input d-none" id="tab-1" name="tabs" type="radio" checked>
+			<input class="tab-slider-input d-none" id="tab-2" name="tabs" type="radio">
+			<input class="tab-slider-input d-none" id="tab-3" name="tabs" type="radio">
+			<input class="tab-slider-input d-none" id="tab-4" name="tabs" type="radio">
+			<input class="tab-slider-input d-none" id="tab-5" name="tabs" type="radio">
+			
+			<div class="tab-slider-tabs d-flex mb-4">
+				<label class="tab-slider-label position-relative m-0 pb-3 px-4" for="tab-1">
+					<img class="tab-slider-icon" src="<?php bloginfo('template_url'); ?>/images/icon/fire.svg">
+					<h4>Stay Warm</h4>
+				</label>
+				<label class="tab-slider-label position-relative m-0 pb-3 px-4" for="tab-2">
+					<img class="tab-slider-icon" src="<?php bloginfo('template_url'); ?>/images/icon/lightbulb.svg">
+					<h4>Lighten Up</h4>
+				</label>
+				<label class="tab-slider-label position-relative m-0 pb-3 px-4" for="tab-3">
+					<img class="tab-slider-icon" src="<?php bloginfo('template_url'); ?>/images/icon/flag.svg">
+					<h4>Highlight Features</h4>
+				</label>
+				<label class="tab-slider-label position-relative m-0 pb-3 px-4" for="tab-4">
+					<img class="tab-slider-icon" src="<?php bloginfo('template_url'); ?>/images/icon/fence.svg">
+					<h4>Show Landscaping</h4>
+				</label>
+				<label class="tab-slider-label position-relative m-0 pb-3 px-4" for="tab-5">
+					<img class="tab-slider-icon" src="<?php bloginfo('template_url'); ?>/images/icon/clipboard.svg">
+					<h4>Clear the Way</h4>
+				</label>
+			</div>
+
+			<div class="tab-slider-panes overflow-hidden text-left">
+				<div>
+					<div class="tab-slider-content float-left" id="tab-pane-1">
+						<div class="mx-auto w-75">
+							<h4>Tab 1</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto asperiores blanditiis consequatur dignissimos dolorum earum eligendi, eveniet facere incidunt labore laboriosam natus odit provident reprehenderit sed sit voluptatem!</p>
+						</div>
+					</div>
+					<div class="tab-slider-content float-left" id="tab-pane-2">
+						<div class="mx-auto w-75">
+							<h4>Tab 2</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto asperiores blanditiis consequatur dignissimos dolorum earum eligendi, eveniet facere incidunt labore laboriosam natus odit provident reprehenderit sed sit voluptatem!</p>
+						</div>
+					</div>
+					<div class="tab-slider-content float-left" id="tab-pane-3">
+						<div class="mx-auto w-75">
+							<h4>Tab 3</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto asperiores blanditiis consequatur dignissimos dolorum earum eligendi, eveniet facere incidunt labore laboriosam natus odit provident reprehenderit sed sit voluptatem!</p>
+						</div>
+					</div>
+					<div class="tab-slider-content float-left" id="tab-pane-4">
+						<div class="mx-auto w-75">
+							<h4>Tab 4</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto asperiores blanditiis consequatur dignissimos dolorum earum eligendi, eveniet facere incidunt labore laboriosam natus odit provident reprehenderit sed sit voluptatem!</p>
+						</div>
+					</div>
+					<div class="tab-slider-content float-left" id="tab-pane-5">
+						<div class="mx-auto w-75">
+							<h4>Tab 5</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi architecto asperiores blanditiis consequatur dignissimos dolorum earum eligendi, eveniet facere incidunt labore laboriosam natus odit provident reprehenderit sed sit voluptatem!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </div>
 
