@@ -40,3 +40,38 @@
 		background: url('../images/icon/star.svg') left center no-repeat;
 	}
 }
+
+.social {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	display: inline-block;
+	font-size: 0;
+	height: 0;
+	overflow: hidden;
+	padding-top: 2.625rem;
+	width: 3.25rem;
+
+	&-facebook {
+		background: url('../images/social/facebook.svg');
+	}
+
+	&-google {
+		background: url('../images/social/google.svg');
+	}
+
+	&-instagram {
+		background: url('../images/social/instagram.svg');
+	}
+
+	&-linkedin {
+		background: url('../images/social/linkedin.svg');
+	}
+
+	&-pinterest {
+		background: url('../images/social/pinterest.svg');
+	}
+
+	&-twitter {
+		background: url('../images/social/twitter.svg');
+	}
+}
