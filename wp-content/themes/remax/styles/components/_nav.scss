@@ -14,12 +14,12 @@ nav ul {
 .nav-link {
 	&:after,
 	&:before {
-		content: "";
 		@include transition();
 		border-color: transparent transparent white;
 		border-style: solid;
 		border-width: 0 1rem 1rem;
 		bottom: -1rem;
+		content: "";
 		height: 0;
 		left: 50%;
 		margin: 0 0 -1.3125rem -1rem;
