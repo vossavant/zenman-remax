@@ -18,7 +18,7 @@ get_header();
 						<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
 						<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
 						<div class="mt-4 text-center">
-							<a href="#" class="btn btn-primary">Buy a Home</a>
+							<a href="<?php bloginfo('home'); ?>/category/for-buyers" class="btn btn-primary">Buy a Home</a>
 						</div>
 					</div>
 				</div>
@@ -28,7 +28,7 @@ get_header();
 						<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
 						<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
 						<div class="mt-4 text-center">
-							<a href="#" class="btn btn-primary">Sell Your Home</a>
+							<a href="<?php bloginfo('home'); ?>/category/for-sellers" class="btn btn-primary">Sell Your Home</a>
 						</div>
 					</div>
 				</div>
