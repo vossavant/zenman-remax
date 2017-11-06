@@ -48,6 +48,27 @@ add_theme_support('post-thumbnails', array('post'));
 
 
 /**
+ * Add custom image sizes. Docs:
+ * https://developer.wordpress.org/reference/functions/add_image_size/
+ */
+add_image_size( 'top-story', 1024, 400, true );
+add_image_size( 'featured-large', 720, 384, true );
+add_image_size( 'featured-medium', 384, 256, true );
+add_image_size( 'featured-small', 144, 96, true );
+
+add_filter('image_size_names_choose', 'remax_custom_image_names');
+function remax_custom_image_names($sizes)
+{
+	return array_merge($sizes, array(
+		'top-story' => __('Wide Banner'),
+		'featured-large' => __('Large Featured Image'),
+		'featured-medium' => __('Medium Thumbnail'),
+		'featured-small' => __('Small Thumbnail'),
+	));
+}
+
+
+/**
  * Removes unneeded WP scripts and styles from the site header.
  */
 function remax_remove_wordpress_extras() {
@@ -194,8 +215,8 @@ class Walker_Simple_Example extends Walker
 			foreach ($posts as $post) :
 				setup_postdata($post);
 				$mega_menu_html .=
-					'<li class="col p-1">
-						<div class="gallery-image-mask">' . get_the_post_thumbnail() . '</div>
+					'<li class="col mt-1 p-1">
+						<div class="gallery-image-mask">' . get_the_post_thumbnail($post->ID, 'featured-medium') . '</div>
 						<h4 class="mt-3 mx-3 mb-0">' . get_the_title() . '</h4>
 						<a class="p-4" href="' . get_permalink() . '">Read More &rsaquo;</a>
 					</li>';

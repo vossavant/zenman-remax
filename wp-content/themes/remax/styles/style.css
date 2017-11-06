@@ -430,6 +430,7 @@ body .mega-menu {
       font: 1.125rem/2.25 "Montserrat Regular", sans-serif;
       min-width: 20rem; }
   body .mega-menu img {
+    height: auto;
     max-width: 100%; }
 
 nav ul {
