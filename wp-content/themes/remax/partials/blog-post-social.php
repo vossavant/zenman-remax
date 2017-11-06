@@ -3,6 +3,8 @@
  * These social media sharing links appear near the title
  * of all blog posts.
  */
+
+// TODO: update constants below - these should be replaced with sharing URLs (e.g., using bit.ly), not the actual social media pages
 ?>
 
 <ul class="blog-post-social d-flex float-right list-unstyled mb-0 position-relative">
