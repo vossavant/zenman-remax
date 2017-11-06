@@ -29,24 +29,36 @@
 				<img class="my-4" src="<?php bloginfo('template_url'); ?>/images/logo/logo-white@2x.png" width="250">
 				
 				<ul class="footer-social list-unstyled mb-3">
-					<li class="d-inline-block">
-						<a class="social social-large social-facebook" href="">Facebook</a>
-					</li>
-					<li class="d-inline-block">
-						<a class="social social-large social-twitter" href="">Twitter</a>
-					</li>
-					<li class="d-inline-block">
-						<a class="social social-large social-google" href="">Google</a>
-					</li>
-					<li class="d-inline-block">
-						<a class="social social-large social-instagram" href="">Instagram</a>
-					</li>
-					<li class="d-inline-block">
-						<a class="social social-large social-linkedin" href="">LinkedIn</a>
-					</li>
-					<li class="d-inline-block">
-						<a class="social social-large social-pinterest" href="">Pinterest</a>
-					</li>
+					<?php if (FACEBOOK_URL) : ?>
+						<li class="d-inline-block">
+							<a class="social social-large social-facebook" href="<?= FACEBOOK_URL; ?>">Facebook</a>
+						</li>
+					<?php endif; ?>
+					<?php if (TWITTER_URL) : ?>
+						<li class="d-inline-block">
+							<a class="social social-large social-twitter" href="<?= TWITTER_URL; ?>">Twitter</a>
+						</li>
+					<?php endif; ?>
+					<?php if (GOOGLE_URL) : ?>
+						<li class="d-inline-block">
+							<a class="social social-large social-google" href="<?= GOOGLE_URL; ?>">Google</a>
+						</li>
+					<?php endif; ?>
+					<?php if (INSTAGRAM_URL) : ?>
+						<li class="d-inline-block">
+							<a class="social social-large social-instagram" href="<?= INSTAGRAM_URL; ?>">Instagram</a>
+						</li>
+					<?php endif; ?>
+					<?php if (LINKEDIN_URL) : ?>
+						<li class="d-inline-block">
+							<a class="social social-large social-linkedin" href="<?= LINKEDIN_URL; ?>">LinkedIn</a>
+						</li>
+					<?php endif; ?>
+					<?php if (PINTEREST_URL) : ?>
+						<li class="d-inline-block">
+							<a class="social social-large social-pinterest" href="<?= PINTEREST_URL; ?>">Pinterest</a>
+						</li>
+					<?php endif; ?>
 				</ul>
 				
 				<?php

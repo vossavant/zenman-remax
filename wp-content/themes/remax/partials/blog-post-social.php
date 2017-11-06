@@ -6,13 +6,19 @@
 ?>
 
 <ul class="blog-post-social d-flex float-right list-unstyled mb-0 position-relative">
-	<li>
-		<a class="social social-facebook" href="facebook">Facebook</a>
-	</li>
-	<li>
-		<a class="social social-linkedin" href="linkedin">LinkedIn</a>
-	</li>
-	<li>
-		<a class="social social-twitter" href="twitter">Twitter</a>
-	</li>
+	<?php if (FACEBOOK_URL) : ?>
+		<li>
+			<a class="social social-facebook" href="<?= FACEBOOK_URL; ?>">Facebook</a>
+		</li>
+	<?php endif; ?>
+	<?php if (LINKEDIN_URL) : ?>
+		<li>
+			<a class="social social-linkedin" href="<?= LINKEDIN_URL; ?>">LinkedIn</a>
+		</li>
+	<?php endif; ?>
+	<?php if (TWITTER_URL) : ?>
+		<li>
+			<a class="social social-twitter" href="<?= TWITTER_URL; ?>">Twitter</a>
+		</li>
+	<?php endif; ?>
 </ul>

@@ -4,11 +4,30 @@
  * Methods to extend theme functionality
  */
 
+
+/**
+ * Define theme constants
+ */
+define('FACEBOOK_URL', get_field('facebook', 'option'));
+define('GOOGLE_URL', get_field('google+', 'option'));
+define('INSTAGRAM_URL', get_field('instagram', 'option'));
+define('LINKEDIN_URL', get_field('linkedin', 'option'));
+define('PINTEREST_URL', get_field('pinterest', 'option'));
+define('TWITTER_URL', get_field('twitter', 'option'));
+
+
+/**
+ * Enqueue theme styles and load in theme header
+ */
 function remax_enqueue_theme_styles() {
     wp_enqueue_style('master', get_template_directory_uri() . '/styles/style.css', null, '0.0.1');
 }
 add_action('wp_enqueue_scripts', 'remax_enqueue_theme_styles');
 
+
+/**
+ * Enqueue theme JavaScripts and load in theme footer
+ */
 function remax_enqueue_theme_scripts() {
     wp_enqueue_script('master', get_template_directory_uri() . '/scripts/final.min.js', array('jquery'), '0.0.1', true);
 }
@@ -103,6 +122,33 @@ if (function_exists('register_sidebar')) {
 			'after_title' => '</h3>'
 		)
 	);
+}
+
+
+/**
+ * Adds an Advanced Custom Fields options page to the WP sidebar
+ * https://www.advancedcustomfields.com/resources/options-page/
+ */
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title' => 'General Theme Settings',
+		'menu_title' => 'Theme Settings',
+		'menu_slug' => 'general-theme-settings',
+		'capability' => 'edit_posts',
+		'redirect' => false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' => 'Social Media Settings',
+		'menu_title' => 'Social Media',
+		'parent_slug' => 'general-theme-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' => 'Theme Footer Settings',
+		'menu_title' => 'Footer',
+		'parent_slug' => 'general-theme-settings',
+	));
 }
 
 
