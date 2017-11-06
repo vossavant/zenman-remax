@@ -42,36 +42,69 @@
 }
 
 .social {
-	background-position: center !important;
-	background-repeat: no-repeat !important;
-	display: inline-block;
-	font-size: 0;
-	height: 0;
-	overflow: hidden;
-	padding-top: 2.625rem;
-	width: 3.25rem;
+	display: block;
+	font-size: 0 !important;
+	line-height: 1;
+	padding: 0.25rem;
 
-	&-facebook {
-		background: url('../images/social/facebook.svg');
+	&:after {
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		content: "";
+		display: block;
+		height: 1.25rem;
+		width: 1.5rem;
 	}
 
-	&-google {
+	&-large {
+		padding: 0.5rem;
+
+		&:after {
+			height: 2.625rem;
+			width: 3.25rem;
+		}
+
+		&.social-facebook:after {
+			width: 3.25rem;
+		}
+	}
+
+	&-facebook:after {
+		background: url('../images/social/facebook.svg');
+		width: 1rem;
+	}
+
+	&-google:after {
 		background: url('../images/social/google.svg');
 	}
 
-	&-instagram {
+	&-instagram:after {
 		background: url('../images/social/instagram.svg');
 	}
 
-	&-linkedin {
+	&-linkedin:after {
 		background: url('../images/social/linkedin.svg');
 	}
 
-	&-pinterest {
+	&-pinterest:after {
 		background: url('../images/social/pinterest.svg');
 	}
 
-	&-twitter {
+	&-twitter:after {
 		background: url('../images/social/twitter.svg');
+	}
+
+	// Alternate color SVGs
+
+	&-facebook-primary:after {
+		background: url('../images/social/facebook-primary.svg');
+	}
+
+	&-linkedin-primary:after {
+		background: url('../images/social/linkedin-primary.svg');
+	}
+
+	&-twitter-primary:after {
+		background: url('../images/social/twitter-primary.svg');
 	}
 }

@@ -5,14 +5,14 @@
  */
 ?>
 
-<ul class="blog-post-social float-right list-unstyled mb-0 position-relative">
-	<li class="d-inline-block">
-		<a class="social social-facebook" href="">Facebook</a>
+<ul class="blog-post-social d-flex float-right list-unstyled mb-0 position-relative">
+	<li>
+		<a class="social social-facebook" href="facebook">Facebook</a>
 	</li>
-	<li class="d-inline-block">
-		<a class="social social-linkedin" href="">LinkedIn</a>
+	<li>
+		<a class="social social-linkedin" href="linkedin">LinkedIn</a>
 	</li>
-	<li class="d-inline-block">
-		<a class="social social-twitter" href="">Twitter</a>
+	<li>
+		<a class="social social-twitter" href="twitter">Twitter</a>
 	</li>
 </ul>

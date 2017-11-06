@@ -10,8 +10,10 @@ get_header();
 			
 			<div class="align-self-end">
 				<p class="h4 mb-4 pb-4 position-relative">3 Things to Consider Before Registering Your Home on a Short-Term Rental Site</p>
-				<a href="">Read More &rsaquo;</a>
-				<?php get_template_part('partials/blog-post-social'); ?>
+				<div class="d-flex align-items-center justify-content-between">
+					<a href="">Read More &rsaquo;</a>
+					<?php get_template_part('partials/blog-post-social'); ?>
+				</div>
 			</div>
 		</div>
 	</article>

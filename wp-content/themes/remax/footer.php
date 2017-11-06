@@ -28,24 +28,24 @@
 			<div class="container">
 				<img class="my-4" src="<?php bloginfo('template_url'); ?>/images/logo/logo-white@2x.png" width="250">
 				
-				<ul class="footer-social list-unstyled my-3">
-					<li class="d-inline-block mx-1">
-						<a class="social social-facebook" href="">Facebook</a>
+				<ul class="footer-social list-unstyled mb-3">
+					<li class="d-inline-block">
+						<a class="social social-large social-facebook" href="">Facebook</a>
 					</li>
-					<li class="d-inline-block mx-1">
-						<a class="social social-twitter" href="">Twitter</a>
+					<li class="d-inline-block">
+						<a class="social social-large social-twitter" href="">Twitter</a>
 					</li>
-					<li class="d-inline-block mx-1">
-						<a class="social social-google" href="">Google</a>
+					<li class="d-inline-block">
+						<a class="social social-large social-google" href="">Google</a>
 					</li>
-					<li class="d-inline-block mx-1">
-						<a class="social social-instagram" href="">Instagram</a>
+					<li class="d-inline-block">
+						<a class="social social-large social-instagram" href="">Instagram</a>
 					</li>
-					<li class="d-inline-block mx-1">
-						<a class="social social-linkedin" href="">LinkedIn</a>
+					<li class="d-inline-block">
+						<a class="social social-large social-linkedin" href="">LinkedIn</a>
 					</li>
-					<li class="d-inline-block mx-1">
-						<a class="social social-pinterest" href="">Pinterest</a>
+					<li class="d-inline-block">
+						<a class="social social-large social-pinterest" href="">Pinterest</a>
 					</li>
 				</ul>
 				
