@@ -94,7 +94,7 @@ get_header();
 										<?php get_template_part('partials/blog-post-social'); ?>
 									</div>
 								</div>
-								<time class="blog-post-date d-block pt-3 pb-2 position-relative text-right" datetime=""><?php the_date('m.j.y'); ?></time>
+								<time class="blog-post-date d-block pt-3 pb-2 position-relative text-right" datetime=""><?php the_time('m.j.y'); ?></time>
 								<h1 class="h4">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h1>
