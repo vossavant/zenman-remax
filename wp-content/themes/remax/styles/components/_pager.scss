@@ -1,0 +1,27 @@
+.pagination {
+	color: $remax-red;
+	font: 1rem "Montserrat Regular", sans-serif;
+	justify-content: center;
+	text-align: center;
+
+	.page-numbers {
+		border: 1px solid $remax-red;
+		display: inline-block;
+		line-height: 3rem;
+		margin: 0 0.5rem;
+		width: 3rem;
+
+		&.current {
+			background: $remax-red;
+			color: white;
+		}
+
+		&.next {
+
+		}
+	}
+
+	.screen-reader-text {
+		display: none;
+	}
+}

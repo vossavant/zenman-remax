@@ -58,8 +58,11 @@ get_header();
 		 * Build a query that excludes the post displayed in the "Top Story"
 		 * box, whether or not that post is sticky.
 		 */
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$get_posts_exclude_top_story = array(
 			'category__in' => get_query_var('cat'),
+			'ignore_sticky_posts' => 1,
+			'paged' => $paged,
 			'post__not_in' => array($top_story_post_id),
 			'posts_per_page' => 8
 		);
@@ -102,7 +105,15 @@ get_header();
 						wp_reset_postdata();
 						?>
 					</div>
-					[ pagination here ]
+					<?php
+					the_posts_pagination(
+						array(
+							'mid_size'  => 2,
+							'next_text' => '&rsaquo;',
+							'prev_text' => '&lsaquo;'
+						)
+					);
+					?>
 				</section>
 			<?php endif; ?>
 			

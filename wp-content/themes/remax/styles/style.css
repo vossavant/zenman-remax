@@ -499,6 +499,23 @@ nav ul {
     .blog-nav .nav-link span:after {
       background: url("../images/icon/chevron-down-red.svg"); }
 
+.pagination {
+  color: #dc1c2e;
+  font: 1rem "Montserrat Regular", sans-serif;
+  justify-content: center;
+  text-align: center; }
+  .pagination .page-numbers {
+    border: 1px solid #dc1c2e;
+    display: inline-block;
+    line-height: 3rem;
+    margin: 0 0.5rem;
+    width: 3rem; }
+    .pagination .page-numbers.current {
+      background: #dc1c2e;
+      color: white; }
+  .pagination .screen-reader-text {
+    display: none; }
+
 .tab-slider {
   margin: auto; }
   .tab-slider-content {
