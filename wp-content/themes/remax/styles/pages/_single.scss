@@ -5,8 +5,12 @@
 	}
 
 	&-post-category {
-		&:after {
-			@extend .pipe;
+		a {
+			margin-left: 0.25rem;
+		}
+
+		a:first-child {
+			margin-left: 0;
 		}
 	}
 
@@ -36,6 +40,12 @@
 
 		.social-twitter {
 			@extend .social-twitter-primary;
+		}
+	}
+
+	&-post-tags {
+		&:before {
+			@extend .pipe-left;
 		}
 	}
 }

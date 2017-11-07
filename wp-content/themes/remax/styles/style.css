@@ -167,7 +167,7 @@
   right: 0;
   top: 0; }
 
-.pipe, .footer-menu li:after, .top-menu li:not(:last-child):after, .single-post-category:after {
+.pipe, .pipe-left, .single-post-tags:before, .footer-menu li:after, .top-menu li:not(:last-child):after {
   background: #005898;
   content: "";
   height: 1rem;
@@ -176,6 +176,10 @@
   right: -1px;
   top: 50%;
   width: 2px; }
+
+.pipe-left, .single-post-tags:before {
+  left: -1px;
+  right: auto; }
 
 .red-hash, blockquote p:before, .blog-post-date:before, .list-stylized li:after, .top-story p:after {
   background: #dc1c2e;
@@ -659,6 +663,12 @@ footer small {
 .single-post-author {
   color: #005898;
   font: 1rem "Montserrat Semibold", sans-serif; }
+
+.single-post-category a {
+  margin-left: 0.25rem; }
+
+.single-post-category a:first-child {
+  margin-left: 0; }
 
 .single-post-content h1 {
   font-size: 1.5rem; }

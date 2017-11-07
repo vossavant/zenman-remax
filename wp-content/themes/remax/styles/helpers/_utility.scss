@@ -87,6 +87,12 @@
 	width: 2px;
 }
 
+.pipe-left {
+	@extend .pipe;
+	left: -1px;
+	right: auto;
+}
+
 .red-hash {
 	background: $remax-red;
 	height: 0.2rem;

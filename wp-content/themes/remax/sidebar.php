@@ -56,6 +56,11 @@
 						get_template_part('partials/blog-post-sidebar');
 					endwhile;
 					wp_reset_query();
+					
+				else :
+					if ($number_of_manually_selected_posts == 0) :
+						echo '<p>No related content found!</p>';
+					endif;
 				endif;
 			endif;
 			?>
