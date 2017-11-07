@@ -2,37 +2,58 @@
 	<?php if (is_single()) : ?>
 		<section>
 			<h1 class="h4 font-weight-bold icon icon-2 icon-document text-primary">Related Posts</h1>
-
-			<article class="blog-post blog-post-small d-flex py-3">
-				<div class="pr-3 w-50">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_5.jpg">
-				</div>
-				<div class="w-50">
-					<h1>Pros and Cons of Solar Panels</h1>
-					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
-				</div>
-			</article>
-			<article class="blog-post blog-post-small d-flex py-3">
-				<div class="pr-3 w-50">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_6.jpg">
-				</div>
-				<div class="w-50">
-					<h1>6 easy, affordable smart home features that could help you sell...</h1>
-					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
-				</div>
-			</article>
-			<article class="blog-post blog-post-small d-flex py-3">
-				<div class="pr-3 w-50">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_7.jpg">
-				</div>
-				<div class="w-50">
-					<h1>Buying a Home? 4 Signs It’s Time to Call An Agent</h1>
-					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
-				</div>
-			</article>
+			<?php
+			if ($manual_related_posts = get_field('related_posts_manual')) :
+				$args = array(
+					'ignore_sticky_posts' => 1,
+					'orderby' => 'post__in',
+					'post__in' => $manual_related_posts,
+					'posts_per_page' => 3,
+				);
+				
+				$query = new WP_Query($args);
+		
+				while ($query->have_posts()) :
+					$query->the_post();
+					get_template_part('partials/blog-post-sidebar');
+				endwhile;
+				wp_reset_query();
+			endif;
+	
+		
+			/**
+			 * Use tags as a basis for fetching related posts. For more details:
+			 * https://www.hongkiat.com/blog/wordpress-related-posts-without-plugins/
+			 */
+			$tags = wp_get_post_tags($post->ID);
+			
+			if ($tags) :
+				$tag_ids = array();
+				foreach ($tags as $individual_tag) :
+					$tag_ids[] = $individual_tag->term_id;
+				endforeach;
+				
+				$args = array(
+					'ignore_sticky_posts' => 1,
+					'post__not_in' => array($post->ID),
+					'posts_per_page' => 3,
+					'tag__in' => $tag_ids
+				);
+				
+				$tags_query = new WP_Query($args);
+				
+				while ($tags_query->have_posts()) :
+					$tags_query->the_post();
+					get_template_part('partials/blog-post-sidebar');
+				endwhile;
+				wp_reset_query();
+			endif;
+			?>
 		</section>
 	
-	<?php else :
+	<?php
+	// else: not a post permalink page
+	else :
 		$popular_posts = $wpdb->get_results("SELECT postid FROM wp_popularpostsdata ORDER BY pageviews DESC LIMIT 3");
 		$popular_posts_array = array();
 		
