@@ -15,6 +15,8 @@ define('LINKEDIN_URL', get_field('linkedin', 'option'));
 define('PINTEREST_URL', get_field('pinterest', 'option'));
 define('TWITTER_URL', get_field('twitter', 'option'));
 
+define('MAX_RELATED_POSTS', 3);
+
 
 /**
  * Enqueue theme styles and load in theme header
