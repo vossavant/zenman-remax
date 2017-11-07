@@ -373,50 +373,36 @@ get_header();
 <div class="py-5">
 	<section class="container pt-4">
 		<h1 class="mb-4 text-center">Real Estate Resources</h1>
-		<div class="card-deck card-deck-posts mb-4 pb-2 text-left">
-			<div class="card m-2 position-relative rounded-0">
-				<div class="card-image-wrap">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
-				</div>
-				<div class="card-body position-absolute text-white">
-					<h5 class="card-title font-weight-bold mb-1 text-white">For Buyers</h5>
-					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p class="card-text mb-2">
-						<a class="text-primary" href="#">Read More &rsaquo;</a>
-					</p>
-					<p class="card-text">11.1.17</p>
-					<p class="card-text card-tags"><a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a></p>
-				</div>
+		<?php if ($real_estate_resources = get_field('real_estate_resources')) : ?>
+			<div class="card-deck card-deck-posts mb-4 pb-2 text-left">
+				<?php
+				foreach ($real_estate_resources as $post) :
+					setup_postdata($post);
+					$first_category_name = null;
+					
+					// get the first category (assumption: each post is only in one category)
+					$post_categories = get_the_category();
+					if (!empty($post_categories)) :
+						$first_category_name = $post_categories[0]->name;
+					endif;
+					?>
+					<div class="card m-2 position-relative rounded-0">
+						<div class="card-image-wrap">
+							<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-medium'); ?>">
+						</div>
+						<div class="align-items-bottom card-body position-absolute text-white">
+							<h5 class="card-title font-weight-bold mb-1 text-white"><?= $first_category_name; ?></h5>
+							<p class="card-text mb-2"><?php the_title(); ?></p>
+							<p class="card-text mb-2">
+								<a class="text-primary" href="<?php the_permalink(); ?>">Read More &rsaquo;</a>
+							</p>
+							<time class="card-text" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('m.j.y'); ?></time>
+							<p class="card-text card-tags"><?php the_tags('', ', '); ?></p>
+						</div>
+					</div>
+				<?php endforeach; ?>
 			</div>
-			<div class="card m-2 position-relative rounded-0">
-				<div class="card-image-wrap">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
-				</div>
-				<div class="card-body position-absolute text-white">
-					<h5 class="card-title font-weight-bold mb-1 text-white">For Sellers</h5>
-					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p class="card-text mb-2">
-						<a class="text-primary" href="#">Read More &rsaquo;</a>
-					</p>
-					<p class="card-text">11.1.17</p>
-					<p class="card-text card-tags"><a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a></p>
-				</div>
-			</div>
-			<div class="card m-2 position-relative rounded-0">
-				<div class="card-image-wrap">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/house.jpg" alt="">
-				</div>
-				<div class="card-body position-absolute text-white">
-					<h5 class="card-title font-weight-bold mb-1 text-white">For Fun</h5>
-					<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<p class="card-text mb-2">
-						<a class="text-primary" href="#">Read More &rsaquo;</a>
-					</p>
-					<p class="card-text">11.1.17</p>
-					<p class="card-text card-tags"><a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a></p>
-				</div>
-			</div>
-		</div>
+		<?php endif; ?>
 		
 		<div class="pt-4 text-center">
 			<a class="btn btn-primary" href="">Read More</a>
