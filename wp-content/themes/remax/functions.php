@@ -54,6 +54,7 @@ add_theme_support('post-thumbnails', array('post'));
  * https://developer.wordpress.org/reference/functions/add_image_size/
  */
 add_image_size( 'top-story', 1024, 400, true );
+add_image_size( 'gallery-large', 900, 900, true );
 add_image_size( 'featured-large', 720, 384, true );
 add_image_size( 'featured-medium', 384, 256, true );
 add_image_size( 'featured-small', 144, 96, true );
@@ -85,6 +86,46 @@ function remax_remove_wordpress_extras() {
     wp_deregister_script('wp-embed');
 }
 add_action('init', 'remax_remove_wordpress_extras');
+
+
+/**
+ *  Enable SVG Uploads
+ */
+add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mimes) {
+	global $wp_version;
+	if ($wp_version !== '4.7.1') {
+		return $data;
+	}
+	
+	$filetype = wp_check_filetype($filename, $mimes);
+	
+	return [
+		'ext' => $filetype['ext'],
+		'type' => $filetype['type'],
+		'proper_filename' => $data['proper_filename']
+	];
+	
+}, 10, 4);
+
+function remax_cc_mime_types($mimes)
+{
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+
+add_filter('upload_mimes', 'remax_cc_mime_types');
+
+function remax_fix_svg()
+{
+	echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+        </style>';
+}
+
+add_action('admin_head', 'remax_fix_svg');
 
 
 /**
