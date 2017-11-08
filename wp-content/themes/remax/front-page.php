@@ -1,5 +1,84 @@
 <?php
+/**
+ * This template controls display of the page that is set
+ * as the "Front Page" in Settings → Reading.
+ */
 get_header();
+
+
+/**
+ * Load flexible content sections.
+ */
+if (have_rows('page_sections')) :
+	while (have_rows('page_sections')) :
+		the_row(); ?>
+		
+		<div class="<?php the_sub_field('section_background'); ?> py-5">
+		
+		<?php
+		if (have_rows('section_layout')) :
+			while (have_rows('section_layout')) :
+				the_row();
+		
+				$layout = get_row_layout();
+				
+				echo $layout . '<br>';
+			endwhile;
+		endif;
+		?>
+		
+		</div>
+		
+		<?php
+	endwhile;
+endif;
+	
+// left off here
+switch ($layout) :
+	case 'title_with_text':
+		echo 'title with text';
+		break;
+	
+	case 'text_with_image_half':
+		echo '1/2 column';
+		break;
+	
+	case 'text_with_image_third':
+		echo '1/3 column';
+		break;
+	
+	case 'text_with_image_two_thirds':
+		echo '2/3 column';
+		break;
+	
+	case 'card_deck':
+		echo 'card deck';
+		break;
+	
+	case 'form':
+		echo 'form';
+		break;
+	
+	case 'image_gallery':
+		echo 'image gallery!';
+		break;
+	
+	case 'stylized_list':
+		echo 'stylized list';
+		break;
+	
+	case 'tabbed_slider':
+		echo 'tabbed slider';
+		break;
+	
+	case 'testimonial':
+		echo 'testimonial';
+		break;
+	
+	default:
+		echo 'Invalid or no layout chosen!';
+		break;
+endswitch;
 ?>
 
 <!-- Intro -->
