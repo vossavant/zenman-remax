@@ -1,5 +1,6 @@
 // @codekit-append "gallery.js"
 // @codekit-append "nav.js"
+// @codekit-append "vendor/rmx-search.js"
 
 // make JSHint happy
 /* global console, jQuery */

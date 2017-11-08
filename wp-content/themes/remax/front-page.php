@@ -40,7 +40,8 @@ get_header();
 		</div>
 	</section>
 	
-	<section class="container pt-5">
+	<!-- Search -->
+	<section class="container py-5">
 		<div class="row">
 			<div class="col col-9 mx-auto text-center">
 				<h1 class="d-flex align-items-end justify-content-center">
@@ -48,8 +49,7 @@ get_header();
 					Start Your Journey Here
 				</h1>
 				<h2 class="font-weight-bold mb-4 pb-4 red-hash red-hash-after red-hash-center red-hash-wide">We'll Make it As Smooth as Possible</h2>
-				<script src="http://remax.com/resources_resp/js/app/ui-modules/searchwidget/rmx-search.js"></script>
-				<div id="remax_search1" class="remax_search"></div>
+				<div id="remax_search1" class="remax_search w-75"></div>
 			</div>
 		</div>
 	</section>
