@@ -12,10 +12,6 @@
 		width: 46%;
 	}
 
-	li:after {
-		@extend .red-hash;
-	}
-
 	li:before {
 		color: $gray-list-item;
 		content: counter(my-counter);

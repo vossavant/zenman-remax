@@ -94,13 +94,42 @@
 }
 
 .red-hash {
-	background: $remax-red;
-	height: 0.2rem;
-	content: "";
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 1.5rem;
+	position: relative;
+
+	&:before,
+	&-after:after {
+		background: $remax-red;
+		height: 0.2rem;
+		content: "";
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 1.5rem;
+	}
+
+	&-after:after {
+		bottom: 0;
+		top: auto;
+	}
+
+	&-after:before {
+		display: none;
+	}
+
+	&-center:before,
+	&-center.red-hash-after:after {
+		left: 50%;
+	}
+
+	&-center.red-hash-wide:before,
+	&-center.red-hash-wide.red-hash-after:after {
+		margin-left: -1.5rem;
+	}
+
+	&-wide:before,
+	&-wide.red-hash-after:after {
+		width: 3rem;
+	}
 }
 
 .shadow {

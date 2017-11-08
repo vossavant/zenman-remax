@@ -25,10 +25,5 @@ blockquote {
 		font: 30px "Montserrat Regular", sans-serif;
 		margin: 0;
 		position: relative;
-
-		&:before {
-			@extend .red-hash;
-			width: 3rem;
-		}
 	}
 }

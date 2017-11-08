@@ -17,7 +17,7 @@ get_header();
 		<div class="row justify-content-center">
 			<div class="card-deck col-xl-10">
 				<div class="card border-0 mx-5 rounded-0 shadow">
-					<div class="card-body">
+					<div class="card-body pt-4 px-5 pb-5">
 						<h3 class="card-title mb-4 text-center">Buyers Guide</h3>
 						<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_BuyersGuide.svg" width="120">
 						<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
@@ -27,7 +27,7 @@ get_header();
 					</div>
 				</div>
 				<div class="card border-0 mx-5 rounded-0 shadow">
-					<div class="card-body">
+					<div class="card-body pt-4 px-5 pb-5">
 						<h3 class="card-title mb-4 text-center">Sellers Guide</h3>
 						<img class="d-block mx-auto" src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_SellersGuide.svg" width="120">
 						<p class="card-text my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec ex condimentum, lobortis eros suscipit, imperdiet.</p>
@@ -42,12 +42,12 @@ get_header();
 	
 	<section class="container pt-5">
 		<div class="row">
-			<div class="col col-9 mx-auto">
-				<h1 class="mb-4 text-center">
+			<div class="col col-9 mx-auto text-center">
+				<h1 class="d-flex align-items-end justify-content-center">
 					<img src="<?php bloginfo('template_url'); ?>/images/fpo/Icon_StartJourney.svg" width="85">
 					Start Your Journey Here
 				</h1>
-				<h2>We'll Make it As Smooth as Possible</h2>
+				<h2 class="font-weight-bold mb-4 pb-4 red-hash red-hash-after red-hash-center red-hash-wide">We'll Make it As Smooth as Possible</h2>
 				<script src="http://remax.com/resources_resp/js/app/ui-modules/searchwidget/rmx-search.js"></script>
 				<div id="remax_search1" class="remax_search"></div>
 			</div>
@@ -228,7 +228,7 @@ get_header();
 		<div class="row">
 			<div class="col col-9 mx-auto">
 				<blockquote class="mb-0">
-					<p class="pt-3">This is a testimonial quote consectetur adipiscing elit. Integer dapibus efficitur ligula vulputate ultricies. Id odio eros. Integer tristique varius nibh eu convallis.</p>
+					<p class="pt-3 red-hash red-hash-wide">This is a testimonial quote consectetur adipiscing elit. Integer dapibus efficitur ligula vulputate ultricies. Id odio eros. Integer tristique varius nibh eu convallis.</p>
 				</blockquote>
 			</div>
 		</div>
@@ -250,10 +250,18 @@ get_header();
 		<div class="row">
 			<div class="col">
 				<ol class="d-flex flex-wrap justify-content-between list-stylized list-unstyled mb-0">
-					<li>The borrower/owner reinstates the loan by paying off the default amount during a grace period determined by state law. This grace period is also known as pre-foreclosure.</li>
-					<li>The borrower/owner sells the property to a third party during the pre-foreclosure period. The sale allows the borrower/owner to pay off the loan and avoid having a foreclosure on his or her credit history.</li>
-					<li>A third party buys the property at a public auction at the end of the pre-foreclosure period.</li>
-					<li>The lender takes ownership of the property, usually with the intent to re-sell it on the open market. The lender can take ownership either through an agreement with the borrower/owner during pre-foreclosure, via a short sale foreclosure or by buying back the property at the public auction. Properties repossessed by the lender are also known as bank-owned or REO properties (Real Estate Owned by the lender).</li>
+					<li class="pt-0">
+						<p class="pt-2 red-hash">The borrower/owner reinstates the loan by paying off the default amount during a grace period determined by state law. This grace period is also known as pre-foreclosure.</p>
+					</li>
+					<li class="pt-0">
+						<p class="pt-2 red-hash">The borrower/owner sells the property to a third party during the pre-foreclosure period. The sale allows the borrower/owner to pay off the loan and avoid having a foreclosure on his or her credit history.</p>
+					</li>
+					<li class="pt-0">
+						<p class="pt-2 red-hash">A third party buys the property at a public auction at the end of the pre-foreclosure period.</p>
+					</li>
+					<li class="pt-0">
+						<p class="pt-2 red-hash">The lender takes ownership of the property, usually with the intent to re-sell it on the open market. The lender can take ownership either through an agreement with the borrower/owner during pre-foreclosure, via a short sale foreclosure or by buying back the property at the public auction. Properties repossessed by the lender are also known as bank-owned or REO properties (Real Estate Owned by the lender).</p>
+					</li>
 				</ol>
 
 				<div class="text-center">

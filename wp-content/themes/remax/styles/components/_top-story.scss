@@ -15,12 +15,6 @@
 
 	p {
 		font-family: "Montserrat Regular", sans-serif;
-
-		&:after {
-			@extend .red-hash;
-			bottom: 0;
-			top: auto;
-		}
 	}
 
 	&-content {

@@ -181,14 +181,27 @@
   left: -1px;
   right: auto; }
 
-.red-hash, blockquote p:before, .blog-post-date:before, .list-stylized li:after, .top-story p:after {
-  background: #dc1c2e;
-  height: 0.2rem;
-  content: "";
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1.5rem; }
+.red-hash {
+  position: relative; }
+  .red-hash:before, .red-hash-after:after {
+    background: #dc1c2e;
+    height: 0.2rem;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1.5rem; }
+  .red-hash-after:after {
+    bottom: 0;
+    top: auto; }
+  .red-hash-after:before {
+    display: none; }
+  .red-hash-center:before, .red-hash-center.red-hash-after:after {
+    left: 50%; }
+  .red-hash-center.red-hash-wide:before, .red-hash-center.red-hash-wide.red-hash-after:after {
+    margin-left: -1.5rem; }
+  .red-hash-wide:before, .red-hash-wide.red-hash-after:after {
+    width: 3rem; }
 
 .shadow {
   box-shadow: 0 0 2rem rgba(86, 86, 86, 0.1); }
@@ -215,6 +228,9 @@ h1, h2, h3, h4,
 
 h1, .h1 {
   font-size: 2.1875rem; }
+
+h2, .h2 {
+  font-size: 1.875rem; }
 
 h3, .h3 {
   font-size: 1.5rem; }
@@ -246,8 +262,6 @@ blockquote {
     font: 30px "Montserrat Regular", sans-serif;
     margin: 0;
     position: relative; }
-    blockquote p:before {
-      width: 3rem; }
 
 .blog-post {
   font: 1rem/1 "Montserrat Regular", sans-serif; }
@@ -582,9 +596,6 @@ nav ul {
     font: 1rem "Montserrat Regular", sans-serif; }
   .top-story p {
     font-family: "Montserrat Regular", sans-serif; }
-    .top-story p:after {
-      bottom: 0;
-      top: auto; }
   .top-story-content {
     bottom: 0;
     left: auto;
