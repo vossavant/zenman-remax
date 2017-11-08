@@ -49,7 +49,7 @@ get_header();
 					Start Your Journey Here
 				</h1>
 				<h2 class="font-weight-bold mb-4 pb-4 red-hash red-hash-after red-hash-center red-hash-wide">We'll Make it As Smooth as Possible</h2>
-				<div id="remax_search1" class="remax_search w-75"></div>
+				<div id="remax_search1" class="remax_search mx-auto w-75"></div>
 			</div>
 		</div>
 	</section>
@@ -407,50 +407,56 @@ get_header();
 	</div>
 </div>
 
-<!-- Real Estate Resources -->
-<div class="py-5">
-	<section class="container pt-4">
-		<div class="row">
-			<div class="col">
-				<h1 class="mb-4 text-center">Real Estate Resources</h1>
-				<?php if ($real_estate_resources = get_field('real_estate_resources')) : ?>
-					<div class="card-deck card-deck-posts mb-4 pb-2 text-left">
-						<?php
-						foreach ($real_estate_resources as $post) :
-							setup_postdata($post);
-							$first_category_name = null;
-							
-							// get the first category (assumption: each post is only in one category)
-							$post_categories = get_the_category();
-							if (!empty($post_categories)) :
-								$first_category_name = $post_categories[0]->name;
-							endif;
+<?php if (get_field('resources_visibility')) : ?>
+	<div class="py-5">
+		<section class="container pt-4">
+			<div class="row">
+				<div class="col">
+					<h1 class="mb-4 text-center"><?php the_field('resources_section_title'); ?></h1>
+					<?php if ($real_estate_resources = get_field('resources_blog_posts')) : ?>
+						<div class="card-deck card-deck-posts mb-4 pb-2 text-left">
+							<?php
+							foreach ($real_estate_resources as $post) :
+								setup_postdata($post);
+								$first_category_name = null;
+								
+								// get the first category (assumption: each post is only in one category)
+								$post_categories = get_the_category();
+								if (!empty($post_categories)) :
+									$first_category_name = $post_categories[0]->name;
+								endif;
+								?>
+								<div class="card m-2 position-relative rounded-0">
+									<div class="card-image-wrap">
+										<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-medium'); ?>">
+									</div>
+									<div class="align-items-bottom card-body position-absolute text-white">
+										<h5 class="card-title font-weight-bold mb-1 text-white"><?= $first_category_name; ?></h5>
+										<p class="card-text mb-2"><?php the_title(); ?></p>
+										<p class="card-text mb-2">
+											<a class="text-primary" href="<?php the_permalink(); ?>">Read More &rsaquo;</a>
+										</p>
+										<time class="card-text" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('m.j.y'); ?></time>
+										<p class="card-text card-tags"><?php the_tags('', ', '); ?></p>
+									</div>
+								</div>
+								<?php
+							endforeach;
+							wp_reset_postdata();
 							?>
-							<div class="card m-2 position-relative rounded-0">
-								<div class="card-image-wrap">
-									<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-medium'); ?>">
-								</div>
-								<div class="align-items-bottom card-body position-absolute text-white">
-									<h5 class="card-title font-weight-bold mb-1 text-white"><?= $first_category_name; ?></h5>
-									<p class="card-text mb-2"><?php the_title(); ?></p>
-									<p class="card-text mb-2">
-										<a class="text-primary" href="<?php the_permalink(); ?>">Read More &rsaquo;</a>
-									</p>
-									<time class="card-text" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('m.j.y'); ?></time>
-									<p class="card-text card-tags"><?php the_tags('', ', '); ?></p>
-								</div>
-							</div>
-						<?php endforeach; ?>
-					</div>
-				<?php endif; ?>
-				
-				<div class="pt-4 text-center">
-					<a class="btn btn-primary" href="">Read More</a>
+						</div>
+					<?php endif; ?>
+					
+					<?php if ($button_text = get_field('resources_button_text')) : ?>
+						<div class="pt-4 text-center">
+							<a class="btn btn-primary" href="<?= get_permalink(get_option('page_for_posts')); ?>"><?= $button_text; ?></a>
+						</div>
+					<?php endif; ?>
 				</div>
 			</div>
-		</div>
-	</section>
-</div>
+		</section>
+	</div>
+<?php endif; ?>
 
 <?php
 get_footer();

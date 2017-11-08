@@ -28,7 +28,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<img class="my-4" src="<?php bloginfo('template_url'); ?>/images/logo/logo-white@2x.png" width="250">
+						<?php if ($footer_logo = get_field('footer_logo', 'option')) : ?>
+							<img class="my-4" src="<?= $footer_logo; ?>" width="250">
+						<?php endif; ?>
 
 						<ul class="footer-social list-unstyled mb-3">
 							<?php if (FACEBOOK_URL) : ?>
@@ -72,9 +74,11 @@
 						wp_nav_menu($args);
 						?>
 
-						<small class="d-block my-4">
-							Each Office Independently Owned and Operated. RE/MAX, LLC is an Equal Opportunity Employer and supports the Fair Housing Act. &copy; <?= date('Y');?> RE/MAX, LLC. All Rights Reserved. Powered by Homes.com.
-						</small>
+						<?php if ($fine_print = get_field('footer_fine_print', 'option')) : ?>
+							<small class="d-block mx-auto my-4 w-75">
+								<?= $fine_print; ?>
+							</small>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
