@@ -104,8 +104,7 @@
   height: 100vh;
   position: relative; }
 
-.parallax-section .parallax-bg {
-  background-size: 100%;
+.parallax-section .bg-parallax {
   bottom: 0;
   left: 0;
   position: absolute;
