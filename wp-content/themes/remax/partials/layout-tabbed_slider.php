@@ -1,7 +1,10 @@
-<?php if (have_rows('tabs')) : ?>
+<?php
+$tab_slider_title = get_sub_field('title');
+
+if (have_rows('tabs')) : ?>
 	<div class="row">
 		<div class="col">
-			<h1 class="mb-4 text-center"><?php the_sub_field('title'); ?></h1>
+			<h1 class="mb-4 text-center"><?= $tab_slider_title; ?></h1>
 
 			<div class="tab-slider mt-5">
 				<?php
