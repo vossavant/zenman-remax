@@ -144,6 +144,43 @@ add_action('init', 'remax_register_custom_menus');
 
 
 /**
+ *  Creates a shortcode for inserting button-style links
+ *
+ *  @param $atts
+ *  @param null $content
+ *  @return string
+ */
+function remax_button_shortcode($atts, $content = null) {
+	$values = shortcode_atts(
+		array(
+			'class' => 'primary',
+			'target' => '_self',
+			'url' => '#'
+		), $atts
+	);
+	
+	return '<a class="btn btn-' . $values['class'] . '" href="' . esc_attr($values['url']) . '" target="' . esc_attr($values['target']) . '">' . $content . '</a>';
+}
+add_shortcode('button', 'remax_button_shortcode');
+
+
+/**
+ * Parses shortcodes contained with ACF custom fields. Docs:
+ * https://www.advancedcustomfields.com/resources/acf-format_value/
+ *
+ * @param $value
+ * @param $post_id
+ * @param $field
+ * @return string
+ */
+function remax_acf_format_value( $value, $post_id, $field ) {
+	$value = do_shortcode($value);
+	return $value;
+}
+add_filter('acf/format_value/type=textarea', 'remax_acf_format_value', 10, 3);
+
+
+/**
  * Enables widget-ready areas in the footer
  */
 if (function_exists('register_sidebar')) {
