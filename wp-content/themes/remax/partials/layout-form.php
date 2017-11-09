@@ -28,7 +28,7 @@ $icon = get_sub_field('icon');
 		<?php endif; ?>
 
 		<?php if ($text = get_sub_field('text')) : ?>
-			<div class="mb-4">
+			<div class="mb-5">
 				<?= $text; ?>
 			</div>
 		<?php endif; ?>

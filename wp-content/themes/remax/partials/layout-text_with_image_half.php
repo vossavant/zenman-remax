@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col">
-		<h1 class="mb-4 text-center"><?php the_sub_field('title'); ?></h1>
+		<h1 class="mb-5 text-center"><?php the_sub_field('title'); ?></h1>
 	</div>
 </div>
 <div class="row">

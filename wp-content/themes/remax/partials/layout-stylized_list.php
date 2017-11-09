@@ -7,7 +7,7 @@
 					the_row();
 					?>
 					<li class="pt-0">
-						<p class="pt-2 red-hash"><?php the_sub_field('content'); ?></p>
+						<p class="mb-0 pt-2 red-hash"><?php the_sub_field('content'); ?></p>
 					</li>
 					<?php
 				endwhile;
