@@ -1,5 +1,8 @@
-<?php if ($images = get_sub_field('gallery')) : ?>
-	<div class="row">
+<?php
+if ($images = get_sub_field('gallery')) :
+	include 'whitespace.php';
+	?>
+	<div class="row<?= $whitespace; ?>">
 		<div class="col">
 			<h1 class="mb-4 text-center"><?php the_sub_field('title'); ?></h1>
 			<div class="gallery d-flex flex-wrap">

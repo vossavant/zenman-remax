@@ -1,4 +1,6 @@
 <?php
+include 'whitespace.php';
+
 switch ($card_count = count(get_sub_field('cards'))) :
 	case 1:
 		$column_width = 6;
@@ -18,7 +20,7 @@ endswitch;
 
 if (have_rows('cards')) : ?>
 	
-	<div class="row justify-content-center">
+	<div class="row justify-content-center<?= $whitespace; ?>">
 		<div class="card-deck col-<?= $column_width; ?>">
 	
 			<?php while (have_rows('cards')) :

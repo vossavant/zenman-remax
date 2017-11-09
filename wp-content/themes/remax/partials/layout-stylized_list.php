@@ -1,5 +1,9 @@
-<?php if (have_rows('list_items')) : ?>
-	<div class="row">
+<?php
+include 'whitespace.php';
+
+if (have_rows('list_items')) :
+	?>
+	<div class="row<?= $whitespace; ?>">
 		<div class="col">
 			<ol class="d-flex flex-wrap justify-content-between list-stylized list-unstyled mb-0">
 				<?php

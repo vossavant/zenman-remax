@@ -1,8 +1,10 @@
 <?php
+include 'whitespace.php';
+
 $tab_slider_title = get_sub_field('title');
 
 if (have_rows('tabs')) : ?>
-	<div class="row">
+	<div class="row<?= $whitespace; ?>">
 		<div class="col">
 			<h1 class="mb-4 text-center"><?= $tab_slider_title; ?></h1>
 

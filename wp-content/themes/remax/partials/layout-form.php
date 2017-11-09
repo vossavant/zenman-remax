@@ -1,9 +1,11 @@
 <?php
+include 'whitespace.php';
+
 $form = get_sub_field('form');
 $icon = get_sub_field('icon');
 ?>
 
-<div class="row">
+<div class="row<?= $whitespace; ?>">
 	<div class="col col-9 mx-auto text-center">
 		<?php if ($form == 'lead-capture') : ?>
 			<h1 class="mb-4 text-center">
