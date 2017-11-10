@@ -68,7 +68,9 @@
 				</div>
 				<div class="container position-relative pt-3 text-center">
 					<a class="logo logo-large mt-1" href="<?= home_url(); ?>">RE/MAX Home</a>
-					<?= get_search_form(); ?>
+					<div class="header-search-form position-absolute">
+						<?= get_search_form(); ?>
+					</div>
 				</div>
 			<?php endif; ?>
 	
