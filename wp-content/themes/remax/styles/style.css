@@ -734,6 +734,25 @@ footer small {
 .single-post-meta .blog-post-social {
   float: none !important; }
 
+.wpcf7-form label {
+  font-size: 0; }
+
+.wpcf7-form .wpcf7-form-control {
+  font-size: inherit; }
+
+.wpcf7-form .wpcf7-submit {
+  transition: background 250ms ease-in-out;
+  background: #dc1c2e;
+  border: 0;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+  font: 1rem "Montserrat Regular", sans-serif;
+  line-height: 3rem;
+  padding: 0 1.5rem; }
+  .wpcf7-form .wpcf7-submit:hover {
+    background: #af1625; }
+
 .rmx-widget-button {
   transition: background 250ms ease-in-out;
   background: #dc1c2e;

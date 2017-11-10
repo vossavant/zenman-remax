@@ -1,0 +1,25 @@
+.wpcf7-form {
+	label {
+		font-size: 0;
+	}
+
+	.wpcf7-form-control {
+		font-size: inherit;
+	}
+
+	.wpcf7-submit {
+		@include transition(background);
+		background: $remax-red;
+		border: 0;
+		border-radius: 1.5rem;
+		color: white;
+		cursor: pointer;
+		font: 1rem "Montserrat Regular", sans-serif;
+		line-height: 3rem;
+		padding: 0 1.5rem;
+
+		&:hover {
+			background: darken($remax-red, 10%);
+		}
+	}
+}
