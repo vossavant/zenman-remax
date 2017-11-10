@@ -10,7 +10,7 @@ if ($images = get_sub_field('gallery')) :
 				<?php foreach ($images as $image) : ?>
 					
 					<figure class="mb-0 p-2 w-25">
-						<div class="gallery-image-mask">
+						<div class="image-grow-on-hover">
 							<img class="mw-100" src="<?= $image['sizes']['gallery-large']; ?>">
 						</div>
 						<figcaption>

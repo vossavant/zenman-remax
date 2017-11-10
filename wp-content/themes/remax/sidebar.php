@@ -92,17 +92,7 @@
 				<?php
 				while ($popular_posts->have_posts()) :
 					$popular_posts->the_post();
-					?>
-					<article class="blog-post blog-post-small d-flex py-3">
-						<div class="pr-3 w-50">
-							<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-small'); ?>">
-						</div>
-						<div class="w-50">
-							<h1><?php the_title(); ?></h1>
-							<a class="blog-post-permalink" href="<?php the_permalink(); ?>">Read More &rsaquo;</a>
-						</div>
-					</article>
-					<?php
+					get_template_part('partials/blog-post-sidebar');
 				endwhile;
 				wp_reset_postdata();
 				?>
@@ -118,27 +108,33 @@
 		<section class="mb-4 pb-2">
 			<h1 class="h4 font-weight-bold icon icon-3 icon-chat text-primary">On Social</h1>
 			
-			<article class="blog-post blog-post-small d-flex py-3">
-				<div class="pr-3 w-50">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_5.jpg">
+			<article class="blog-post blog-post-small gallery d-flex mx-0 py-3">
+				<div class="image-grow-on-hover mr-3 position-relative">
+					<a href="<?php the_permalink(); ?>">
+						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_5.jpg">
+					</a>
 				</div>
 				<div class="w-50">
 					<h1>Pros and Cons of Solar Panels</h1>
 					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
 				</div>
 			</article>
-			<article class="blog-post blog-post-small d-flex py-3">
-				<div class="pr-3 w-50">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_6.jpg">
+			<article class="blog-post blog-post-small gallery d-flex mx-0 py-3">
+				<div class="image-grow-on-hover mr-3 position-relative">
+					<a href="<?php the_permalink(); ?>">
+						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_6.jpg">
+					</a>
 				</div>
 				<div class="w-50">
 					<h1>6 easy, affordable smart home features that could help you sell...</h1>
 					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
 				</div>
 			</article>
-			<article class="blog-post blog-post-small d-flex py-3">
-				<div class="pr-3 w-50">
-					<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_7.jpg">
+			<article class="blog-post blog-post-small gallery d-flex mx-0 py-3">
+				<div class="image-grow-on-hover mr-3 position-relative">
+					<a href="<?php the_permalink(); ?>">
+						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_7.jpg">
+					</a>
 				</div>
 				<div class="w-50">
 					<h1>Buying a Home? 4 Signs It’s Time to Call An Agent</h1>

@@ -20,7 +20,7 @@
 					<?php while (have_posts()) : the_post(); ?>
 					
 						<article class="d-flex mb-5 search-result">
-							<div class="gallery-image-mask mr-4 position-relative">
+							<div class="image-grow-on-hover mr-4 position-relative">
 								<a href="<?php the_permalink(); ?>">
 									<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-small'); ?>">
 								</a>

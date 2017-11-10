@@ -61,6 +61,15 @@
 	font-weight: normal !important;
 }
 
+.image-grow-on-hover {
+	overflow: hidden;
+
+	img {
+		@include transition();
+		vertical-align: bottom;
+	}
+}
+
 .overflow-hidden {
 	overflow: hidden;
 }

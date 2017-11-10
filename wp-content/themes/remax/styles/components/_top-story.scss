@@ -5,8 +5,12 @@
 		color: white;
 	}
 
-	a {
-		font: 1rem "Montserrat Regular", sans-serif;
+	a, .read-more {
+		@include transition(color);
+
+		&:hover {
+			color: $remax-red;
+		}
 	}
 
 	h1 {
@@ -15,6 +19,10 @@
 
 	p {
 		font-family: "Montserrat Regular", sans-serif;
+	}
+
+	.read-more {
+		font: 1rem "Montserrat Regular", sans-serif;
 	}
 
 	&-content {

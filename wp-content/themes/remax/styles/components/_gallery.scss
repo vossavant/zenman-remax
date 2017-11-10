@@ -6,18 +6,8 @@
 	}
 
 	figure {
-		&.active .gallery-image-mask {
+		&.active .image-grow-on-hover {
 			border: 1px solid $remax-red;
-		}
-	}
-
-	img {
-		transition: all .2s ease-in-out;
-
-		&:hover {
-			cursor: pointer;
-			opacity: 0.5;
-			transform: scale(1.1);
 		}
 	}
 
@@ -46,10 +36,6 @@
 			right: 0.75rem;
 			top: 0.75rem;
 		}
-	}
-
-	&-image-mask {
-		overflow: hidden;
 	}
 
 	&-placeholder {

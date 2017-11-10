@@ -153,6 +153,12 @@
   font-family: "Montserrat Bold", sans-serif !important;
   font-weight: normal !important; }
 
+.image-grow-on-hover {
+  overflow: hidden; }
+  .image-grow-on-hover img {
+    transition: all 250ms ease-in-out;
+    vertical-align: bottom; }
+
 .overflow-hidden {
   overflow: hidden; }
 
@@ -215,6 +221,17 @@ a {
   color: #dc1c2e; }
   a:focus {
     outline: none; }
+  a:hover {
+    text-decoration: none; }
+    a:hover h4, a:hover .h4, a:hover .read-more {
+      color: #dc1c2e; }
+    a:hover .image-grow-on-hover img {
+      opacity: 0.5;
+      transform: scale(1.1); }
+    a:hover .read-more {
+      font-family: "Montserrat Bold", sans-serif; }
+  a h4, a .h4, a .read-more {
+    transition: all 250ms ease-in-out; }
 
 body {
   color: #333333;
@@ -319,8 +336,16 @@ blockquote {
   color: #dc1c2e;
   cursor: pointer; }
 
+.card-deck-posts a:hover .card-body {
+  bottom: 0.25rem; }
+
+.card-deck-posts .card-image-wrap:before {
+  z-index: 1; }
+
 .card-deck-posts .card-body {
-  bottom: 0; }
+  transition: bottom 250ms ease-in-out;
+  bottom: 0;
+  z-index: 2; }
 
 .card-deck-posts .card-text {
   font: 1rem "Montserrat Regular", sans-serif; }
@@ -361,14 +386,8 @@ blockquote {
   margin: 0 -0.5rem; }
   .gallery figcaption {
     display: none; }
-  .gallery figure.active .gallery-image-mask {
+  .gallery figure.active .image-grow-on-hover {
     border: 1px solid #dc1c2e; }
-  .gallery img {
-    transition: all .2s ease-in-out; }
-    .gallery img:hover {
-      cursor: pointer;
-      opacity: 0.5;
-      transform: scale(1.1); }
   .gallery .current-photo-details {
     background: #ebebeb;
     border: 1px solid #dc1c2e;
@@ -386,8 +405,6 @@ blockquote {
       position: absolute;
       right: 0.75rem;
       top: 0.75rem; }
-  .gallery-image-mask {
-    overflow: hidden; }
   .gallery-placeholder {
     line-height: 0; }
 
@@ -437,10 +454,14 @@ body .mega-menu {
     body .mega-menu a:after {
       display: none; }
     body .mega-menu a.mega-menu-cat-link {
+      transition: all 250ms ease-in-out;
       background: white;
       border: 4px solid #dc1c2e;
       font: 1.125rem/2.25 "Montserrat Regular", sans-serif;
       min-width: 20rem; }
+    body .mega-menu a.mega-menu-cat-link:hover {
+      background: #dc1c2e;
+      color: white !important; }
   body .mega-menu img {
     height: auto;
     max-width: 100%; }
@@ -586,10 +607,14 @@ nav ul {
   height: 25rem; }
   .top-story a, .top-story h1, .top-story p {
     color: white; }
-  .top-story a {
-    font: 1rem "Montserrat Regular", sans-serif; }
+  .top-story a, .top-story .read-more {
+    transition: color 250ms ease-in-out; }
+    .top-story a:hover, .top-story .read-more:hover {
+      color: #dc1c2e; }
   .top-story p {
     font-family: "Montserrat Regular", sans-serif; }
+  .top-story .read-more {
+    font: 1rem "Montserrat Regular", sans-serif; }
   .top-story-content {
     bottom: 0;
     left: auto;
@@ -609,6 +634,8 @@ footer small {
   .footer-menu a {
     color: white;
     padding: 1.25rem; }
+    .footer-menu a:hover {
+      text-decoration: underline; }
   .footer-menu li {
     display: inline-block;
     position: relative; }
@@ -621,6 +648,8 @@ footer small {
   font: 1rem "Montserrat Semibold", sans-serif; }
   .footer-top a {
     color: white; }
+    .footer-top a:hover {
+      text-decoration: underline; }
   .footer-top h3 {
     color: white;
     font: 1rem "Montserrat Semibold", sans-serif;
@@ -662,6 +691,7 @@ footer small {
   overflow: auto; }
 
 .top-menu a {
+  transition: all 250ms ease-in-out;
   font: 1rem "Montserrat Semibold", sans-serif;
   display: inline-block;
   line-height: 3rem;

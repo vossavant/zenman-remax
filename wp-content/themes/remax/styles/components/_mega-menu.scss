@@ -33,10 +33,16 @@ body .mega-menu {
 		}
 
 		&.mega-menu-cat-link {
+			@include transition();
 			background: white;
 			border: 4px solid $remax-red;
 			font: 1.125rem/2.25 "Montserrat Regular", sans-serif;
 			min-width: 20rem;
+		}
+
+		&.mega-menu-cat-link:hover {
+			background: $remax-red;
+			color: white !important;
 		}
 	}
 

@@ -85,7 +85,7 @@ get_header();
 							endif;
 							?>
 							<article class="col-6 blog-post p-3 pb-5">
-								<div class="gallery-image-mask position-relative">
+								<div class="image-grow-on-hover position-relative">
 									<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-medium'); ?>">
 									<div class="blog-post-meta d-flex align-items-center justify-content-between p-3">
 										<?php if (!empty($first_category_name)) : ?>

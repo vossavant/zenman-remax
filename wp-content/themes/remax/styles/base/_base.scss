@@ -10,6 +10,24 @@ a {
 	}
 
 	&:hover {
+		text-decoration: none;
+
+		h4, .h4, .read-more {
+			color: $remax-red;
+		}
+
+		.image-grow-on-hover img {
+			opacity: 0.5;
+			transform: scale(1.1);
+		}
+
+		.read-more {
+			font-family: "Montserrat Bold", sans-serif;
+		}
+	}
+
+	h4, .h4, .read-more {
+		@include transition();
 	}
 }
 

@@ -264,15 +264,17 @@ class Walker_Simple_Example extends Walker
 		$mega_menu_html = '';
 		
 		if ($posts = get_posts($posts_in_category)) {
-			$mega_menu_html .= '<ul class="mega-menu border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 gallery text-center pb-3 px-1">';
+			$mega_menu_html .= '<ul class="mega-menu border border-primary border-top-0 border-right-0 border-bottom-4 border-left-0 text-center pb-3 px-1">';
 			
 			foreach ($posts as $post) :
 				setup_postdata($post);
 				$mega_menu_html .=
 					'<li class="col mt-1 p-1">
-						<div class="gallery-image-mask">' . get_the_post_thumbnail($post->ID, 'featured-medium') . '</div>
-						<h4 class="mt-3 mx-3 mb-0">' . get_the_title() . '</h4>
-						<a class="p-4" href="' . get_permalink() . '">Read More &rsaquo;</a>
+						<a href="' . get_permalink() . '">
+							<div class="image-grow-on-hover">' . get_the_post_thumbnail($post->ID, 'featured-medium') . '</div>
+							<h4 class="mt-3 mx-3 mb-0">' . get_the_title() . '</h4>
+							<div class="p-4 read-more">Read More &rsaquo;</div>
+						</a>
 					</li>';
 			endforeach;
 			

@@ -11,6 +11,10 @@ footer {
 	a {
 		color: white;
 		padding: 1.25rem;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	li {
@@ -33,6 +37,10 @@ footer {
 
 	a {
 		color: white;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	h3 {
