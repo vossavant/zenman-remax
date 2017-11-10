@@ -129,6 +129,20 @@ add_action('admin_head', 'remax_fix_svg');
 
 
 /**
+ * Adjusts default excerpt length.
+ *
+ * @param $length
+ * @return int
+ */
+function remax_custom_excerpt_length($length)
+{
+	return 25;
+}
+
+add_filter('excerpt_length', 'remax_custom_excerpt_length', 999);
+
+
+/**
  * Registers custom menus, which are editable under Appearance > Menus
  */
 function remax_register_custom_menus() {
