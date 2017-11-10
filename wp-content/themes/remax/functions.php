@@ -118,11 +118,11 @@ add_action('init', 'remax_register_custom_menus');
 
 
 /**
- *  Creates a shortcode for inserting button-style links
+ * Creates a shortcode for inserting button-style links
  *
- *  @param $atts
- *  @param null $content
- *  @return string
+ * @param $atts
+ * @param null $content
+ * @return string
  */
 function remax_button_shortcode($atts, $content = null) {
 	$values = shortcode_atts(
@@ -136,6 +136,20 @@ function remax_button_shortcode($atts, $content = null) {
 	return '<a class="btn btn-' . $values['class'] . '" href="' . esc_attr($values['url']) . '" target="' . esc_attr($values['target']) . '">' . $content . '</a>';
 }
 add_shortcode('button', 'remax_button_shortcode');
+
+
+/**
+ * Creates a shortcode for centering content (useful when editing
+ * in a non-WYSIWYG field)
+ *
+ * @param $atts
+ * @param null $content
+ * @return string
+ */
+function remax_center_shortcode($atts, $content = null) {
+	return '<div class="text-center">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('center', 'remax_center_shortcode');
 
 
 /**
