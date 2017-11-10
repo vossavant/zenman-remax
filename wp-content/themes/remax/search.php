@@ -15,7 +15,7 @@
 			
 			<?php if (have_posts()) : ?>
 				
-				<div class="gallery pt-5">
+				<div class="gallery mx-0 pt-5">
 				
 					<?php while (have_posts()) : the_post(); ?>
 					
