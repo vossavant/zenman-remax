@@ -1,4 +1,29 @@
 <?php
+/**
+ * Comments Template
+ *
+ * Controls display of comments on single blog posts and pages
+ * (if pages have comments enabled). Called from `single.php`
+ * with the `comments_template()` method.
+ *
+ * Documentation:
+ * https://developer.wordpress.org/reference/functions/comments_template/
+ */
+?>
+
+<section class="mt-5">
+	<h1 class="h3">
+		<?php comments_number('No comments yet', '1 comment', '% comments'); ?>
+	</h1>
+	
+	<?php if (have_comments()) : ?>
+		<ul class="list-unstyled" id="comment-list">
+			<?php wp_list_comments(); ?>
+		</ul>
+	<?php endif; ?>
+</section>
+
+<?php
 $args = array(
 	'class_form' => 'form-comment',
 	'class_submit' => 'btn btn-primary mt-3',

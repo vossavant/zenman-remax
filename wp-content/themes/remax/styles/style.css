@@ -355,6 +355,15 @@ blockquote {
   color: initial;
   position: absolute; }
 
+.comment {
+  border-bottom: 1px dotted #ebebeb;
+  margin: 1rem 0;
+  padding: 1rem 0; }
+
+textarea {
+  height: 12rem;
+  resize: none; }
+
 .form-comment .form-submit {
   margin: 0; }
 
@@ -720,6 +729,3 @@ footer small {
 
 .single-post-meta .blog-post-social {
   float: none !important; }
-
-.comment-reply-title {
-  font: 1rem "Montserrat Semibold", sans-serif; }
