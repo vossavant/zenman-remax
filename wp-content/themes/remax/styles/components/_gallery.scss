@@ -9,6 +9,11 @@
 		&.active .image-grow-on-hover {
 			border: 1px solid $remax-red;
 		}
+
+		&:hover .image-grow-on-hover img {
+			opacity: 0.5;
+			transform: scale(1.1);
+		}
 	}
 
 	.current-photo-details {

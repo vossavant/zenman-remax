@@ -1,4 +1,5 @@
 textarea {
+	border-radius: 1rem !important;
 	height: 12rem;
 	resize: none;
 }
@@ -9,11 +10,9 @@ textarea {
 	}
 }
 
-.form-inline {
-	.form-control {
-		border-radius: 2rem;
-		width: 17.5rem;
-	}
+.form-control {
+	border-radius: 2rem;
+	min-width: 17.5rem;
 }
 
 .form-search {
