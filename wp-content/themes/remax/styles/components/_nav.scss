@@ -55,10 +55,15 @@ nav ul {
 label[for="mobile-nav"] {
 	background: url('../images/icon/menu.svg');
 	content: "";
+	display: block;
 	float: right;
 	height: 48px;
 	margin-bottom: -0.5rem;
 	width: 48px;
+
+	@include breakpoint('lg') {
+		display: none;
+	}
 }
 
 .mobile-menu-toggle {

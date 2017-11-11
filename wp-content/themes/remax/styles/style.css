@@ -94,8 +94,7 @@
 
 .parallax-wrapper {
   overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px; }
+  overflow-y: auto; }
 
 .parallax-section {
   align-items: center;
@@ -296,10 +295,13 @@ blockquote {
     right: -13rem;
     top: auto; }
   blockquote p {
-    font: 1.25rem "Montserrat Regular", sans-serif;
+    font: 1rem "Montserrat Regular", sans-serif;
     margin: 0;
     position: relative; }
     @media (min-width: 576px) {
+      blockquote p {
+        font-size: 1.25rem; } }
+    @media (min-width: 768px) {
       blockquote p {
         font-size: 1.5rem; } }
     @media (min-width: 992px) {
@@ -582,10 +584,14 @@ nav ul {
 label[for="mobile-nav"] {
   background: url("../images/icon/menu.svg");
   content: "";
+  display: block;
   float: right;
   height: 48px;
   margin-bottom: -0.5rem;
   width: 48px; }
+  @media (min-width: 992px) {
+    label[for="mobile-nav"] {
+      display: none; } }
 
 .mobile-menu-toggle {
   display: none; }

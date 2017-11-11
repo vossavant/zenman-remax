@@ -30,8 +30,8 @@
 <body <?php body_class($post->post_name); ?>>
 	<div class="parallax-wrapper">
 		<header>
-			<div class="container d-flex align-items-center justify-content-between position-relative pt-3">
-				<?php if (is_front_page()) : ?>
+			<?php if (is_front_page()) : ?>
+				<div class="container d-flex align-items-center justify-content-between position-relative pt-3">
 					<a class="logo mt-md-2 mt-lg-0" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<?php
 					$args = array(
@@ -43,48 +43,38 @@
 					wp_nav_menu($args);
 					?>
 					<a class="btn btn-primary nav-create-account" href="">Create An Account</a>
-				<?php else : ?>
-					<div class="blog-social-header pt-2">
-						<div class="container">
-							<ul class="blog-post-social d-flex float-right list-unstyled mb-0 position-relative">
-								<?php if (FACEBOOK_URL) : ?>
-									<li>
-										<a class="social social-facebook" href="<?= FACEBOOK_URL; ?>">Facebook</a>
-									</li>
-								<?php endif; ?>
-								<?php if (LINKEDIN_URL) : ?>
-									<li>
-										<a class="social social-linkedin" href="<?= LINKEDIN_URL; ?>">LinkedIn</a>
-									</li>
-								<?php endif; ?>
-								<?php if (TWITTER_URL) : ?>
-									<li>
-										<a class="social social-twitter" href="<?= TWITTER_URL; ?>">Twitter</a>
-									</li>
-								<?php endif; ?>
-							</ul>
-						</div>
+					<?= get_template_part('partials/mobile', 'nav'); ?>
+				</div>
+			<?php else : ?>
+				<div class="blog-social-header pt-2">
+					<div class="container">
+						<ul class="blog-post-social d-flex float-right list-unstyled mb-0 position-relative">
+							<?php if (FACEBOOK_URL) : ?>
+								<li>
+									<a class="social social-facebook" href="<?= FACEBOOK_URL; ?>">Facebook</a>
+								</li>
+							<?php endif; ?>
+							<?php if (LINKEDIN_URL) : ?>
+								<li>
+									<a class="social social-linkedin" href="<?= LINKEDIN_URL; ?>">LinkedIn</a>
+								</li>
+							<?php endif; ?>
+							<?php if (TWITTER_URL) : ?>
+								<li>
+									<a class="social social-twitter" href="<?= TWITTER_URL; ?>">Twitter</a>
+								</li>
+							<?php endif; ?>
+						</ul>
 					</div>
-					<div class="container position-relative pt-3 text-center">
-						<a class="logo logo-large mt-1" href="<?= home_url(); ?>">RE/MAX Home</a>
-						<div class="header-search-form position-absolute">
-							<?= get_search_form(); ?>
-						</div>
+				</div>
+				<div class="container position-relative pt-3 text-center">
+					<a class="logo logo-large mt-1" href="<?= home_url(); ?>">RE/MAX Home</a>
+					<div class="header-search-form position-absolute">
+						<?= get_search_form(); ?>
 					</div>
-				<?php endif; ?>
-
-				<input class="mobile-menu-toggle" id="mobile-nav" type="checkbox">
-				<label for="mobile-nav"></label>
-				<?php
-				$args = array(
-					'container' => '',
-					'menu_class' => 'mobile-menu list-unstyled',
-					'item_spacing' => 'discard',
-					'theme_location' => 'mobile'
-				);
-				wp_nav_menu($args);
-				?>
-			</div>
+					<?= get_template_part('partials/mobile', 'nav'); ?>
+				</div>
+			<?php endif; ?>
 			
 			<div class="<?php if (!is_front_page()) { echo 'blog-nav '; } ?>bg-primary border border-secondary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
 				<?php
