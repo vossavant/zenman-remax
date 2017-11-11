@@ -22,11 +22,15 @@ blockquote {
 	}
 
 	p {
-		font: 1.25rem "Montserrat Regular", sans-serif;
+		font: 1rem "Montserrat Regular", sans-serif;
 		margin: 0;
 		position: relative;
 
 		@include breakpoint('sm') {
+			font-size: 1.25rem;
+		}
+
+		@include breakpoint('md') {
 			font-size: 1.5rem;
 		}
 
