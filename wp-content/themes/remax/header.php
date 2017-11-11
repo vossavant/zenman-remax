@@ -67,16 +67,18 @@
 						</ul>
 					</div>
 				</div>
-				<div class="container position-relative pt-3 text-center">
-					<a class="logo logo-large mt-1" href="<?= home_url(); ?>">RE/MAX Home</a>
+				<div class="blog-main-header container position-relative pt-3 text-center">
+					<a class="logo logo-large mt-md-2 mt-lg-1" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<div class="header-search-form position-absolute">
+						<input class="mobile-search-toggle" id="mobile-search" type="checkbox">
+						<label class="mb-0" for="mobile-search"></label>
 						<?= get_search_form(); ?>
 					</div>
 					<?= get_template_part('partials/mobile', 'nav'); ?>
 				</div>
 			<?php endif; ?>
 			
-			<div class="<?php if (!is_front_page()) { echo 'blog-nav '; } ?>bg-primary border border-secondary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 text-center">
+			<div class="<?php if (!is_front_page()) { echo 'blog-nav '; } ?>bg-primary border border-secondary border-top-0 border-right-0 border-bottom-4 border-left-0 mt-4 nav-primary-wrapper text-center">
 				<?php
 				$args = array(
 					'container' => 'nav',

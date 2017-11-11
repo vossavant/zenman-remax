@@ -84,6 +84,14 @@ label[for="mobile-nav"] {
 	}
 }
 
+.nav-primary-wrapper {
+	display: none;
+
+	@include breakpoint('lg') {
+		display: block;
+	}
+}
+
 // Creates white triangles beneath hovered/active links
 
 .nav-link {

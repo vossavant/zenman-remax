@@ -385,7 +385,8 @@ blockquote {
   bottom: 0.25rem; }
 
 .curated-posts .card-image-wrap {
-  flex-grow: 1; }
+  flex-grow: 1;
+  max-height: 16rem; }
   .curated-posts .card-image-wrap:before {
     z-index: 1; }
   .curated-posts .card-image-wrap img {
@@ -607,6 +608,12 @@ label[for="mobile-nav"] {
     .nav-create-account {
       display: block; } }
 
+.nav-primary-wrapper {
+  display: none; }
+  @media (min-width: 992px) {
+    .nav-primary-wrapper {
+      display: block; } }
+
 .nav-link:after, .nav-link:before {
   transition: all 250ms ease-in-out;
   border-color: transparent transparent white;
@@ -814,10 +821,27 @@ footer small {
     padding-left: 0; }
 
 header {
-  background: #005898; }
+  background: #005898;
+  padding-bottom: 1.75rem; }
   @media (min-width: 992px) {
     header {
-      background: white; } }
+      background: white;
+      padding-bottom: 0; } }
+
+.blog-main-header {
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 992px) {
+    .blog-main-header {
+      display: block; } }
+
+.blog-social-header {
+  border-bottom: 1px solid #4c4c4c;
+  display: none;
+  overflow: auto; }
+  @media (min-width: 992px) {
+    .blog-social-header {
+      display: block; } }
 
 .logo {
   background: url("../images/logo/logo-white@2x.png") no-repeat;
@@ -831,15 +855,40 @@ header {
     .logo {
       background: url("../images/logo/logo@2x.png"); } }
   .logo-large {
-    background: url("../images/logo/logo-large@2x.png");
-    padding-top: 60px;
-    min-width: 328px; }
+    background: url("../images/logo/logo-white@2x.png") no-repeat; }
+    @media (min-width: 992px) {
+      .logo-large {
+        background: url("../images/logo/logo-large@2x.png");
+        padding-top: 60px;
+        min-width: 328px; } }
 
 .header-search-form {
-  margin-top: -0.75rem;
-  right: 15px;
-  top: 50%;
-  width: 15em; }
+  right: 4.5rem;
+  margin-top: -0.1rem;
+  top: 50%; }
+  @media (min-width: 992px) {
+    .header-search-form {
+      margin-top: -0.75rem;
+      right: 15px; } }
+  .header-search-form form {
+    display: none; }
+    @media (min-width: 992px) {
+      .header-search-form form {
+        display: block; } }
+
+.mobile-search-toggle {
+  display: none; }
+  .mobile-search-toggle:checked ~ form {
+    display: block; }
+
+label[for="mobile-search"] {
+  background: url("../images/icon/search-white.svg");
+  display: block;
+  height: 24px;
+  width: 24px; }
+  @media (min-width: 992px) {
+    label[for="mobile-search"] {
+      display: none; } }
 
 .sidebar {
   font: 1rem/1 "Montserrat Regular", sans-serif; }

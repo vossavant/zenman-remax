@@ -1,8 +1,29 @@
 header {
 	background: $remax-blue;
+	padding-bottom: 1.75rem;
 
 	@include breakpoint('lg') {
 		background: white;
+		padding-bottom: 0;
+	}
+}
+
+.blog-main-header {
+	display: flex;
+	justify-content: space-between;
+
+	@include breakpoint('lg') {
+		display: block;
+	}
+}
+
+.blog-social-header {
+	border-bottom: 1px solid $remax-gray;
+	display: none;
+	overflow: auto;
+
+	@include breakpoint('lg') {
+		display: block;
 	}
 }
 
@@ -20,15 +41,51 @@ header {
 	}
 
 	&-large {
-		background: url('../images/logo/logo-large@2x.png');
-		padding-top: 60px;
-		min-width: 328px;
+		background: url('../images/logo/logo-white@2x.png') no-repeat;
+
+		@include breakpoint('lg') {
+			background: url('../images/logo/logo-large@2x.png');
+			padding-top: 60px;
+			min-width: 328px;
+		}
 	}
 }
 
 .header-search-form {
-	margin-top: -0.75rem;
-	right: 15px;
+	right: 4.5rem;
+	margin-top: -0.1rem;
 	top: 50%;
-	width: 15em;
+
+	@include breakpoint('lg') {
+		margin-top: -0.75rem;
+		right: 15px;
+	}
+
+	form {
+		display: none;
+
+		@include breakpoint('lg') {
+			display: block;
+		}
+	}
+}
+
+
+.mobile-search-toggle {
+	display: none;
+
+	&:checked ~ form {
+		display: block;
+	}
+}
+
+label[for="mobile-search"] {
+	background: url('../images/icon/search-white.svg');
+	display: block;
+	height: 24px;
+	width: 24px;
+	
+	@include breakpoint('lg') {
+		display: none;
+	}
 }
