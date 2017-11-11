@@ -35,14 +35,8 @@
 				?>
 			
 			<?php else: ?>
-				<div class="message warning">
-					<i class="material-icons">warning</i>
-					<div>
-						<h5>Bummer!</h5>
-						<p>No results for <b><?= get_search_query(); ?></b>. Please try a different search or <a
-									href="<?= home_url(); ?>">return to the home page</a>.</p>
-					</div>
-				</div>
+				<h3 class="mt-5">Bummer!</h3>
+				<p>No results for <b><?= get_search_query(); ?></b>. Please try a different search or <a href="<?= home_url(); ?>">return to the home page</a>.</p>
 			<?php endif; ?>
 		</section>
 		

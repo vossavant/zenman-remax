@@ -33,13 +33,8 @@ get_header();
 					?>
 				</div>
 			<?php else: ?>
-				<div class="message warning">
-					<i class="material-icons">warning</i>
-					<div>
-						<h5>Bummer!</h5>
-						<p>No popular posts!</p>
-					</div>
-				</div>
+				<h3 class="mt-5">Bummer!</h3>
+				<p>We couldn't find any popular posts.</p>
 			<?php endif; ?>
 		</section>
 		
