@@ -251,7 +251,10 @@ h3, .h3 {
   font-size: 1.5rem; }
 
 h4, .h4 {
-  font-size: 1.375rem; }
+  font-size: 1.125rem; }
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 1.375rem; } }
 
 h5, .h5 {
   font-size: 1.125rem; }
@@ -324,9 +327,12 @@ blockquote {
   background: #dc1c2e;
   border: 0;
   border-radius: 1.5rem;
-  font: 1rem "Montserrat Regular", sans-serif;
+  font: 0.8125rem "Montserrat Regular", sans-serif;
   line-height: 3rem;
   padding: 0 1.5rem; }
+  @media (min-width: 1200px) {
+    .btn-primary {
+      font-size: 1rem; } }
   .btn-primary:hover {
     background: #af1625; }
 
@@ -485,6 +491,61 @@ nav ul {
   nav ul a,
   nav ul li {
     display: inline-block; }
+
+.mobile-menu {
+  transition: right 250ms ease-in-out;
+  background: white;
+  bottom: 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  position: fixed;
+  right: -21rem;
+  top: 0;
+  width: 20rem;
+  z-index: 999; }
+  @media (min-width: 992px) {
+    .mobile-menu {
+      display: none; } }
+  .mobile-menu:before {
+    border-bottom: 1px solid #005898;
+    color: #005898;
+    content: "Menu";
+    display: block;
+    padding: 1rem 2rem;
+    text-transform: uppercase; }
+  .mobile-menu:after {
+    color: #4c4c4c;
+    content: "Close";
+    font-size: 0.8125rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem; }
+  .mobile-menu .menu-item {
+    display: block; }
+  .mobile-menu .menu-item a {
+    display: block;
+    padding: 1rem 2rem; }
+
+label[for="mobile-nav"] {
+  background: url("../images/icon/menu.svg");
+  content: "";
+  float: right;
+  height: 48px;
+  margin-bottom: -0.5rem;
+  width: 48px; }
+
+.mobile-menu-toggle {
+  display: none; }
+  .mobile-menu-toggle:checked ~ .mobile-menu {
+    overflow: scroll;
+    right: 0; }
+
+.nav-primary,
+.nav-create-account {
+  display: none; }
+  @media (min-width: 992px) {
+    .nav-primary,
+    .nav-create-account {
+      display: block; } }
 
 .nav-link:after, .nav-link:before {
   transition: all 250ms ease-in-out;
@@ -676,14 +737,23 @@ footer small {
     list-style: none;
     padding-left: 0; }
 
+header {
+  background: #005898; }
+  @media (min-width: 992px) {
+    header {
+      background: white; } }
+
 .logo {
-  background: url("../images/logo/logo@2x.png");
+  background: url("../images/logo/logo-white@2x.png") no-repeat;
   background-size: contain !important;
   display: inline-block;
   height: 0;
+  min-width: 180px;
   overflow: hidden;
-  padding-top: 33px;
-  min-width: 180px; }
+  padding-top: 33px; }
+  @media (min-width: 992px) {
+    .logo {
+      background: url("../images/logo/logo@2x.png"); } }
   .logo-large {
     background: url("../images/logo/logo-large@2x.png");
     padding-top: 60px;
@@ -702,16 +772,23 @@ footer small {
   border-bottom: 1px solid #4c4c4c;
   overflow: auto; }
 
-.top-menu a {
-  transition: all 250ms ease-in-out;
-  font: 1rem "Montserrat Semibold", sans-serif;
-  display: inline-block;
-  line-height: 3rem;
-  padding: 0 1.5rem;
-  text-transform: uppercase; }
-
-.top-menu li {
-  position: relative; }
+.top-menu {
+  display: none; }
+  @media (min-width: 992px) {
+    .top-menu {
+      display: block; } }
+  .top-menu a {
+    transition: all 250ms ease-in-out;
+    font: 0.8125rem "Montserrat Semibold", sans-serif;
+    display: inline-block;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .top-menu a {
+        font-size: 1rem; } }
+  .top-menu li {
+    position: relative; }
 
 .single-post-author {
   color: #005898;
@@ -859,3 +936,9 @@ footer small {
 .rmx-widget-submit {
   padding-left: 1rem !important;
   text-align: center !important; }
+
+.remax_search .hide-mobile {
+  display: block !important; }
+
+.remax_search .show-mobile {
+  display: none !important; }

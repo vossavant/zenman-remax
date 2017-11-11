@@ -12,17 +12,17 @@ if ($whitespace) : ?>
 	</div>
 	<div class="row">
 		<?php if (get_sub_field('image_alignment')) : ?>
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<?php the_sub_field('content'); ?>
 			</div>
-			<div class="col-8">
+			<div class="col-12 col-md-8">
 				<img class="mb-2 mw-100" src="<?php the_sub_field('image'); ?>">
 			</div>
 		<?php else: ?>
-			<div class="col-8">
+			<div class="col-12 col-md-8">
 				<img class="mb-2 mw-100" src="<?php the_sub_field('image'); ?>">
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<?php the_sub_field('content'); ?>
 			</div>
 		<?php endif; ?>

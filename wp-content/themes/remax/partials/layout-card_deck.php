@@ -21,13 +21,13 @@ endswitch;
 if (have_rows('cards')) : ?>
 	
 	<div class="row justify-content-center<?= $whitespace; ?>">
-		<div class="card-deck col-<?= $column_width; ?>">
+		<div class="card-deck col-12 col-lg-<?= $column_width; ?>">
 	
 			<?php while (have_rows('cards')) :
 				the_row(); ?>
 				
-				<div class="card border-0 mx-<?= $card_margin; ?> rounded-0 shadow">
-					<div class="card-body pt-4 px-5 pb-5">
+				<div class="card border-0 mx-lg-<?= $card_margin; ?> rounded-0 shadow">
+					<div class="card-body p-4 px-lg-5 pb-lg-5">
 						<h3 class="card-title mb-4 text-center"><?php the_sub_field('card_title'); ?></h3>
 						
 						<?php if ($card_image_url = get_sub_field('card_image')) : ?>

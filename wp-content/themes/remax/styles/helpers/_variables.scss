@@ -7,3 +7,12 @@ $gray-dark		: #333333;
 $gray-gallery	: #ebebeb;
 $gray-light		: #f8f9fa;
 $gray-list-item	: #c4c6c8;
+
+// these match Bootstrap 4.0 breakpoints
+$breakpoints : (
+	'xl': (min-width: 1200px),
+	'lg': (min-width: 992px),
+	'md': (min-width: 768px),
+	'sm': (min-width: 576px),
+	//'xs': (min-width: 800px),
+);

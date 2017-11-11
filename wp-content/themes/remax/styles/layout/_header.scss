@@ -1,11 +1,23 @@
+header {
+	background: $remax-blue;
+
+	@include breakpoint('lg') {
+		background: white;
+	}
+}
+
 .logo {
-	background: url('../images/logo/logo@2x.png');
+	background: url('../images/logo/logo-white@2x.png') no-repeat;
 	background-size: contain !important;
 	display: inline-block;
 	height: 0;
+	min-width: 180px;
 	overflow: hidden;
 	padding-top: 33px;
-	min-width: 180px;
+
+	@include breakpoint('lg') {
+		background: url('../images/logo/logo@2x.png');
+	}
 
 	&-large {
 		background: url('../images/logo/logo-large@2x.png');

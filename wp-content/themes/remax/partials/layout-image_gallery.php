@@ -5,11 +5,11 @@ if ($images = get_sub_field('gallery')) :
 	<div class="row<?= $whitespace; ?>">
 		<div class="col">
 			<h1 class="mb-4 text-center"><?php the_sub_field('title'); ?></h1>
-			<div class="gallery d-flex flex-wrap">
+			<div class="gallery row">
 				
 				<?php foreach ($images as $image) : ?>
 					
-					<figure class="mb-0 p-2 w-25">
+					<figure class="mb-0 p-2 col-6 col-md-3">
 						<div class="image-grow-on-hover">
 							<img class="mw-100" src="<?= $image['sizes']['gallery-large']; ?>">
 						</div>

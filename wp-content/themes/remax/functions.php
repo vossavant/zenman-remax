@@ -110,6 +110,7 @@ function remax_register_custom_menus() {
         array(
             'top' => __('Top Menu'),
             'main' => __('Main Menu'),
+            'mobile' => __('Mobile Menu'),
 	        'footer' => __('Footer')
         )
     );

@@ -9,6 +9,76 @@ nav ul {
 	}
 }
 
+.mobile-menu {
+	@include transition(right);
+	background: white;
+	bottom: 0;
+	box-shadow: 0 0 1rem transparentize(black, 0.75);
+	position: fixed;
+	right: -21rem;
+	top: 0;
+	width: 20rem;
+	z-index: 999;
+
+	@include breakpoint('lg') {
+		display: none;
+	}
+
+	&:before {
+		border-bottom: 1px solid $remax-blue;
+		color: $remax-blue;
+		content: "Menu";
+		display: block;
+		padding: 1rem 2rem;
+		text-transform: uppercase;
+	}
+
+	&:after {
+		color: $remax-gray;
+		content: "Close";
+		font-size: 0.8125rem;
+		position: absolute;
+		right: 2rem;
+		top: 1rem;
+	}
+
+	.menu-item {
+		display: block;
+	}
+
+	.menu-item a {
+		display: block;
+		padding: 1rem 2rem;
+	}
+}
+
+label[for="mobile-nav"] {
+	background: url('../images/icon/menu.svg');
+	content: "";
+	float: right;
+	height: 48px;
+	margin-bottom: -0.5rem;
+	width: 48px;
+}
+
+.mobile-menu-toggle {
+	display: none;
+
+	&:checked ~ .mobile-menu {
+		overflow: scroll;
+		right: 0;
+	}
+}
+
+.nav-primary,
+.nav-create-account {
+	display: none;
+
+	@include breakpoint('lg') {
+		display: block;
+	}
+}
+
 // Creates white triangles beneath hovered/active links
 
 .nav-link {

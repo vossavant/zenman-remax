@@ -6,7 +6,7 @@ $icon = get_sub_field('icon');
 ?>
 
 <div class="row<?= $whitespace; ?>">
-	<div class="col col-9 mx-auto text-center">
+	<div class="col col-12 col-lg-9 mx-auto text-center">
 		<?php if ($form == 'lead-capture') : ?>
 			<h1 class="mb-4 text-center">
 				<?php if ($icon) : ?>
@@ -38,7 +38,9 @@ $icon = get_sub_field('icon');
 		<?php if ($form == 'lead-capture') : ?>
 			<?= do_shortcode('[contact-form-7 id="354" title="Lead Capture Form"]'); ?>
 		<?php elseif ($form == 'search') : ?>
-			<div id="remax_search1" class="remax_search mx-auto w-75"></div>
+			<div class="col col-lg-9 mx-auto">
+				<div id="remax_search1" class="remax_search"></div>
+			</div>
 		<?php endif; ?>
 	</div>
 </div>
