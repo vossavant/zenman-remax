@@ -30,14 +30,26 @@
   font-style: normal; }
 
 .icon {
-  background-size: 1.25rem !important;
-  padding-left: 2rem; }
+  background-size: 1rem !important;
+  padding-left: 1.5rem; }
+  @media (min-width: 992px) {
+    .icon {
+      background-size: 1.25rem !important;
+      padding-left: 2rem; } }
   .icon-2 {
-    background-size: 1.5rem !important;
-    padding-left: 2.25rem; }
+    background-size: 1.25rem !important;
+    padding-left: 1.75rem; }
+    @media (min-width: 992px) {
+      .icon-2 {
+        background-size: 1.5rem !important;
+        padding-left: 2.25rem; } }
   .icon-3 {
-    background-size: 1.75rem !important;
-    padding-left: 2.5rem; }
+    background-size: 1.5rem !important;
+    padding-left: 2rem; }
+    @media (min-width: 992px) {
+      .icon-3 {
+        background-size: 1.75rem !important;
+        padding-left: 2.5rem; } }
   .icon-header {
     font-family: "Montserrat Bold", sans-serif; }
   .icon-calendar {
@@ -63,8 +75,12 @@
     background-repeat: no-repeat !important;
     content: "";
     display: block;
-    height: 1.25rem;
-    width: 1.5rem; }
+    height: 1rem;
+    width: 1.25rem; }
+    @media (min-width: 992px) {
+      .social:after {
+        height: 1.25rem;
+        width: 1.5rem; } }
   .social-large {
     padding: 0.5rem; }
     .social-large:after {
@@ -74,7 +90,10 @@
       width: 3.25rem; }
   .social-facebook:after {
     background: url("../images/social/facebook.svg");
-    width: 1rem; }
+    width: 0.75rem; }
+    @media (min-width: 992px) {
+      .social-facebook:after {
+        width: 1rem; } }
   .social-google:after {
     background: url("../images/social/google.svg"); }
   .social-instagram:after {
@@ -760,24 +779,53 @@ label[for="mobile-nav"] {
   margin-left: -400%; }
 
 .top-story {
-  height: 25rem; }
+  height: auto; }
+  @media (min-width: 1200px) {
+    .top-story {
+      height: 25rem; } }
   .top-story a, .top-story h1, .top-story p {
     color: white; }
   .top-story a, .top-story .read-more {
     transition: color 250ms ease-in-out; }
     .top-story a:hover, .top-story .read-more:hover {
       color: #dc1c2e; }
-  .top-story p {
-    font-family: "Montserrat Regular", sans-serif; }
+  .top-story h1 {
+    font-size: 1rem; }
+    @media (min-width: 992px) {
+      .top-story h1 {
+        font-size: 1.125rem; } }
+  .top-story img {
+    max-width: none !important;
+    width: 200% !important; }
+    @media (min-width: 480px) {
+      .top-story img {
+        max-width: 150% !important;
+        width: 150% !important; } }
+    @media (min-width: 576px) {
+      .top-story img {
+        max-width: 100% !important;
+        width: 100% !important; } }
+  .top-story p,
   .top-story .read-more {
-    font: 1rem "Montserrat Regular", sans-serif; }
+    font: 0.8125rem "Montserrat Regular", sans-serif; }
+    @media (min-width: 992px) {
+      .top-story p,
+      .top-story .read-more {
+        font-size: 1.125rem; } }
   .top-story-content {
     bottom: 0;
     left: auto;
     position: absolute;
     right: 0;
-    top: 0;
-    width: 33.333%; }
+    top: 25%;
+    width: 100%; }
+    @media (min-width: 576px) {
+      .top-story-content {
+        top: 0;
+        width: 75%; } }
+    @media (min-width: 768px) {
+      .top-story-content {
+        width: 33.333%; } }
     .top-story-content > * {
       position: relative; }
 
@@ -835,14 +883,6 @@ header {
     .blog-main-header {
       display: block; } }
 
-.blog-social-header {
-  border-bottom: 1px solid #4c4c4c;
-  display: none;
-  overflow: auto; }
-  @media (min-width: 992px) {
-    .blog-social-header {
-      display: block; } }
-
 .logo {
   background: url("../images/logo/logo-white@2x.png") no-repeat;
   background-size: contain !important;
@@ -864,7 +904,7 @@ header {
 
 .header-search-form {
   right: 4.5rem;
-  margin-top: -0.1rem;
+  margin-top: -0.25rem;
   top: 50%; }
   @media (min-width: 992px) {
     .header-search-form {
@@ -880,11 +920,14 @@ header {
   display: none; }
   .mobile-search-toggle:checked ~ form {
     display: block; }
+  .mobile-search-toggle:checked ~ label {
+    display: none; }
 
 label[for="mobile-search"] {
   background: url("../images/icon/search-white.svg");
   display: block;
   height: 24px;
+  margin-top: 0.2rem;
   width: 24px; }
   @media (min-width: 992px) {
     label[for="mobile-search"] {
@@ -895,7 +938,11 @@ label[for="mobile-search"] {
 
 .blog-social-header {
   border-bottom: 1px solid #4c4c4c;
+  display: none;
   overflow: auto; }
+  @media (min-width: 992px) {
+    .blog-social-header {
+      display: block; } }
 
 .top-menu {
   display: none; }

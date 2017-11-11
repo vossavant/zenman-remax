@@ -1,7 +1,12 @@
 .blog {
 	&-social-header {
 		border-bottom: 1px solid $remax-gray;
+		display: none;
 		overflow: auto;
+
+		@include breakpoint('lg') {
+			display: block;
+		}
 
 		.social-facebook {
 			@extend .social-facebook-primary;

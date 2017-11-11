@@ -1,5 +1,9 @@
 .top-story {
-	height: 25rem;
+	height: auto;
+
+	@include breakpoint('xl') {
+		height: 25rem;
+	}
 
 	a, h1, p {
 		color: white;
@@ -14,18 +18,54 @@
 	}
 
 	h1 {
+		font-size: 1rem;
 
+		@include breakpoint('lg') {
+			font-size: 1.125rem;
+		}
 	}
 
-	p {
-		font-family: "Montserrat Regular", sans-serif;
+	img {
+		max-width: none !important;
+		width: 200% !important;
+
+		@include breakpoint('xs') {
+			max-width: 150% !important;
+			width: 150% !important;
+		}
+
+		@include breakpoint('sm') {
+			max-width: 100% !important;
+			width: 100% !important;
+		}
 	}
 
+	p,
 	.read-more {
-		font: 1rem "Montserrat Regular", sans-serif;
+		font: 0.8125rem "Montserrat Regular", sans-serif;
+
+		@include breakpoint('lg') {
+			font-size: 1.125rem;
+		}
 	}
 
 	&-content {
+		bottom: 0;
+		left: auto;
+		position: absolute;
+		right: 0;
+		top: 25%;
+		width: 100%;
+
+		@include breakpoint('sm') {
+			top: 0;
+			width: 75%;
+		}
+
+		@include breakpoint('md') {
+			width: 33.333%;
+		}
+
 		&:before {
 			@extend .overlay;
 		}
@@ -33,12 +73,5 @@
 		> * {
 			position: relative;
 		}
-
-		bottom: 0;
-		left: auto;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 33.333%;
 	}
 }
