@@ -69,9 +69,19 @@ get_header();
 		$regular_posts = new WP_Query($get_posts_exclude_top_story);
 		?>
 
+		<div class="sidebar-mobile-links my-4">
+			<h1 class="h4 font-weight-bold icon icon-3 icon-megaphone py-2 text-primary">
+				<a href="#sb-trending">See What's Trending &rsaquo;</a>
+			</h1>
+			<h1 class="h4 font-weight-bold icon icon-3 icon-chat py-2 text-primary">
+				<a href="#sb-social">See What's On Social &rsaquo;</a>
+			</h1>
+			<?php get_template_part('partials/form', 'newsletter'); ?>
+		</div>
+		
 		<div class="my-4 pt-2 row">
 			<?php if ($regular_posts->have_posts()) : ?>
-				<section class="col-8">
+				<section class="col-12 col-md-8">
 					<h1 class="h4 font-weight-bold icon icon-2 icon-calendar text-primary">Happening Now</h1>
 					<div class="gallery row">
 						<?php
@@ -84,11 +94,11 @@ get_header();
 								$first_category_name = $post_categories[0]->name;
 							endif;
 							?>
-							<article class="col-6 blog-post p-3 pb-5">
+							<article class="col-12 col-sm-6 col-md-12 col-lg-6 blog-post p-2 p-lg-3 pb-4 pb-lg-5">
 								<div class="image-grow-on-hover position-relative">
 									<a href="<?php the_permalink(); ?>">
 										<div class="image-grow-on-hover">
-											<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-medium'); ?>">
+											<img class="mw-100 w-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-medium'); ?>">
 										</div>
 									</a>
 									<div class="blog-post-meta d-flex align-items-center justify-content-between p-3">

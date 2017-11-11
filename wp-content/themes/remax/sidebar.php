@@ -1,4 +1,4 @@
-<div class="col-4 sidebar">
+<div class="col-12 col-md-4 mt-5 mt-md-0 sidebar">
 	<?php if (is_single()) : ?>
 		<section>
 			<h1 class="h4 font-weight-bold icon icon-2 icon-document text-primary">Related Posts</h1>
@@ -72,7 +72,7 @@
 		$popular_posts = remax_get_popular_posts(3);
 	
 		if ($popular_posts->have_posts()) : ?>
-			<section class="mb-4 pb-2">
+			<section class="mb-0 mb-md-4 pt-4 pt-md-0 pb-2" id="sb-trending">
 				<h1 class="h4 font-weight-bold icon icon-3 icon-megaphone text-primary">Now Trending</h1>
 				
 				<?php
@@ -91,7 +91,7 @@
 		endif;
 	
 		if ($trending_on_social_posts = get_field('social_trending_posts', 'option')) : ?>
-			<section class="mb-4 pb-2">
+			<section class="mb-0 mb-md-4 pt-4 pt-md-0" id="sb-social">
 				<h1 class="h4 font-weight-bold icon icon-3 icon-chat text-primary">On Social</h1>
 				<?php
 				foreach ($trending_on_social_posts as $key => $post) :
@@ -107,17 +107,10 @@
 				<a class="d-block py-3" href="<?php bloginfo('home'); ?>/trending-social">View All Social &rsaquo;</a>
 			</section>
 			<?php
-		endif; ?>
+		endif;
 		
-		<section>
-			<h1 class="h4 font-weight-bold icon icon-3 icon-email text-primary">Newsletter Sign-Up</h1>
-			<form class="form-inline pt-3">
-				<div class="form-group w-100">
-					<label for="name" class="sr-only">Name</label>
-					<input type="text" class="form-control mb-2 px-3 w-100" id="name" placeholder="Name">
-				</div>
-				<button type="submit" class="btn btn-unstyled px-0">Submit &rsaquo;</button>
-			</form>
-		</section>
-	<?php endif; ?>
+		get_template_part('partials/form', 'newsletter');
+	endif; ?>
+	
+	<a class="back-to-top" href="#">Return to Top</a>
 </div>

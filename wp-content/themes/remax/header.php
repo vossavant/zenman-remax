@@ -32,7 +32,7 @@
 		<header>
 			<?php if (is_front_page()) : ?>
 				<div class="container d-flex align-items-center justify-content-between position-relative pt-3">
-					<a class="logo mt-md-2 mt-lg-0" href="<?= home_url(); ?>">RE/MAX Home</a>
+					<a class="logo mt-2 mt-lg-0" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<?php
 					$args = array(
 						'container' => 'nav',
@@ -43,7 +43,7 @@
 					wp_nav_menu($args);
 					?>
 					<a class="btn btn-primary nav-create-account" href="">Create An Account</a>
-					<?= get_template_part('partials/mobile', 'nav'); ?>
+					<?php get_template_part('partials/mobile', 'nav'); ?>
 				</div>
 			<?php else : ?>
 				<div class="blog-social-header pt-2">
@@ -68,13 +68,13 @@
 					</div>
 				</div>
 				<div class="blog-main-header container position-relative pt-3 text-center">
-					<a class="logo logo-large mt-md-2 mt-lg-1" href="<?= home_url(); ?>">RE/MAX Home</a>
+					<a class="logo logo-large mt-2 mt-lg-1" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<div class="header-search-form position-absolute">
 						<input class="mobile-search-toggle" id="mobile-search" type="checkbox">
 						<label class="mb-0" for="mobile-search"></label>
 						<?= get_search_form(); ?>
 					</div>
-					<?= get_template_part('partials/mobile', 'nav'); ?>
+					<?php get_template_part('partials/mobile', 'nav'); ?>
 				</div>
 			<?php endif; ?>
 			
