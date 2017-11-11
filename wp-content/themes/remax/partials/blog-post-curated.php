@@ -8,7 +8,7 @@
 if (get_field('resources_visibility')) : ?>
 	<div class="py-5">
 		<div class="container pt-4">
-			<h1 class="mb-5 text-center"><?php the_field('resources_section_title'); ?></h1>
+			<h1 class="mb-2 mb-md-4 text-center"><?php the_field('resources_section_title'); ?></h1>
 			<?php if ($real_estate_resources = get_field('resources_blog_posts')) : ?>
 				<div class="curated-posts mb-4 pb-2 row">
 					<?php

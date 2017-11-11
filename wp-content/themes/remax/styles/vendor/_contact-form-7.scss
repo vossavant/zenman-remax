@@ -86,9 +86,13 @@
 		color: white;
 		cursor: pointer;
 		font: 1rem "Montserrat Regular", sans-serif;
-		line-height: 3rem;
+		line-height: 2.5rem;
 		padding: 0 1.5rem;
 		width: auto;
+
+		@include breakpoint('lg') {
+			line-height: 3rem;
+		}
 
 		&:hover {
 			background: darken($remax-red, 10%);
