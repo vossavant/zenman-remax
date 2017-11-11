@@ -234,7 +234,11 @@ a {
 
 body {
   color: #333333;
-  font: 1rem/1.625rem "Raleway Medium", sans-serif; }
+  font: 0.815rem/1.35rem "Raleway Medium", sans-serif; }
+  @media (min-width: 576px) {
+    body {
+      font-size: 1rem;
+      line-height: 1.625rem; } }
 
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
@@ -242,13 +246,28 @@ h1, h2, h3, h4,
   font-family: "Montserrat Regular", sans-serif; }
 
 h1, .h1 {
-  font-size: 2.1875rem; }
+  font-size: 1.5rem; }
+  @media (min-width: 576px) {
+    h1, .h1 {
+      font-size: 1.875rem; } }
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 2.1875rem; } }
 
 h2, .h2 {
-  font-size: 1.875rem; }
+  font-size: 1.125rem; }
+  @media (min-width: 576px) {
+    h2, .h2 {
+      font-size: 1.5rem; } }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 1.875rem; } }
 
 h3, .h3 {
-  font-size: 1.5rem; }
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    h3, .h3 {
+      font-size: 1.5rem; } }
 
 h4, .h4 {
   font-size: 1.125rem; }
@@ -277,9 +296,15 @@ blockquote {
     right: -13rem;
     top: auto; }
   blockquote p {
-    font: 30px "Montserrat Regular", sans-serif;
+    font: 1.25rem "Montserrat Regular", sans-serif;
     margin: 0;
     position: relative; }
+    @media (min-width: 576px) {
+      blockquote p {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      blockquote p {
+        font-size: 1.875rem; } }
 
 .blog-post {
   font: 1rem/1 "Montserrat Regular", sans-serif; }
@@ -316,10 +341,15 @@ blockquote {
   box-shadow: 0 0 0 2px white;
   color: white;
   cursor: pointer;
-  font-size: 1.5rem;
-  height: 2.5rem;
+  font-size: 1rem;
+  height: 2rem;
   padding: 0;
-  width: 2.5rem; }
+  width: 2rem; }
+  @media (min-width: 992px) {
+    .btn-close {
+      font-size: 1.5rem;
+      height: 2.5rem;
+      width: 2.5rem; } }
   .btn-close:hover {
     background: #af1625; }
 
@@ -328,8 +358,11 @@ blockquote {
   border: 0;
   border-radius: 1.5rem;
   font: 0.8125rem "Montserrat Regular", sans-serif;
-  line-height: 3rem;
+  line-height: 2.5rem;
   padding: 0 1.5rem; }
+  @media (min-width: 992px) {
+    .btn-primary {
+      line-height: 3rem; } }
   @media (min-width: 1200px) {
     .btn-primary {
       font-size: 1rem; } }
@@ -440,10 +473,12 @@ textarea {
     content: counter(my-counter);
     counter-increment: my-counter;
     font: 3rem "Montserrat Regular", sans-serif;
-    left: -3rem;
+    left: 15px;
     line-height: 1;
     position: absolute;
     top: -0.7rem; }
+  .list-stylized p {
+    margin-left: 2.5rem; }
 
 body .mega-menu {
   transition: all 250ms ease-in-out;

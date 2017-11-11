@@ -1,6 +1,4 @@
 .list-stylized {
-	//column-count: 2;
-	//column-gap: 6rem;
 	counter-reset: my-counter;
 
 	li {
@@ -17,9 +15,13 @@
 		content: counter(my-counter);
 		counter-increment: my-counter;
 		font: 3rem "Montserrat Regular", sans-serif;
-		left: -3rem;
+		left: 15px;
 		line-height: 1;
 		position: absolute;
 		top: -0.7rem;
+	}
+
+	p {
+		margin-left: 2.5rem;
 	}
 }
