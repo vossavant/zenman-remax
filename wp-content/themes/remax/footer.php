@@ -29,7 +29,7 @@
 				<div class="row">
 					<div class="col">
 						<?php if ($footer_logo = get_field('footer_logo', 'option')) : ?>
-							<img class="my-4" src="<?= $footer_logo; ?>" width="250">
+							<img class="my-4 mw-100" src="<?= $footer_logo; ?>" width="250">
 						<?php endif; ?>
 
 						<ul class="footer-social list-unstyled mb-3">

@@ -1,16 +1,29 @@
 footer {
 	small {
-		font: 0.875rem "Montserrat Regular", sans-serif;
+		font: 0.625rem "Montserrat Regular", sans-serif;
+
+		@include breakpoint('md') {
+			font-size: 0.875rem;
+		}
 	}
 }
 
 .footer-menu {
-	font: 0.9375rem "Montserrat Bold", sans-serif;
+	font: 0.75rem "Montserrat Bold", sans-serif;
 	text-transform: uppercase;
+
+	@include breakpoint('md') {
+		font-size: 0.9375rem;
+	}
 
 	a {
 		color: white;
-		padding: 1.25rem;
+		display: block;
+		padding: 0.5rem 1rem;
+
+		@include breakpoint('md') {
+			padding: 1.25rem;
+		}
 
 		&:hover {
 			text-decoration: underline;
@@ -18,12 +31,21 @@ footer {
 	}
 
 	li {
-		display: inline-block;
+		display: block;
 		position: relative;
+
+		@include breakpoint('xs') {
+			display: inline-block;
+		}
 
 		&:after {
 			@extend .pipe;
-			background: white;
+			display: none;
+
+			@include breakpoint('xs') {
+				background: white;
+				display: block;
+			}
 		}
 
 		&:last-child:after {

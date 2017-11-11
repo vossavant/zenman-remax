@@ -77,15 +77,28 @@
 	}
 
 	&-large {
-		padding: 0.5rem;
+		padding: 0.25rem;
+
+		@include breakpoint('sm') {
+			padding: 0.5rem;
+		}
 
 		&:after {
-			height: 2.625rem;
-			width: 3.25rem;
+			height: 1.625rem;
+			width: 2rem;
+
+			@include breakpoint('sm') {
+				height: 2.625rem;
+				width: 3.25rem;
+			}
 		}
 
 		&.social-facebook:after {
-			width: 3.25rem;
+			width: 2rem;
+
+			@include breakpoint('sm') {
+				width: 3.25rem;
+			}
 		}
 	}
 
