@@ -3,20 +3,16 @@ include 'whitespace.php';
 
 if (have_rows('list_items')) :
 	?>
-	<div class="row<?= $whitespace; ?>">
-		<div class="col">
-			<ol class="d-flex flex-wrap justify-content-between list-stylized list-unstyled mb-0">
+			<ol class="row<?= $whitespace; ?> justify-content-between list-stylized list-unstyled mb-0">
 				<?php
 				while (have_rows('list_items')) :
 					the_row();
 					?>
-					<li class="pt-0">
+					<li class="col-12 col-sm-6 pt-0">
 						<p class="mb-0 pt-2 red-hash"><?php the_sub_field('content'); ?></p>
 					</li>
 					<?php
 				endwhile;
 				?>
 			</ol>
-		</div>
-	</div>
 <?php endif; ?>

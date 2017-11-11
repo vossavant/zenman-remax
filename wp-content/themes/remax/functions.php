@@ -206,7 +206,7 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(
 		array(
 			'name' => 'Footer (Left Column)',
-			'before_widget' => '<div class="col-3">',
+			'before_widget' => '<div class="col-12 col-sm-6 col-lg-3">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>'
@@ -216,7 +216,7 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(
 		array(
 			'name' => 'Footer (Center Left Column)',
-			'before_widget' => '<div class="col-3">',
+			'before_widget' => '<div class="col-12 col-sm-6 col-lg-3">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>'
@@ -226,7 +226,7 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(
 		array(
 			'name' => 'Footer (Center Right Column)',
-			'before_widget' => '<div class="col-3">',
+			'before_widget' => '<div class="col-12 col-sm-6 col-lg-3">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>'
@@ -236,7 +236,7 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(
 		array(
 			'name' => 'Footer (Right Column)',
-			'before_widget' => '<div class="col-3">',
+			'before_widget' => '<div class="col-12 col-sm-6 col-lg-3">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3>',
 			'after_title' => '</h3>'

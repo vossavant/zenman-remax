@@ -75,7 +75,7 @@
 						?>
 
 						<?php if ($fine_print = get_field('footer_fine_print', 'option')) : ?>
-							<small class="d-block mx-auto my-4 w-75">
+							<small class="d-block mx-auto my-4 col-12 col-lg-9">
 								<?= $fine_print; ?>
 							</small>
 						<?php endif; ?>

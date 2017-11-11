@@ -10,11 +10,11 @@ if (have_rows('add_whitespace')) :
 		the_row();
 		
 		if (get_sub_field('top')) {
-			$whitespace .= ' pt-5';
+			$whitespace .= ' pt-3 pt-md-3';
 		}
 		
 		if (get_sub_field('bottom')) {
-			$whitespace .= ' pb-5';
+			$whitespace .= ' pb-3 pb-md-5';
 		}
 	endwhile;
 endif;

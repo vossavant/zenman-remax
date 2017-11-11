@@ -30,8 +30,8 @@ if ($images = get_sub_field('gallery')) :
 				<?php endforeach; ?>
 				
 				<div class="current-photo-details d-none m-2 w-100" data-js-closeable="true">
-					<div class="js-photo-box p-5 w-50"></div>
-					<div class="js-photo-details-box pt-5 pr-5 pb-5 pl-2 w-50"></div>
+					<div class="js-photo-box p-3 p-lg-5 w-50"></div>
+					<div class="js-photo-details-box pt-3 pt-lg-5 pr-5 pb-3 pb-lg-5 pl-2 w-50"></div>
 					<button class="js-close-photo-details btn btn-close rounded-circle">X</button>
 				</div>
 				<figure class="gallery-placeholder m-0">&nbsp;</figure>

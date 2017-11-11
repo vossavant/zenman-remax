@@ -6,7 +6,7 @@ $icon = get_sub_field('icon');
 ?>
 
 <div class="row<?= $whitespace; ?>">
-	<div class="col col-12 col-lg-9 mx-auto text-center">
+	<div class="col col-12 col-lg-9 mx-auto text-left text-md-center">
 		<?php if ($form == 'lead-capture') : ?>
 			<h1 class="mb-4 text-center">
 				<?php if ($icon) : ?>
@@ -26,7 +26,7 @@ $icon = get_sub_field('icon');
 		<?php endif; ?>
 		
 		<?php if ($subtitle = get_sub_field('subtitle')) : ?>
-			<h2 class="font-weight-bold mb-4 pb-4 red-hash red-hash-after red-hash-center red-hash-wide"><?= $subtitle; ?></h2>
+			<h2 class="font-weight-bold mb-4 pb-4 red-hash red-hash-after red-hash-center red-hash-wide text-center"><?= $subtitle; ?></h2>
 		<?php endif; ?>
 
 		<?php if ($text = get_sub_field('text')) : ?>

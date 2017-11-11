@@ -27,10 +27,10 @@ if (have_rows('page_sections')) :
 			<div class="parallax-section overflow-hidden text-white">
 				<div class="bg-image bg-parallax py-5" <?= $section_background_image; ?>></div>
 		<?php else: ?>
-			<div class="<?=$section_background; ?> py-5<?php if ($section_background_image) { echo ' text-white'; } ?>" <?= $section_background_image; ?>>
+			<div class="<?=$section_background; ?> py-4 py-lg-5<?php if ($section_background_image) { echo ' text-white'; } ?>" <?= $section_background_image; ?>>
 		<?php endif; ?>
 
-				<div class="container py-4">
+				<div class="container py-2 py-md-4">
 			
 					<?php
 					if (have_rows('section_layout')) :
