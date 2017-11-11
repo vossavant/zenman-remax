@@ -9,6 +9,7 @@
 
 	.card-image-wrap {
 		flex-grow: 1;
+		max-height: 16rem;
 
 		&:before {
 			@extend .overlay;

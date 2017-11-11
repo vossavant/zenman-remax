@@ -7,7 +7,7 @@
 ?>
 
 <article class="overflow-hidden position-relative top-story">
-	<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'top-story'); ?>">
+	<img class="mw-100 w-100" src="<?= get_the_post_thumbnail_url($post->ID, 'top-story'); ?>">
 	<div class="d-flex flex-wrap p-4 top-story-content">
 		<h1 class="align-self-start font-weight-bold h4 icon icon-star">Top Story</h1>
 		<div class="align-self-end">
