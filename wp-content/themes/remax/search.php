@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="container my-5 mx-auto">
+<div class="container my-2 my-md-4 py-2 mx-auto">
 	<div class="row">
-		<section class="col-8">
+		<section class="col-12 col-md-8">
 			<h1>Search Results</h1>
 			<?php if ($total_results = $wp_query->found_posts) : ?>
 				<h4>Your search for &ldquo;<b><?= get_search_query(); ?></b>&rdquo; returned <?= $total_results . ( $total_results != 1 ? ' results' : ' result' ); ?></h4>
@@ -15,7 +15,7 @@
 			
 			<?php if (have_posts()) : ?>
 				
-				<div class="gallery mx-0 pt-5">
+				<div class="gallery mx-0 pt-4 pt-lg-5">
 					<?php
 					while (have_posts()) :
 						the_post();

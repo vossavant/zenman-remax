@@ -1,6 +1,10 @@
 header {
 	background: $remax-blue;
-	padding-bottom: 1.75rem;
+	padding-bottom: 1.2rem;
+
+	@include breakpoint('md') {
+		padding-bottom: 1.75rem;
+	}
 
 	@include breakpoint('lg') {
 		background: white;
@@ -43,8 +47,12 @@ header {
 
 .header-search-form {
 	right: 4.5rem;
-	margin-top: -0.25rem;
+	margin-top: -0.5rem;
 	top: 50%;
+
+	@include breakpoint('md') {
+		margin-top: -0.25rem;
+	}
 
 	@include breakpoint('lg') {
 		margin-top: -0.75rem;

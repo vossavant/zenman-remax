@@ -31,7 +31,7 @@
 	<div class="parallax-wrapper">
 		<header>
 			<?php if (is_front_page()) : ?>
-				<div class="container d-flex align-items-center justify-content-between position-relative pt-3">
+				<div class="container d-flex align-items-center justify-content-between position-relative pt-2 pt-md-3">
 					<a class="logo mt-2 mt-lg-0" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<?php
 					$args = array(
@@ -67,7 +67,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="blog-main-header container position-relative pt-3 text-center">
+				<div class="blog-main-header container position-relative pt-2 pt-md-3 text-center">
 					<a class="logo logo-large mt-2 mt-lg-1" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<div class="header-search-form position-absolute">
 						<input class="mobile-search-toggle" id="mobile-search" type="checkbox">

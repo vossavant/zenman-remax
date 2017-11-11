@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-	<div class="container my-4 py-2 mx-auto">
+	<div class="container my-2 my-md-4 py-2 mx-auto">
 		
 		<?php
 		/**

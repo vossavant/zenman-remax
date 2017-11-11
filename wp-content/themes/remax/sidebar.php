@@ -112,5 +112,5 @@
 		get_template_part('partials/form', 'newsletter');
 	endif; ?>
 	
-	<a class="back-to-top" href="#">Return to Top</a>
+	<a class="back-to-top mb-3" href="#">Return to Top</a>
 </div>

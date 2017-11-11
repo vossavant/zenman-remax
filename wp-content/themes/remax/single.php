@@ -2,16 +2,16 @@
 get_header();
 ?>
 
-<div class="container my-5 mx-auto">
+<div class="container my-2 my-md-4 py-2 mx-auto">
 	<div class="row">
-		<section class="col-8">
-			<img class="mw-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-large'); ?>">
+		<section class="col-12 col-md-8">
+			<img class="mw-100 w-100" src="<?= get_the_post_thumbnail_url($post->ID, 'featured-large'); ?>">
 			<div class="single-post-meta d-flex justify-content-between my-3">
 				<?php get_template_part('partials/blog-post-social'); ?>
 				<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('m.j.y'); ?></time>
 			</div>
 			
-			<article class="single-post-content pt-3">
+			<article class="single-post-content pt-0 pt-lg-3">
 				<h1><?php the_title(); ?></h1>
 				<?php edit_post_link('Edit Post', null, null, null, 'btn btn-primary mb-4'); ?>
 				<?php the_content(); ?>
