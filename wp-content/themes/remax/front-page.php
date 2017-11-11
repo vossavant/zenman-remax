@@ -53,6 +53,6 @@ if (have_rows('page_sections')) :
 	endwhile;
 endif;
 
-get_template_part('partials/front-page', 'resources');
+get_template_part('partials/blog-post', 'curated');
 
 get_footer();
