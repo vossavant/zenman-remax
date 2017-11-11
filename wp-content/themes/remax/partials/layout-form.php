@@ -37,31 +37,6 @@ $icon = get_sub_field('icon');
 		
 		<?php if ($form == 'lead-capture') : ?>
 			<?= do_shortcode('[contact-form-7 id="354" title="Lead Capture Form"]'); ?>
-			
-			<form class="mb-2">
-				<div class="row">
-					<div class="col-6 form-group">
-						<label for="name" class="sr-only">Name</label>
-						<input type="text" class="form-control px-3" id="name" placeholder="Name">
-					</div>
-					<div class="col-6 form-group">
-						<label for="email" class="sr-only">Email</label>
-						<input type="email" class="form-control px-3" id="email" placeholder="Email">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col form-group">
-						<label for="comments" class="sr-only">Comments</label>
-						<textarea class="form-control px-3 w-100" id="comments" placeholder="Comments"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<button type="submit" class="btn btn-primary">Learn More</button>
-					</div>
-				</div>
-			</form>
-		
 		<?php elseif ($form == 'search') : ?>
 			<div id="remax_search1" class="remax_search mx-auto w-75"></div>
 		<?php endif; ?>
