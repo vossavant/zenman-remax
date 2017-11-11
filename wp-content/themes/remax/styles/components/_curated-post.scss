@@ -1,0 +1,49 @@
+.curated-posts {
+
+
+	a:hover {
+		.card-body {
+			bottom: 0.25rem;
+		}
+	}
+
+	.card-image-wrap {
+		flex-grow: 1;
+
+		&:before {
+			@extend .overlay;
+			z-index: 1;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.card-body {
+		@include transition(bottom);
+		bottom: 0;
+		z-index: 2;
+	}
+
+	.card-tags {
+		font-size: 0.8125rem;
+		padding: 0.5rem 1.25rem 0;
+	}
+
+	.card-text {
+		font: 1rem "Montserrat Regular", sans-serif;
+	}
+
+	.card-title {
+		font-size: 1.125rem;
+	}
+
+	.curated-post {
+		margin-bottom: 30px;
+
+		@include breakpoint('xl') {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -161,7 +161,7 @@
 .overflow-hidden {
   overflow: hidden; }
 
-.overlay, .bg-image:before, .blog-post-meta:before, .card-deck-posts .card-image-wrap:before, .top-story-content:before {
+.overlay, .bg-image:before, .blog-post-meta:before, .curated-posts .card-image-wrap:before, .top-story-content:before {
   background: black;
   bottom: 0;
   content: "";
@@ -374,29 +374,41 @@ blockquote {
   color: #dc1c2e;
   cursor: pointer; }
 
-.card-deck-posts a:hover .card-body {
-  bottom: 0.25rem; }
-
-.card-deck-posts .card-image-wrap:before {
-  z-index: 1; }
-
-.card-deck-posts .card-body {
-  transition: bottom 250ms ease-in-out;
-  bottom: 0;
-  z-index: 2; }
-
-.card-deck-posts .card-text {
-  font: 1rem "Montserrat Regular", sans-serif; }
-
-.card-deck-posts .card-tags {
-  bottom: -2rem;
-  color: initial;
-  position: absolute; }
-
 .comment {
   border-bottom: 1px dotted #ebebeb;
   margin: 1rem 0;
   padding: 1rem 0; }
+
+.curated-posts a:hover .card-body {
+  bottom: 0.25rem; }
+
+.curated-posts .card-image-wrap {
+  flex-grow: 1; }
+  .curated-posts .card-image-wrap:before {
+    z-index: 1; }
+  .curated-posts .card-image-wrap img {
+    width: 100%; }
+
+.curated-posts .card-body {
+  transition: bottom 250ms ease-in-out;
+  bottom: 0;
+  z-index: 2; }
+
+.curated-posts .card-tags {
+  font-size: 0.8125rem;
+  padding: 0.5rem 1.25rem 0; }
+
+.curated-posts .card-text {
+  font: 1rem "Montserrat Regular", sans-serif; }
+
+.curated-posts .card-title {
+  font-size: 1.125rem; }
+
+.curated-posts .curated-post {
+  margin-bottom: 30px; }
+  @media (min-width: 1200px) {
+    .curated-posts .curated-post {
+      margin-bottom: 0; } }
 
 textarea {
   border-radius: 1rem !important;
