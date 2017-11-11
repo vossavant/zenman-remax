@@ -83,53 +83,31 @@
 				wp_reset_postdata();
 				?>
 				
-				<a class="d-block py-3" href="/trending">View All Trending &rsaquo;</a>
+				<a class="d-block py-3" href="<?php bloginfo('home'); ?>/trending">View All Trending &rsaquo;</a>
 			</section>
 			
 			<?php
 			wp_reset_postdata();
 		endif;
-		?>
-		
-		<section class="mb-4 pb-2">
-			<h1 class="h4 font-weight-bold icon icon-3 icon-chat text-primary">On Social</h1>
-			
-			<article class="blog-post blog-post-small gallery d-flex mx-0 py-3">
-				<div class="image-grow-on-hover mr-3 position-relative">
-					<a href="<?php the_permalink(); ?>">
-						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_5.jpg">
-					</a>
-				</div>
-				<div class="w-50">
-					<h1>Pros and Cons of Solar Panels</h1>
-					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
-				</div>
-			</article>
-			<article class="blog-post blog-post-small gallery d-flex mx-0 py-3">
-				<div class="image-grow-on-hover mr-3 position-relative">
-					<a href="<?php the_permalink(); ?>">
-						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_6.jpg">
-					</a>
-				</div>
-				<div class="w-50">
-					<h1>6 easy, affordable smart home features that could help you sell...</h1>
-					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
-				</div>
-			</article>
-			<article class="blog-post blog-post-small gallery d-flex mx-0 py-3">
-				<div class="image-grow-on-hover mr-3 position-relative">
-					<a href="<?php the_permalink(); ?>">
-						<img class="mw-100" src="<?php bloginfo('template_url'); ?>/images/fpo/Placeholder_7.jpg">
-					</a>
-				</div>
-				<div class="w-50">
-					<h1>Buying a Home? 4 Signs It’s Time to Call An Agent</h1>
-					<a class="blog-post-permalink" href="">Read More &rsaquo;</a>
-				</div>
-			</article>
-			
-			<a class="d-block py-3" href="">View All Social &rsaquo;</a>
-		</section>
+	
+		if ($trending_on_social_posts = get_field('social_trending_posts', 'option')) : ?>
+			<section class="mb-4 pb-2">
+				<h1 class="h4 font-weight-bold icon icon-3 icon-chat text-primary">On Social</h1>
+				<?php
+				foreach ($trending_on_social_posts as $key => $post) :
+					if ($key > 2) {
+						break;
+					}
+					
+					setup_postdata($post);
+					get_template_part('partials/blog-post-sidebar');
+				endforeach;
+				?>
+				
+				<a class="d-block py-3" href="<?php bloginfo('home'); ?>/trending-social">View All Social &rsaquo;</a>
+			</section>
+			<?php
+		endif; ?>
 		
 		<section>
 			<h1 class="h4 font-weight-bold icon icon-3 icon-email text-primary">Newsletter Sign-Up</h1>
