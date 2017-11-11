@@ -153,6 +153,36 @@ add_shortcode('center', 'remax_center_shortcode');
 
 
 /**
+ * Queries the database for the $limit most popular blog posts
+ * and returns a WP_Query object for use in a loop.
+ *
+ * @param $limit
+ * @return array|null|object|WP_Query
+ */
+function remax_get_popular_posts($limit)
+{
+	global $wpdb;
+	$popular_posts = $wpdb->get_results("SELECT postid FROM wp_popularpostsdata ORDER BY pageviews DESC");
+	$popular_posts_array = array();
+	
+	foreach ($popular_posts as $popular_post) :
+		array_push($popular_posts_array, $popular_post->postid);
+	endforeach;
+	
+	$args = array(
+		'orderby' => 'post__in',
+		'post__in' => $popular_posts_array,
+		'ignore_sticky_posts' => 1,
+		'posts_per_page' => $limit
+	);
+	
+	$popular_posts = new WP_Query($args);
+	
+	return $popular_posts;
+}
+
+
+/**
  * Parses shortcodes contained with ACF custom fields. Docs:
  * https://www.advancedcustomfields.com/resources/acf-format_value/
  *

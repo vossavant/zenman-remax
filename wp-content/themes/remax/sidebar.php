@@ -69,21 +69,7 @@
 	<?php
 	// else: not a post permalink page
 	else :
-		$popular_posts = $wpdb->get_results("SELECT postid FROM wp_popularpostsdata ORDER BY pageviews DESC LIMIT 3");
-		$popular_posts_array = array();
-		
-		foreach ($popular_posts as $popular_post) :
-			array_push($popular_posts_array, $popular_post->postid);
-		endforeach;
-		
-		$args = array(
-			'orderby' => 'post__in',
-			'post__in' => $popular_posts_array,
-			'ignore_sticky_posts' => 1,
-			'posts_per_page' => 3
-		);
-		
-		$popular_posts = new WP_Query($args);
+		$popular_posts = remax_get_popular_posts(3);
 	
 		if ($popular_posts->have_posts()) : ?>
 			<section class="mb-4 pb-2">
@@ -97,7 +83,7 @@
 				wp_reset_postdata();
 				?>
 				
-				<a class="d-block py-3" href="">View All Trending &rsaquo;</a>
+				<a class="d-block py-3" href="/trending">View All Trending &rsaquo;</a>
 			</section>
 			
 			<?php
