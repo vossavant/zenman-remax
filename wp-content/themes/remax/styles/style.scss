@@ -1,5 +1,7 @@
 @import "helpers/variables";
 @import "helpers/mixins";
+
+@import "helpers/bootstrap-overrides";
 @import "helpers/fonts";
 @import "helpers/icon";
 @import "helpers/parallax";
@@ -31,5 +33,3 @@
 
 @import "vendor/contact-form-7";
 @import "vendor/rmx-search";
-
-// TODO: move all "BS Override" styles into a distinct SASS file

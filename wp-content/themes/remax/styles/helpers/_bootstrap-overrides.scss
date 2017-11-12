@@ -1,0 +1,29 @@
+/**
+	Classes in this file override Bootstrap classes
+	of the same name.
+ */
+
+.bg-primary {
+	background-color: $remax-red !important;
+}
+
+.bg-secondary {
+	background-color: $remax-blue !important;
+}
+
+.border-primary {
+	border-color: $remax-red !important;
+}
+
+.border-secondary {
+	border-color: $remax-blue !important;
+}
+
+.font-weight-bold {
+	font-family: "Montserrat Bold", sans-serif !important;
+	font-weight: normal !important;
+}
+
+.text-primary {
+	color: $remax-red !important;
+}
