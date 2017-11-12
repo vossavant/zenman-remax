@@ -68,10 +68,10 @@
 					</div>
 				</div>
 				<div class="blog-main-header container position-relative pt-2 pt-md-3 text-center">
+					<input class="mobile-search-toggle" id="mobile-search" type="checkbox">
+					<label class="mb-0" for="mobile-search"></label>
 					<a class="logo logo-large mt-2 mt-lg-1" href="<?= home_url(); ?>">RE/MAX Home</a>
 					<div class="header-search-form position-absolute">
-						<input class="mobile-search-toggle" id="mobile-search" type="checkbox">
-						<label class="mb-0" for="mobile-search"></label>
 						<?= get_search_form(); ?>
 					</div>
 					<?php get_template_part('partials/mobile', 'nav'); ?>

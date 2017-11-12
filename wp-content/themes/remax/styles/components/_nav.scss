@@ -46,6 +46,12 @@ nav ul {
 		display: block;
 	}
 
+	.menu-item:last-child a {
+		background: $remax-red;
+		color: white;
+		font-family: "Montserrat Semibold", sans-serif;
+	}
+
 	.menu-item a {
 		display: block;
 		padding: 1rem 2rem;
@@ -68,6 +74,17 @@ label[for="mobile-nav"] {
 
 .mobile-menu-toggle {
 	display: none;
+
+	&:checked {
+		display: block;
+		height: 3.75rem;
+		opacity: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 6rem;
+		z-index: 1000;
+	}
 
 	&:checked ~ .mobile-menu {
 		overflow: scroll;

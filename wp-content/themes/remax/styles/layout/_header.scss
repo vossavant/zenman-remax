@@ -47,8 +47,7 @@ header {
 
 .header-search-form {
 	right: 4.5rem;
-	margin-top: -0.5rem;
-	top: 50%;
+	top: 1rem;
 
 	@include breakpoint('md') {
 		margin-top: -0.25rem;
@@ -72,12 +71,20 @@ header {
 .mobile-search-toggle {
 	display: none;
 
-	&:checked ~ form {
+	&:checked ~ label[for="mobile-search"] {
+		display: none;
+	}
+
+	&:checked ~ .header-search-form {
+		left: 15px;
+	}
+
+	&:checked ~ .header-search-form form {
 		display: block;
 	}
 
-	&:checked ~ label {
-		display: none;
+	&:checked ~ .logo {
+		visibility: hidden;
 	}
 }
 
@@ -85,7 +92,9 @@ label[for="mobile-search"] {
 	background: url('../images/icon/search-white.svg');
 	display: block;
 	height: 24px;
-	margin-top: 0.2rem;
+	position: absolute;
+	right: 4.5rem;
+	top: 1.25rem;
 	width: 24px;
 	
 	@include breakpoint('lg') {
