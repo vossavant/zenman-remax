@@ -464,7 +464,7 @@ textarea {
   min-width: 17.5rem; }
 
 .form-search .form-control {
-  background: url("../images/icon/search.svg") 1rem center no-repeat/1rem;
+  background: white url("../images/icon/search.svg") 1rem center no-repeat/1rem;
   border: 0;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   color: #dc1c2e;
@@ -1019,11 +1019,12 @@ label[for="mobile-search"] {
   color: #005898;
   font: 1rem "Montserrat Semibold", sans-serif; }
 
-.single-post-category a {
-  margin-left: 0.25rem; }
-
-.single-post-category a:first-child {
-  margin-left: 0; }
+.single-post-category {
+  white-space: nowrap; }
+  .single-post-category a {
+    margin-left: 0.25rem; }
+  .single-post-category a:first-child {
+    margin-left: 0; }
 
 .single-post-content h1 {
   font-size: 1.5rem; }
@@ -1034,6 +1035,10 @@ label[for="mobile-search"] {
 
 .single-post-meta .blog-post-social {
   float: none !important; }
+
+.single-post-tags:before {
+  top: 0;
+  margin-top: 0.25rem; }
 
 /**
 	Unfortunately, these styles are needed because CF7's HTML

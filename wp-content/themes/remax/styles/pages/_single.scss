@@ -5,6 +5,8 @@
 	}
 
 	&-post-category {
+		white-space: nowrap;
+
 		a {
 			margin-left: 0.25rem;
 		}
@@ -46,6 +48,8 @@
 	&-post-tags {
 		&:before {
 			@extend .pipe-left;
+			top: 0;
+			margin-top: 0.25rem;
 		}
 	}
 }

@@ -19,7 +19,7 @@ get_header();
 
 			<div class="single-post-meta mt-3 pt-3">
 				<div class="single-post-author pb-2"><?php the_author(); ?></div>
-				<div class="pb-2">
+				<div class="d-flex pb-2">
 					<span class="single-post-category">
 						<?php the_category(','); ?>
 					</span>
